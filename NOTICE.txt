@@ -1,0 +1,35 @@
+xbCDWAlite
+Copyright 2013 Gunnar Kappei
+
+This product includes software developed by
+The Apache Software Foundation (http://www.apache.org/).
+
+    Apache XMLBeans 2.6.0 -> http://www.xmlbeans.apache.org
+    [ASL 2.0, http://www.apache.org/licenses/]
+
+This product includes software developed by
+Saxonica Limited (http://www.saxonica.com/).
+
+    Saxon 9.5HE -> https://sourceforge.net/svn/?group_id=29872
+    [MPL 2.0, http://www.mozilla.org/MPL/MPL-2.0.html]
+
+This product includes software developed by
+Google (http://www.google.com/).
+
+    Google Guice 3.0 -> http://code.google.com/p/google-guice/
+    [ASL 2.0, http://www.apache.org/licenses/]
+
+Portions of this software may use a  XML schema Copyright © 2005, 2006 ARTstor
+and J Paul Getty Trust. For further information about CDWA Lite please look at
+http://www.getty.edu/research/conducting_research/standards/cdwa/cdwalite/cdwalite.pdf .
+
+--------------------------------------------------------------------------------
+src/schemaorg_apache_xmlbeans/src/CDWALite-xsd-public-1.1.xsd is an xml-schema
+developed by ARTstor and J Paul Getty Trust.
+This file is provided without warranties of any kind nor will the author be
+liable for any damage arising as the result of using the work.
+
+Copyright (C) 2013 Gunnar Kappei (gkappei@web.de). Verbatim copying
+and distribution of this entire article is permitted in any medium,
+provided this notice is preserved.
+--------------------------------------------------------------------------------
