@@ -6,7 +6,7 @@
  *
  * Automatically generated - do not modify.
  */
-package edu.getty.cdwa.cdwaLite.impl;
+package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
 /**
  * A document containing one extentMaterialsTech(@http://www.getty.edu/CDWA/CDWALite) element.
  *
@@ -60,7 +60,7 @@ public class ExtentMaterialsTechDocumentImpl extends org.apache.xmlbeans.impl.va
     /**
      * Sets the "extentMaterialsTech" element
      */
-    public void setExtentMaterialsTech(java.lang.String extentMaterialsTech)
+    @Inject(optional=true) public void setExtentMaterialsTech(java.lang.String extentMaterialsTech)
     {
         synchronized (monitor())
         {

@@ -6,7 +6,7 @@
  *
  * Automatically generated - do not modify.
  */
-package edu.getty.cdwa.cdwaLite.impl;
+package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
 /**
  * A document containing one indentifier(@http://www.getty.edu/CDWA/CDWALite) attribute.
  *
@@ -72,7 +72,7 @@ public class IndentifierAttributeImpl extends org.apache.xmlbeans.impl.values.Xm
     /**
      * Sets the "indentifier" attribute
      */
-    public void setIndentifier(java.lang.String indentifier)
+    @Inject(optional=true) public void setIndentifier(java.lang.String indentifier)
     {
         synchronized (monitor())
         {

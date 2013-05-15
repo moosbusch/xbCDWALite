@@ -6,7 +6,7 @@
  *
  * Automatically generated - do not modify.
  */
-package edu.getty.cdwa.cdwaLite.impl;
+package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
 /**
  * A document containing one locIDtype(@http://www.getty.edu/CDWA/CDWALite) attribute.
  *
@@ -72,7 +72,7 @@ public class LocIDtypeAttributeImpl extends org.apache.xmlbeans.impl.values.XmlC
     /**
      * Sets the "locIDtype" attribute
      */
-    public void setLocIDtype(java.lang.String locIDtype)
+    @Inject(optional=true) public void setLocIDtype(java.lang.String locIDtype)
     {
         synchronized (monitor())
         {

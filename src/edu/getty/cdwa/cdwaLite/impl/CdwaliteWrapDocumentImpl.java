@@ -6,7 +6,8 @@
  *
  * Automatically generated - do not modify.
  */
-package edu.getty.cdwa.cdwaLite.impl;
+package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
+
 /**
  * A document containing one cdwaliteWrap(@http://www.getty.edu/CDWA/CDWALite) element.
  *
@@ -15,16 +16,16 @@ package edu.getty.cdwa.cdwaLite.impl;
 public class CdwaliteWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements edu.getty.cdwa.cdwaLite.CdwaliteWrapDocument
 {
     private static final long serialVersionUID = 1L;
-    
+
     public CdwaliteWrapDocumentImpl(org.apache.xmlbeans.SchemaType sType)
     {
         super(sType);
     }
-    
-    private static final javax.xml.namespace.QName CDWALITEWRAP$0 = 
+
+    private static final javax.xml.namespace.QName CDWALITEWRAP$0 =
         new javax.xml.namespace.QName("http://www.getty.edu/CDWA/CDWALite", "cdwaliteWrap");
-    
-    
+
+
     /**
      * Gets the "cdwaliteWrap" element
      */
@@ -42,15 +43,15 @@ public class CdwaliteWrapDocumentImpl extends org.apache.xmlbeans.impl.values.Xm
             return target;
         }
     }
-    
+
     /**
      * Sets the "cdwaliteWrap" element
      */
-    public void setCdwaliteWrap(edu.getty.cdwa.cdwaLite.CdwaliteWrapDocument.CdwaliteWrap cdwaliteWrap)
+    @Inject(optional=true) public void setCdwaliteWrap(edu.getty.cdwa.cdwaLite.CdwaliteWrapDocument.CdwaliteWrap cdwaliteWrap)
     {
         generatedSetterHelperImpl(cdwaliteWrap, CDWALITEWRAP$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
-    
+
     /**
      * Appends and returns a new empty "cdwaliteWrap" element
      */
@@ -72,16 +73,16 @@ public class CdwaliteWrapDocumentImpl extends org.apache.xmlbeans.impl.values.Xm
     public static class CdwaliteWrapImpl extends org.apache.xmlbeans.impl.values.XmlComplexContentImpl implements edu.getty.cdwa.cdwaLite.CdwaliteWrapDocument.CdwaliteWrap
     {
         private static final long serialVersionUID = 1L;
-        
+
         public CdwaliteWrapImpl(org.apache.xmlbeans.SchemaType sType)
         {
             super(sType);
         }
-        
-        private static final javax.xml.namespace.QName CDWALITE$0 = 
+
+        private static final javax.xml.namespace.QName CDWALITE$0 =
             new javax.xml.namespace.QName("http://www.getty.edu/CDWA/CDWALite", "cdwalite");
-        
-        
+
+
         /**
          * Gets a List of "cdwalite" elements
          */
@@ -92,7 +93,7 @@ public class CdwaliteWrapDocumentImpl extends org.apache.xmlbeans.impl.values.Xm
                 @Override
                 public edu.getty.cdwa.cdwaLite.CdwaliteDocument.Cdwalite get(int i)
                     { return CdwaliteWrapImpl.this.getCdwaliteArray(i); }
-                
+
                 @Override
                 public edu.getty.cdwa.cdwaLite.CdwaliteDocument.Cdwalite set(int i, edu.getty.cdwa.cdwaLite.CdwaliteDocument.Cdwalite o)
                 {
@@ -100,11 +101,11 @@ public class CdwaliteWrapDocumentImpl extends org.apache.xmlbeans.impl.values.Xm
                     CdwaliteWrapImpl.this.setCdwaliteArray(i, o);
                     return old;
                 }
-                
+
                 @Override
                 public void add(int i, edu.getty.cdwa.cdwaLite.CdwaliteDocument.Cdwalite o)
                     { CdwaliteWrapImpl.this.insertNewCdwalite(i).set(o); }
-                
+
                 @Override
                 public edu.getty.cdwa.cdwaLite.CdwaliteDocument.Cdwalite remove(int i)
                 {
@@ -112,20 +113,20 @@ public class CdwaliteWrapDocumentImpl extends org.apache.xmlbeans.impl.values.Xm
                     CdwaliteWrapImpl.this.removeCdwalite(i);
                     return old;
                 }
-                
+
                 @Override
                 public int size()
                     { return CdwaliteWrapImpl.this.sizeOfCdwaliteArray(); }
-                
+
             }
-            
+
             synchronized (monitor())
             {
                 check_orphaned();
                 return new CdwaliteList();
             }
         }
-        
+
         /**
          * Gets array of all "cdwalite" elements
          * @deprecated
@@ -143,7 +144,7 @@ public class CdwaliteWrapDocumentImpl extends org.apache.xmlbeans.impl.values.Xm
                 return result;
             }
         }
-        
+
         /**
          * Gets ith "cdwalite" element
          */
@@ -161,7 +162,7 @@ public class CdwaliteWrapDocumentImpl extends org.apache.xmlbeans.impl.values.Xm
                 return target;
             }
         }
-        
+
         /**
          * Returns number of "cdwalite" element
          */
@@ -173,24 +174,24 @@ public class CdwaliteWrapDocumentImpl extends org.apache.xmlbeans.impl.values.Xm
                 return get_store().count_elements(CDWALITE$0);
             }
         }
-        
+
         /**
          * Sets array of all "cdwalite" element  WARNING: This method is not atomicaly synchronized.
          */
-        public void setCdwaliteArray(edu.getty.cdwa.cdwaLite.CdwaliteDocument.Cdwalite[] cdwaliteArray)
+        @Inject(optional=true) public void setCdwaliteArray(edu.getty.cdwa.cdwaLite.CdwaliteDocument.Cdwalite[] cdwaliteArray)
         {
             check_orphaned();
             arraySetterHelper(cdwaliteArray, CDWALITE$0);
         }
-        
+
         /**
          * Sets ith "cdwalite" element
          */
-        public void setCdwaliteArray(int i, edu.getty.cdwa.cdwaLite.CdwaliteDocument.Cdwalite cdwalite)
+        @Inject(optional=true) public void setCdwaliteArray(int i, edu.getty.cdwa.cdwaLite.CdwaliteDocument.Cdwalite cdwalite)
         {
             generatedSetterHelperImpl(cdwalite, CDWALITE$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }
-        
+
         /**
          * Inserts and returns a new empty value (as xml) as the ith "cdwalite" element
          */
@@ -204,7 +205,7 @@ public class CdwaliteWrapDocumentImpl extends org.apache.xmlbeans.impl.values.Xm
                 return target;
             }
         }
-        
+
         /**
          * Appends and returns a new empty value (as xml) as the last "cdwalite" element
          */
@@ -218,7 +219,7 @@ public class CdwaliteWrapDocumentImpl extends org.apache.xmlbeans.impl.values.Xm
                 return target;
             }
         }
-        
+
         /**
          * Removes the ith "cdwalite" element
          */

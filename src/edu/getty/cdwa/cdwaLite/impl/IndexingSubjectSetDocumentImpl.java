@@ -6,7 +6,7 @@
  *
  * Automatically generated - do not modify.
  */
-package edu.getty.cdwa.cdwaLite.impl;
+package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
 /**
  * A document containing one indexingSubjectSet(@http://www.getty.edu/CDWA/CDWALite) element.
  *
@@ -46,7 +46,7 @@ public class IndexingSubjectSetDocumentImpl extends org.apache.xmlbeans.impl.val
     /**
      * Sets the "indexingSubjectSet" element
      */
-    public void setIndexingSubjectSet(edu.getty.cdwa.cdwaLite.IndexingSubjectSetDocument.IndexingSubjectSet indexingSubjectSet)
+    @Inject(optional=true) public void setIndexingSubjectSet(edu.getty.cdwa.cdwaLite.IndexingSubjectSetDocument.IndexingSubjectSet indexingSubjectSet)
     {
         generatedSetterHelperImpl(indexingSubjectSet, INDEXINGSUBJECTSET$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -133,7 +133,7 @@ public class IndexingSubjectSetDocumentImpl extends org.apache.xmlbeans.impl.val
         /**
          * Sets the "extentSubject" element
          */
-        public void setExtentSubject(java.lang.String extentSubject)
+        @Inject(optional=true) public void setExtentSubject(java.lang.String extentSubject)
         {
             synchronized (monitor())
             {
@@ -273,7 +273,7 @@ public class IndexingSubjectSetDocumentImpl extends org.apache.xmlbeans.impl.val
         /**
          * Sets array of all "subjectTerm" element  WARNING: This method is not atomicaly synchronized.
          */
-        public void setSubjectTermArray(edu.getty.cdwa.cdwaLite.SubjectTermDocument.SubjectTerm[] subjectTermArray)
+        @Inject(optional=true) public void setSubjectTermArray(edu.getty.cdwa.cdwaLite.SubjectTermDocument.SubjectTerm[] subjectTermArray)
         {
             check_orphaned();
             arraySetterHelper(subjectTermArray, SUBJECTTERM$2);
@@ -282,7 +282,7 @@ public class IndexingSubjectSetDocumentImpl extends org.apache.xmlbeans.impl.val
         /**
          * Sets ith "subjectTerm" element
          */
-        public void setSubjectTermArray(int i, edu.getty.cdwa.cdwaLite.SubjectTermDocument.SubjectTerm subjectTerm)
+        @Inject(optional=true) public void setSubjectTermArray(int i, edu.getty.cdwa.cdwaLite.SubjectTermDocument.SubjectTerm subjectTerm)
         {
             generatedSetterHelperImpl(subjectTerm, SUBJECTTERM$2, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }
@@ -374,7 +374,7 @@ public class IndexingSubjectSetDocumentImpl extends org.apache.xmlbeans.impl.val
         /**
          * Sets the "type" attribute
          */
-        public void setType(java.lang.String type)
+        @Inject(optional=true) public void setType(java.lang.String type)
         {
             synchronized (monitor())
             {

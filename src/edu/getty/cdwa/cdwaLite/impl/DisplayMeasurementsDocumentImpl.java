@@ -6,7 +6,7 @@
  *
  * Automatically generated - do not modify.
  */
-package edu.getty.cdwa.cdwaLite.impl;
+package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
 /**
  * A document containing one displayMeasurements(@http://www.getty.edu/CDWA/CDWALite) element.
  *
@@ -60,7 +60,7 @@ public class DisplayMeasurementsDocumentImpl extends org.apache.xmlbeans.impl.va
     /**
      * Sets the "displayMeasurements" element
      */
-    public void setDisplayMeasurements(java.lang.String displayMeasurements)
+    @Inject(optional=true) public void setDisplayMeasurements(java.lang.String displayMeasurements)
     {
         synchronized (monitor())
         {

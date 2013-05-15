@@ -6,7 +6,7 @@
  *
  * Automatically generated - do not modify.
  */
-package edu.getty.cdwa.cdwaLite.impl;
+package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
 /**
  * A document containing one recordInfoLink(@http://www.getty.edu/CDWA/CDWALite) element.
  *
@@ -60,7 +60,7 @@ public class RecordInfoLinkDocumentImpl extends org.apache.xmlbeans.impl.values.
     /**
      * Sets the "recordInfoLink" element
      */
-    public void setRecordInfoLink(java.lang.String recordInfoLink)
+    @Inject(optional=true) public void setRecordInfoLink(java.lang.String recordInfoLink)
     {
         synchronized (monitor())
         {

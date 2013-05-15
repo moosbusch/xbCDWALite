@@ -6,7 +6,7 @@
  *
  * Automatically generated - do not modify.
  */
-package edu.getty.cdwa.cdwaLite.impl;
+package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
 /**
  * A document containing one cultureWrap(@http://www.getty.edu/CDWA/CDWALite) element.
  *
@@ -46,7 +46,7 @@ public class CultureWrapDocumentImpl extends org.apache.xmlbeans.impl.values.Xml
     /**
      * Sets the "cultureWrap" element
      */
-    public void setCultureWrap(edu.getty.cdwa.cdwaLite.CultureWrapDocument.CultureWrap cultureWrap)
+    @Inject(optional=true) public void setCultureWrap(edu.getty.cdwa.cdwaLite.CultureWrapDocument.CultureWrap cultureWrap)
     {
         generatedSetterHelperImpl(cultureWrap, CULTUREWRAP$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -177,7 +177,7 @@ public class CultureWrapDocumentImpl extends org.apache.xmlbeans.impl.values.Xml
         /**
          * Sets array of all "culture" element  WARNING: This method is not atomicaly synchronized.
          */
-        public void setCultureArray(edu.getty.cdwa.cdwaLite.CultureDocument.Culture[] cultureArray)
+        @Inject(optional=true) public void setCultureArray(edu.getty.cdwa.cdwaLite.CultureDocument.Culture[] cultureArray)
         {
             check_orphaned();
             arraySetterHelper(cultureArray, CULTURE$0);
@@ -186,7 +186,7 @@ public class CultureWrapDocumentImpl extends org.apache.xmlbeans.impl.values.Xml
         /**
          * Sets ith "culture" element
          */
-        public void setCultureArray(int i, edu.getty.cdwa.cdwaLite.CultureDocument.Culture culture)
+        @Inject(optional=true) public void setCultureArray(int i, edu.getty.cdwa.cdwaLite.CultureDocument.Culture culture)
         {
             generatedSetterHelperImpl(culture, CULTURE$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }

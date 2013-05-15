@@ -6,7 +6,7 @@
  *
  * Automatically generated - do not modify.
  */
-package edu.getty.cdwa.cdwaLite.impl;
+package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
 /**
  * A document containing one descriptiveNote(@http://www.getty.edu/CDWA/CDWALite) element.
  *
@@ -60,7 +60,7 @@ public class DescriptiveNoteDocumentImpl extends org.apache.xmlbeans.impl.values
     /**
      * Sets the "descriptiveNote" element
      */
-    public void setDescriptiveNote(java.lang.String descriptiveNote)
+    @Inject(optional=true) public void setDescriptiveNote(java.lang.String descriptiveNote)
     {
         synchronized (monitor())
         {

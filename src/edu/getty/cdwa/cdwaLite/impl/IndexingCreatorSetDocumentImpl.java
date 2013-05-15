@@ -6,7 +6,7 @@
  *
  * Automatically generated - do not modify.
  */
-package edu.getty.cdwa.cdwaLite.impl;
+package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
 /**
  * A document containing one indexingCreatorSet(@http://www.getty.edu/CDWA/CDWALite) element.
  *
@@ -46,7 +46,7 @@ public class IndexingCreatorSetDocumentImpl extends org.apache.xmlbeans.impl.val
     /**
      * Sets the "indexingCreatorSet" element
      */
-    public void setIndexingCreatorSet(edu.getty.cdwa.cdwaLite.IndexingCreatorSetDocument.IndexingCreatorSet indexingCreatorSet)
+    @Inject(optional=true) public void setIndexingCreatorSet(edu.getty.cdwa.cdwaLite.IndexingCreatorSetDocument.IndexingCreatorSet indexingCreatorSet)
     {
         generatedSetterHelperImpl(indexingCreatorSet, INDEXINGCREATORSET$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -189,7 +189,7 @@ public class IndexingCreatorSetDocumentImpl extends org.apache.xmlbeans.impl.val
         /**
          * Sets array of all "nameCreatorSet" element  WARNING: This method is not atomicaly synchronized.
          */
-        public void setNameCreatorSetArray(edu.getty.cdwa.cdwaLite.NameCreatorSetDocument.NameCreatorSet[] nameCreatorSetArray)
+        @Inject(optional=true) public void setNameCreatorSetArray(edu.getty.cdwa.cdwaLite.NameCreatorSetDocument.NameCreatorSet[] nameCreatorSetArray)
         {
             check_orphaned();
             arraySetterHelper(nameCreatorSetArray, NAMECREATORSET$0);
@@ -198,7 +198,7 @@ public class IndexingCreatorSetDocumentImpl extends org.apache.xmlbeans.impl.val
         /**
          * Sets ith "nameCreatorSet" element
          */
-        public void setNameCreatorSetArray(int i, edu.getty.cdwa.cdwaLite.NameCreatorSetDocument.NameCreatorSet nameCreatorSet)
+        @Inject(optional=true) public void setNameCreatorSetArray(int i, edu.getty.cdwa.cdwaLite.NameCreatorSetDocument.NameCreatorSet nameCreatorSet)
         {
             generatedSetterHelperImpl(nameCreatorSet, NAMECREATORSET$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }
@@ -419,7 +419,7 @@ public class IndexingCreatorSetDocumentImpl extends org.apache.xmlbeans.impl.val
         /**
          * Sets array of all "nationalityCreator" element
          */
-        public void setNationalityCreatorArray(java.lang.String[] nationalityCreatorArray)
+        @Inject(optional=true) public void setNationalityCreatorArray(java.lang.String[] nationalityCreatorArray)
         {
             synchronized (monitor())
             {
@@ -431,7 +431,7 @@ public class IndexingCreatorSetDocumentImpl extends org.apache.xmlbeans.impl.val
         /**
          * Sets ith "nationalityCreator" element
          */
-        public void setNationalityCreatorArray(int i, java.lang.String nationalityCreator)
+        @Inject(optional=true) public void setNationalityCreatorArray(int i, java.lang.String nationalityCreator)
         {
             synchronized (monitor())
             {
@@ -639,7 +639,7 @@ public class IndexingCreatorSetDocumentImpl extends org.apache.xmlbeans.impl.val
         /**
          * Sets array of all "vitalDatesCreator" element  WARNING: This method is not atomicaly synchronized.
          */
-        public void setVitalDatesCreatorArray(edu.getty.cdwa.cdwaLite.VitalDatesCreatorDocument.VitalDatesCreator[] vitalDatesCreatorArray)
+        @Inject(optional=true) public void setVitalDatesCreatorArray(edu.getty.cdwa.cdwaLite.VitalDatesCreatorDocument.VitalDatesCreator[] vitalDatesCreatorArray)
         {
             check_orphaned();
             arraySetterHelper(vitalDatesCreatorArray, VITALDATESCREATOR$4);
@@ -648,7 +648,7 @@ public class IndexingCreatorSetDocumentImpl extends org.apache.xmlbeans.impl.val
         /**
          * Sets ith "vitalDatesCreator" element
          */
-        public void setVitalDatesCreatorArray(int i, edu.getty.cdwa.cdwaLite.VitalDatesCreatorDocument.VitalDatesCreator vitalDatesCreator)
+        @Inject(optional=true) public void setVitalDatesCreatorArray(int i, edu.getty.cdwa.cdwaLite.VitalDatesCreatorDocument.VitalDatesCreator vitalDatesCreator)
         {
             generatedSetterHelperImpl(vitalDatesCreator, VITALDATESCREATOR$4, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }
@@ -740,7 +740,7 @@ public class IndexingCreatorSetDocumentImpl extends org.apache.xmlbeans.impl.val
         /**
          * Sets the "genderCreator" element
          */
-        public void setGenderCreator(java.lang.String genderCreator)
+        @Inject(optional=true) public void setGenderCreator(java.lang.String genderCreator)
         {
             synchronized (monitor())
             {
@@ -880,7 +880,7 @@ public class IndexingCreatorSetDocumentImpl extends org.apache.xmlbeans.impl.val
         /**
          * Sets array of all "roleCreator" element  WARNING: This method is not atomicaly synchronized.
          */
-        public void setRoleCreatorArray(edu.getty.cdwa.cdwaLite.RoleCreatorDocument.RoleCreator[] roleCreatorArray)
+        @Inject(optional=true) public void setRoleCreatorArray(edu.getty.cdwa.cdwaLite.RoleCreatorDocument.RoleCreator[] roleCreatorArray)
         {
             check_orphaned();
             arraySetterHelper(roleCreatorArray, ROLECREATOR$8);
@@ -889,7 +889,7 @@ public class IndexingCreatorSetDocumentImpl extends org.apache.xmlbeans.impl.val
         /**
          * Sets ith "roleCreator" element
          */
-        public void setRoleCreatorArray(int i, edu.getty.cdwa.cdwaLite.RoleCreatorDocument.RoleCreator roleCreator)
+        @Inject(optional=true) public void setRoleCreatorArray(int i, edu.getty.cdwa.cdwaLite.RoleCreatorDocument.RoleCreator roleCreator)
         {
             generatedSetterHelperImpl(roleCreator, ROLECREATOR$8, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }
@@ -1110,7 +1110,7 @@ public class IndexingCreatorSetDocumentImpl extends org.apache.xmlbeans.impl.val
         /**
          * Sets array of all "attributionQualifierCreator" element
          */
-        public void setAttributionQualifierCreatorArray(java.lang.String[] attributionQualifierCreatorArray)
+        @Inject(optional=true) public void setAttributionQualifierCreatorArray(java.lang.String[] attributionQualifierCreatorArray)
         {
             synchronized (monitor())
             {
@@ -1122,7 +1122,7 @@ public class IndexingCreatorSetDocumentImpl extends org.apache.xmlbeans.impl.val
         /**
          * Sets ith "attributionQualifierCreator" element
          */
-        public void setAttributionQualifierCreatorArray(int i, java.lang.String attributionQualifierCreator)
+        @Inject(optional=true) public void setAttributionQualifierCreatorArray(int i, java.lang.String attributionQualifierCreator)
         {
             synchronized (monitor())
             {
@@ -1411,7 +1411,7 @@ public class IndexingCreatorSetDocumentImpl extends org.apache.xmlbeans.impl.val
         /**
          * Sets array of all "extentCreator" element
          */
-        public void setExtentCreatorArray(java.lang.String[] extentCreatorArray)
+        @Inject(optional=true) public void setExtentCreatorArray(java.lang.String[] extentCreatorArray)
         {
             synchronized (monitor())
             {
@@ -1423,7 +1423,7 @@ public class IndexingCreatorSetDocumentImpl extends org.apache.xmlbeans.impl.val
         /**
          * Sets ith "extentCreator" element
          */
-        public void setExtentCreatorArray(int i, java.lang.String extentCreator)
+        @Inject(optional=true) public void setExtentCreatorArray(int i, java.lang.String extentCreator)
         {
             synchronized (monitor())
             {

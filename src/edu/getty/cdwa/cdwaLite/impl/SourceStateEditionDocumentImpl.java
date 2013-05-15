@@ -6,7 +6,7 @@
  *
  * Automatically generated - do not modify.
  */
-package edu.getty.cdwa.cdwaLite.impl;
+package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
 /**
  * A document containing one sourceStateEdition(@http://www.getty.edu/CDWA/CDWALite) element.
  *
@@ -60,7 +60,7 @@ public class SourceStateEditionDocumentImpl extends org.apache.xmlbeans.impl.val
     /**
      * Sets the "sourceStateEdition" element
      */
-    public void setSourceStateEdition(java.lang.String sourceStateEdition)
+    @Inject(optional=true) public void setSourceStateEdition(java.lang.String sourceStateEdition)
     {
         synchronized (monitor())
         {

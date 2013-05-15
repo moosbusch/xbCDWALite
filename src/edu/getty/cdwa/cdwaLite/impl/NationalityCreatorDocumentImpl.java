@@ -6,7 +6,7 @@
  *
  * Automatically generated - do not modify.
  */
-package edu.getty.cdwa.cdwaLite.impl;
+package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
 /**
  * A document containing one nationalityCreator(@http://www.getty.edu/CDWA/CDWALite) element.
  *
@@ -60,7 +60,7 @@ public class NationalityCreatorDocumentImpl extends org.apache.xmlbeans.impl.val
     /**
      * Sets the "nationalityCreator" element
      */
-    public void setNationalityCreator(java.lang.String nationalityCreator)
+    @Inject(optional=true) public void setNationalityCreator(java.lang.String nationalityCreator)
     {
         synchronized (monitor())
         {

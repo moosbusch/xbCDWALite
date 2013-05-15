@@ -6,7 +6,7 @@
  *
  * Automatically generated - do not modify.
  */
-package edu.getty.cdwa.cdwaLite.impl;
+package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
 /**
  * A document containing one labelRelatedWork(@http://www.getty.edu/CDWA/CDWALite) element.
  *
@@ -60,7 +60,7 @@ public class LabelRelatedWorkDocumentImpl extends org.apache.xmlbeans.impl.value
     /**
      * Sets the "labelRelatedWork" element
      */
-    public void setLabelRelatedWork(java.lang.String labelRelatedWork)
+    @Inject(optional=true) public void setLabelRelatedWork(java.lang.String labelRelatedWork)
     {
         synchronized (monitor())
         {

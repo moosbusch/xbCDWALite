@@ -6,7 +6,7 @@
  *
  * Automatically generated - do not modify.
  */
-package edu.getty.cdwa.cdwaLite.impl;
+package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
 /**
  * A document containing one shapeMeasurements(@http://www.getty.edu/CDWA/CDWALite) element.
  *
@@ -60,7 +60,7 @@ public class ShapeMeasurementsDocumentImpl extends org.apache.xmlbeans.impl.valu
     /**
      * Sets the "shapeMeasurements" element
      */
-    public void setShapeMeasurements(java.lang.String shapeMeasurements)
+    @Inject(optional=true) public void setShapeMeasurements(java.lang.String shapeMeasurements)
     {
         synchronized (monitor())
         {

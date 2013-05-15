@@ -6,7 +6,7 @@
  *
  * Automatically generated - do not modify.
  */
-package edu.getty.cdwa.cdwaLite.impl;
+package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
 /**
  * A document containing one administrativeMetadata(@http://www.getty.edu/CDWA/CDWALite) element.
  *
@@ -46,7 +46,7 @@ public class AdministrativeMetadataDocumentImpl extends org.apache.xmlbeans.impl
     /**
      * Sets the "administrativeMetadata" element
      */
-    public void setAdministrativeMetadata(edu.getty.cdwa.cdwaLite.AdministrativeMetadataDocument.AdministrativeMetadata administrativeMetadata)
+    @Inject(optional=true) public void setAdministrativeMetadata(edu.getty.cdwa.cdwaLite.AdministrativeMetadataDocument.AdministrativeMetadata administrativeMetadata)
     {
         generatedSetterHelperImpl(administrativeMetadata, ADMINISTRATIVEMETADATA$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -181,7 +181,7 @@ public class AdministrativeMetadataDocumentImpl extends org.apache.xmlbeans.impl
         /**
          * Sets array of all "rightsWork" element  WARNING: This method is not atomicaly synchronized.
          */
-        public void setRightsWorkArray(edu.getty.cdwa.cdwaLite.RightsWorkDocument.RightsWork[] rightsWorkArray)
+        @Inject(optional=true) public void setRightsWorkArray(edu.getty.cdwa.cdwaLite.RightsWorkDocument.RightsWork[] rightsWorkArray)
         {
             check_orphaned();
             arraySetterHelper(rightsWorkArray, RIGHTSWORK$0);
@@ -190,7 +190,7 @@ public class AdministrativeMetadataDocumentImpl extends org.apache.xmlbeans.impl
         /**
          * Sets ith "rightsWork" element
          */
-        public void setRightsWorkArray(int i, edu.getty.cdwa.cdwaLite.RightsWorkDocument.RightsWork rightsWork)
+        @Inject(optional=true) public void setRightsWorkArray(int i, edu.getty.cdwa.cdwaLite.RightsWorkDocument.RightsWork rightsWork)
         {
             generatedSetterHelperImpl(rightsWork, RIGHTSWORK$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }
@@ -268,7 +268,7 @@ public class AdministrativeMetadataDocumentImpl extends org.apache.xmlbeans.impl
         /**
          * Sets the "recordWrap" element
          */
-        public void setRecordWrap(edu.getty.cdwa.cdwaLite.RecordWrapDocument.RecordWrap recordWrap)
+        @Inject(optional=true) public void setRecordWrap(edu.getty.cdwa.cdwaLite.RecordWrapDocument.RecordWrap recordWrap)
         {
             generatedSetterHelperImpl(recordWrap, RECORDWRAP$2, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
         }
@@ -332,7 +332,7 @@ public class AdministrativeMetadataDocumentImpl extends org.apache.xmlbeans.impl
         /**
          * Sets the "resourceWrap" element
          */
-        public void setResourceWrap(edu.getty.cdwa.cdwaLite.ResourceWrapDocument.ResourceWrap resourceWrap)
+        @Inject(optional=true) public void setResourceWrap(edu.getty.cdwa.cdwaLite.ResourceWrapDocument.ResourceWrap resourceWrap)
         {
             generatedSetterHelperImpl(resourceWrap, RESOURCEWRAP$4, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
         }

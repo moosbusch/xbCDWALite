@@ -6,7 +6,7 @@
  *
  * Automatically generated - do not modify.
  */
-package edu.getty.cdwa.cdwaLite.impl;
+package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
 /**
  * A document containing one linkscheme(@http://www.getty.edu/CDWA/CDWALite) attribute.
  *
@@ -72,7 +72,7 @@ public class LinkschemeAttributeImpl extends org.apache.xmlbeans.impl.values.Xml
     /**
      * Sets the "linkscheme" attribute
      */
-    public void setLinkscheme(java.lang.String linkscheme)
+    @Inject(optional=true) public void setLinkscheme(java.lang.String linkscheme)
     {
         synchronized (monitor())
         {

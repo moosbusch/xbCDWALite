@@ -6,7 +6,7 @@
  *
  * Automatically generated - do not modify.
  */
-package edu.getty.cdwa.cdwaLite.impl;
+package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
 /**
  * A document containing one styleWrap(@http://www.getty.edu/CDWA/CDWALite) element.
  *
@@ -46,7 +46,7 @@ public class StyleWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCo
     /**
      * Sets the "styleWrap" element
      */
-    public void setStyleWrap(edu.getty.cdwa.cdwaLite.StyleWrapDocument.StyleWrap styleWrap)
+    @Inject(optional=true) public void setStyleWrap(edu.getty.cdwa.cdwaLite.StyleWrapDocument.StyleWrap styleWrap)
     {
         generatedSetterHelperImpl(styleWrap, STYLEWRAP$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -177,7 +177,7 @@ public class StyleWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCo
         /**
          * Sets array of all "style" element  WARNING: This method is not atomicaly synchronized.
          */
-        public void setStyleArray(edu.getty.cdwa.cdwaLite.StyleDocument.Style[] styleArray)
+        @Inject(optional=true) public void setStyleArray(edu.getty.cdwa.cdwaLite.StyleDocument.Style[] styleArray)
         {
             check_orphaned();
             arraySetterHelper(styleArray, STYLE$0);
@@ -186,7 +186,7 @@ public class StyleWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCo
         /**
          * Sets ith "style" element
          */
-        public void setStyleArray(int i, edu.getty.cdwa.cdwaLite.StyleDocument.Style style)
+        @Inject(optional=true) public void setStyleArray(int i, edu.getty.cdwa.cdwaLite.StyleDocument.Style style)
         {
             generatedSetterHelperImpl(style, STYLE$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }

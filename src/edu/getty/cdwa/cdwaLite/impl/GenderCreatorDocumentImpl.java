@@ -6,7 +6,7 @@
  *
  * Automatically generated - do not modify.
  */
-package edu.getty.cdwa.cdwaLite.impl;
+package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
 /**
  * A document containing one genderCreator(@http://www.getty.edu/CDWA/CDWALite) element.
  *
@@ -60,7 +60,7 @@ public class GenderCreatorDocumentImpl extends org.apache.xmlbeans.impl.values.X
     /**
      * Sets the "genderCreator" element
      */
-    public void setGenderCreator(java.lang.String genderCreator)
+    @Inject(optional=true) public void setGenderCreator(java.lang.String genderCreator)
     {
         synchronized (monitor())
         {

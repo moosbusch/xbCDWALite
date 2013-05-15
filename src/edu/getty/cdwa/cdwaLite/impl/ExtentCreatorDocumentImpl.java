@@ -6,7 +6,7 @@
  *
  * Automatically generated - do not modify.
  */
-package edu.getty.cdwa.cdwaLite.impl;
+package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
 /**
  * A document containing one extentCreator(@http://www.getty.edu/CDWA/CDWALite) element.
  *
@@ -60,7 +60,7 @@ public class ExtentCreatorDocumentImpl extends org.apache.xmlbeans.impl.values.X
     /**
      * Sets the "extentCreator" element
      */
-    public void setExtentCreator(java.lang.String extentCreator)
+    @Inject(optional=true) public void setExtentCreator(java.lang.String extentCreator)
     {
         synchronized (monitor())
         {

@@ -6,7 +6,7 @@
  *
  * Automatically generated - do not modify.
  */
-package edu.getty.cdwa.cdwaLite.impl;
+package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
 /**
  * A document containing one displayMaterialsTech(@http://www.getty.edu/CDWA/CDWALite) element.
  *
@@ -60,7 +60,7 @@ public class DisplayMaterialsTechDocumentImpl extends org.apache.xmlbeans.impl.v
     /**
      * Sets the "displayMaterialsTech" element
      */
-    public void setDisplayMaterialsTech(java.lang.String displayMaterialsTech)
+    @Inject(optional=true) public void setDisplayMaterialsTech(java.lang.String displayMaterialsTech)
     {
         synchronized (monitor())
         {

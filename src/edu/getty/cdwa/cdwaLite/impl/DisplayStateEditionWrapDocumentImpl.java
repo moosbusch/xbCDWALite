@@ -6,7 +6,7 @@
  *
  * Automatically generated - do not modify.
  */
-package edu.getty.cdwa.cdwaLite.impl;
+package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
 /**
  * A document containing one displayStateEditionWrap(@http://www.getty.edu/CDWA/CDWALite) element.
  *
@@ -46,7 +46,7 @@ public class DisplayStateEditionWrapDocumentImpl extends org.apache.xmlbeans.imp
     /**
      * Sets the "displayStateEditionWrap" element
      */
-    public void setDisplayStateEditionWrap(edu.getty.cdwa.cdwaLite.DisplayStateEditionWrapDocument.DisplayStateEditionWrap displayStateEditionWrap)
+    @Inject(optional=true) public void setDisplayStateEditionWrap(edu.getty.cdwa.cdwaLite.DisplayStateEditionWrapDocument.DisplayStateEditionWrap displayStateEditionWrap)
     {
         generatedSetterHelperImpl(displayStateEditionWrap, DISPLAYSTATEEDITIONWRAP$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -262,7 +262,7 @@ public class DisplayStateEditionWrapDocumentImpl extends org.apache.xmlbeans.imp
         /**
          * Sets array of all "displayState" element
          */
-        public void setDisplayStateArray(java.lang.String[] displayStateArray)
+        @Inject(optional=true) public void setDisplayStateArray(java.lang.String[] displayStateArray)
         {
             synchronized (monitor())
             {
@@ -274,7 +274,7 @@ public class DisplayStateEditionWrapDocumentImpl extends org.apache.xmlbeans.imp
         /**
          * Sets ith "displayState" element
          */
-        public void setDisplayStateArray(int i, java.lang.String displayState)
+        @Inject(optional=true) public void setDisplayStateArray(int i, java.lang.String displayState)
         {
             synchronized (monitor())
             {
@@ -563,7 +563,7 @@ public class DisplayStateEditionWrapDocumentImpl extends org.apache.xmlbeans.imp
         /**
          * Sets array of all "displayEdition" element
          */
-        public void setDisplayEditionArray(java.lang.String[] displayEditionArray)
+        @Inject(optional=true) public void setDisplayEditionArray(java.lang.String[] displayEditionArray)
         {
             synchronized (monitor())
             {
@@ -575,7 +575,7 @@ public class DisplayStateEditionWrapDocumentImpl extends org.apache.xmlbeans.imp
         /**
          * Sets ith "displayEdition" element
          */
-        public void setDisplayEditionArray(int i, java.lang.String displayEdition)
+        @Inject(optional=true) public void setDisplayEditionArray(int i, java.lang.String displayEdition)
         {
             synchronized (monitor())
             {
@@ -864,7 +864,7 @@ public class DisplayStateEditionWrapDocumentImpl extends org.apache.xmlbeans.imp
         /**
          * Sets array of all "sourceStateEdition" element
          */
-        public void setSourceStateEditionArray(java.lang.String[] sourceStateEditionArray)
+        @Inject(optional=true) public void setSourceStateEditionArray(java.lang.String[] sourceStateEditionArray)
         {
             synchronized (monitor())
             {
@@ -876,7 +876,7 @@ public class DisplayStateEditionWrapDocumentImpl extends org.apache.xmlbeans.imp
         /**
          * Sets ith "sourceStateEdition" element
          */
-        public void setSourceStateEditionArray(int i, java.lang.String sourceStateEdition)
+        @Inject(optional=true) public void setSourceStateEditionArray(int i, java.lang.String sourceStateEdition)
         {
             synchronized (monitor())
             {

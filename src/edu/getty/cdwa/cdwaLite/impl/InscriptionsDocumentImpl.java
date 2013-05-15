@@ -6,7 +6,7 @@
  *
  * Automatically generated - do not modify.
  */
-package edu.getty.cdwa.cdwaLite.impl;
+package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
 /**
  * A document containing one inscriptions(@http://www.getty.edu/CDWA/CDWALite) element.
  *
@@ -60,7 +60,7 @@ public class InscriptionsDocumentImpl extends org.apache.xmlbeans.impl.values.Xm
     /**
      * Sets the "inscriptions" element
      */
-    public void setInscriptions(java.lang.String inscriptions)
+    @Inject(optional=true) public void setInscriptions(java.lang.String inscriptions)
     {
         synchronized (monitor())
         {

@@ -6,7 +6,7 @@
  *
  * Automatically generated - do not modify.
  */
-package edu.getty.cdwa.cdwaLite.impl;
+package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
 /**
  * A document containing one pref(@http://www.getty.edu/CDWA/CDWALite) attribute.
  *
@@ -72,7 +72,7 @@ public class PrefAttributeImpl extends org.apache.xmlbeans.impl.values.XmlComple
     /**
      * Sets the "pref" attribute
      */
-    public void setPref(java.lang.String pref)
+    @Inject(optional=true) public void setPref(java.lang.String pref)
     {
         synchronized (monitor())
         {

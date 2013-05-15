@@ -6,7 +6,7 @@
  *
  * Automatically generated - do not modify.
  */
-package edu.getty.cdwa.cdwaLite.impl;
+package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
 /**
  * A document containing one earliestDate(@http://www.getty.edu/CDWA/CDWALite) element.
  *
@@ -46,7 +46,7 @@ public class EarliestDateDocumentImpl extends org.apache.xmlbeans.impl.values.Xm
     /**
      * Sets the "earliestDate" element
      */
-    public void setEarliestDate(edu.getty.cdwa.cdwaLite.EarliestDateDocument.EarliestDate earliestDate)
+    @Inject(optional=true) public void setEarliestDate(edu.getty.cdwa.cdwaLite.EarliestDateDocument.EarliestDate earliestDate)
     {
         generatedSetterHelperImpl(earliestDate, EARLIESTDATE$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -134,7 +134,7 @@ public class EarliestDateDocumentImpl extends org.apache.xmlbeans.impl.values.Xm
         /**
          * Sets the "termsource" attribute
          */
-        public void setTermsource(java.lang.String termsource)
+        @Inject(optional=true) public void setTermsource(java.lang.String termsource)
         {
             synchronized (monitor())
             {

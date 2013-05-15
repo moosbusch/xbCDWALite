@@ -6,7 +6,7 @@
  *
  * Automatically generated - do not modify.
  */
-package edu.getty.cdwa.cdwaLite.impl;
+package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
 /**
  * A document containing one attributionQualifierCreator(@http://www.getty.edu/CDWA/CDWALite) element.
  *
@@ -60,7 +60,7 @@ public class AttributionQualifierCreatorDocumentImpl extends org.apache.xmlbeans
     /**
      * Sets the "attributionQualifierCreator" element
      */
-    public void setAttributionQualifierCreator(java.lang.String attributionQualifierCreator)
+    @Inject(optional=true) public void setAttributionQualifierCreator(java.lang.String attributionQualifierCreator)
     {
         synchronized (monitor())
         {

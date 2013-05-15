@@ -6,7 +6,7 @@
  *
  * Automatically generated - do not modify.
  */
-package edu.getty.cdwa.cdwaLite.impl;
+package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
 /**
  * A document containing one locRelatedWork(@http://www.getty.edu/CDWA/CDWALite) element.
  *
@@ -46,7 +46,7 @@ public class LocRelatedWorkDocumentImpl extends org.apache.xmlbeans.impl.values.
     /**
      * Sets the "locRelatedWork" element
      */
-    public void setLocRelatedWork(edu.getty.cdwa.cdwaLite.LocRelatedWorkDocument.LocRelatedWork locRelatedWork)
+    @Inject(optional=true) public void setLocRelatedWork(edu.getty.cdwa.cdwaLite.LocRelatedWorkDocument.LocRelatedWork locRelatedWork)
     {
         generatedSetterHelperImpl(locRelatedWork, LOCRELATEDWORK$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -140,7 +140,7 @@ public class LocRelatedWorkDocumentImpl extends org.apache.xmlbeans.impl.values.
         /**
          * Sets the "relWorkID" attribute
          */
-        public void setRelWorkID(java.lang.String relWorkID)
+        @Inject(optional=true) public void setRelWorkID(java.lang.String relWorkID)
         {
             synchronized (monitor())
             {
@@ -232,7 +232,7 @@ public class LocRelatedWorkDocumentImpl extends org.apache.xmlbeans.impl.values.
         /**
          * Sets the "termsource" attribute
          */
-        public void setTermsource(java.lang.String termsource)
+        @Inject(optional=true) public void setTermsource(java.lang.String termsource)
         {
             synchronized (monitor())
             {
@@ -324,7 +324,7 @@ public class LocRelatedWorkDocumentImpl extends org.apache.xmlbeans.impl.values.
         /**
          * Sets the "locID" attribute
          */
-        public void setLocID(java.lang.String locID)
+        @Inject(optional=true) public void setLocID(java.lang.String locID)
         {
             synchronized (monitor())
             {
@@ -416,7 +416,7 @@ public class LocRelatedWorkDocumentImpl extends org.apache.xmlbeans.impl.values.
         /**
          * Sets the "locIDtype" attribute
          */
-        public void setLocIDtype(java.lang.String locIDtype)
+        @Inject(optional=true) public void setLocIDtype(java.lang.String locIDtype)
         {
             synchronized (monitor())
             {

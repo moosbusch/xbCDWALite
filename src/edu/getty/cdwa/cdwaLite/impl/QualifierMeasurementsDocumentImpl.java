@@ -6,7 +6,7 @@
  *
  * Automatically generated - do not modify.
  */
-package edu.getty.cdwa.cdwaLite.impl;
+package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
 /**
  * A document containing one qualifierMeasurements(@http://www.getty.edu/CDWA/CDWALite) element.
  *
@@ -60,7 +60,7 @@ public class QualifierMeasurementsDocumentImpl extends org.apache.xmlbeans.impl.
     /**
      * Sets the "qualifierMeasurements" element
      */
-    public void setQualifierMeasurements(java.lang.String qualifierMeasurements)
+    @Inject(optional=true) public void setQualifierMeasurements(java.lang.String qualifierMeasurements)
     {
         synchronized (monitor())
         {

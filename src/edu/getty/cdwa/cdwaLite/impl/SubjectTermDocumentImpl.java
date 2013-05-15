@@ -6,7 +6,7 @@
  *
  * Automatically generated - do not modify.
  */
-package edu.getty.cdwa.cdwaLite.impl;
+package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
 /**
  * A document containing one subjectTerm(@http://www.getty.edu/CDWA/CDWALite) element.
  *
@@ -46,7 +46,7 @@ public class SubjectTermDocumentImpl extends org.apache.xmlbeans.impl.values.Xml
     /**
      * Sets the "subjectTerm" element
      */
-    public void setSubjectTerm(edu.getty.cdwa.cdwaLite.SubjectTermDocument.SubjectTerm subjectTerm)
+    @Inject(optional=true) public void setSubjectTerm(edu.getty.cdwa.cdwaLite.SubjectTermDocument.SubjectTerm subjectTerm)
     {
         generatedSetterHelperImpl(subjectTerm, SUBJECTTERM$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -138,7 +138,7 @@ public class SubjectTermDocumentImpl extends org.apache.xmlbeans.impl.values.Xml
         /**
          * Sets the "type" attribute
          */
-        public void setType(java.lang.String type)
+        @Inject(optional=true) public void setType(java.lang.String type)
         {
             synchronized (monitor())
             {
@@ -230,7 +230,7 @@ public class SubjectTermDocumentImpl extends org.apache.xmlbeans.impl.values.Xml
         /**
          * Sets the "termsource" attribute
          */
-        public void setTermsource(java.lang.String termsource)
+        @Inject(optional=true) public void setTermsource(java.lang.String termsource)
         {
             synchronized (monitor())
             {
@@ -322,7 +322,7 @@ public class SubjectTermDocumentImpl extends org.apache.xmlbeans.impl.values.Xml
         /**
          * Sets the "termsourceID" attribute
          */
-        public void setTermsourceID(java.lang.String termsourceID)
+        @Inject(optional=true) public void setTermsourceID(java.lang.String termsourceID)
         {
             synchronized (monitor())
             {

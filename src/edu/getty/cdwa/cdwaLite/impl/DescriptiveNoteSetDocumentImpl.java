@@ -6,7 +6,7 @@
  *
  * Automatically generated - do not modify.
  */
-package edu.getty.cdwa.cdwaLite.impl;
+package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
 /**
  * A document containing one descriptiveNoteSet(@http://www.getty.edu/CDWA/CDWALite) element.
  *
@@ -46,7 +46,7 @@ public class DescriptiveNoteSetDocumentImpl extends org.apache.xmlbeans.impl.val
     /**
      * Sets the "descriptiveNoteSet" element
      */
-    public void setDescriptiveNoteSet(edu.getty.cdwa.cdwaLite.DescriptiveNoteSetDocument.DescriptiveNoteSet descriptiveNoteSet)
+    @Inject(optional=true) public void setDescriptiveNoteSet(edu.getty.cdwa.cdwaLite.DescriptiveNoteSetDocument.DescriptiveNoteSet descriptiveNoteSet)
     {
         generatedSetterHelperImpl(descriptiveNoteSet, DESCRIPTIVENOTESET$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -131,7 +131,7 @@ public class DescriptiveNoteSetDocumentImpl extends org.apache.xmlbeans.impl.val
         /**
          * Sets the "descriptiveNote" element
          */
-        public void setDescriptiveNote(java.lang.String descriptiveNote)
+        @Inject(optional=true) public void setDescriptiveNote(java.lang.String descriptiveNote)
         {
             synchronized (monitor())
             {
@@ -352,7 +352,7 @@ public class DescriptiveNoteSetDocumentImpl extends org.apache.xmlbeans.impl.val
         /**
          * Sets array of all "sourceDescriptiveNote" element
          */
-        public void setSourceDescriptiveNoteArray(java.lang.String[] sourceDescriptiveNoteArray)
+        @Inject(optional=true) public void setSourceDescriptiveNoteArray(java.lang.String[] sourceDescriptiveNoteArray)
         {
             synchronized (monitor())
             {
@@ -364,7 +364,7 @@ public class DescriptiveNoteSetDocumentImpl extends org.apache.xmlbeans.impl.val
         /**
          * Sets ith "sourceDescriptiveNote" element
          */
-        public void setSourceDescriptiveNoteArray(int i, java.lang.String sourceDescriptiveNote)
+        @Inject(optional=true) public void setSourceDescriptiveNoteArray(int i, java.lang.String sourceDescriptiveNote)
         {
             synchronized (monitor())
             {

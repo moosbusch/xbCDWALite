@@ -6,7 +6,7 @@
  *
  * Automatically generated - do not modify.
  */
-package edu.getty.cdwa.cdwaLite.impl;
+package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
 /**
  * A document containing one extentMeasurements(@http://www.getty.edu/CDWA/CDWALite) element.
  *
@@ -60,7 +60,7 @@ public class ExtentMeasurementsDocumentImpl extends org.apache.xmlbeans.impl.val
     /**
      * Sets the "extentMeasurements" element
      */
-    public void setExtentMeasurements(java.lang.String extentMeasurements)
+    @Inject(optional=true) public void setExtentMeasurements(java.lang.String extentMeasurements)
     {
         synchronized (monitor())
         {

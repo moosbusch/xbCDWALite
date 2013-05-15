@@ -6,7 +6,7 @@
  *
  * Automatically generated - do not modify.
  */
-package edu.getty.cdwa.cdwaLite.impl;
+package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
 /**
  * A document containing one indexingMeasurementsSet(@http://www.getty.edu/CDWA/CDWALite) element.
  *
@@ -46,7 +46,7 @@ public class IndexingMeasurementsSetDocumentImpl extends org.apache.xmlbeans.imp
     /**
      * Sets the "indexingMeasurementsSet" element
      */
-    public void setIndexingMeasurementsSet(edu.getty.cdwa.cdwaLite.IndexingMeasurementsSetDocument.IndexingMeasurementsSet indexingMeasurementsSet)
+    @Inject(optional=true) public void setIndexingMeasurementsSet(edu.getty.cdwa.cdwaLite.IndexingMeasurementsSetDocument.IndexingMeasurementsSet indexingMeasurementsSet)
     {
         generatedSetterHelperImpl(indexingMeasurementsSet, INDEXINGMEASUREMENTSSET$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -187,7 +187,7 @@ public class IndexingMeasurementsSetDocumentImpl extends org.apache.xmlbeans.imp
         /**
          * Sets array of all "measurementsSet" element  WARNING: This method is not atomicaly synchronized.
          */
-        public void setMeasurementsSetArray(edu.getty.cdwa.cdwaLite.MeasurementsSetDocument.MeasurementsSet[] measurementsSetArray)
+        @Inject(optional=true) public void setMeasurementsSetArray(edu.getty.cdwa.cdwaLite.MeasurementsSetDocument.MeasurementsSet[] measurementsSetArray)
         {
             check_orphaned();
             arraySetterHelper(measurementsSetArray, MEASUREMENTSSET$0);
@@ -196,7 +196,7 @@ public class IndexingMeasurementsSetDocumentImpl extends org.apache.xmlbeans.imp
         /**
          * Sets ith "measurementsSet" element
          */
-        public void setMeasurementsSetArray(int i, edu.getty.cdwa.cdwaLite.MeasurementsSetDocument.MeasurementsSet measurementsSet)
+        @Inject(optional=true) public void setMeasurementsSetArray(int i, edu.getty.cdwa.cdwaLite.MeasurementsSetDocument.MeasurementsSet measurementsSet)
         {
             generatedSetterHelperImpl(measurementsSet, MEASUREMENTSSET$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }
@@ -417,7 +417,7 @@ public class IndexingMeasurementsSetDocumentImpl extends org.apache.xmlbeans.imp
         /**
          * Sets array of all "extentMeasurements" element
          */
-        public void setExtentMeasurementsArray(java.lang.String[] extentMeasurementsArray)
+        @Inject(optional=true) public void setExtentMeasurementsArray(java.lang.String[] extentMeasurementsArray)
         {
             synchronized (monitor())
             {
@@ -429,7 +429,7 @@ public class IndexingMeasurementsSetDocumentImpl extends org.apache.xmlbeans.imp
         /**
          * Sets ith "extentMeasurements" element
          */
-        public void setExtentMeasurementsArray(int i, java.lang.String extentMeasurements)
+        @Inject(optional=true) public void setExtentMeasurementsArray(int i, java.lang.String extentMeasurements)
         {
             synchronized (monitor())
             {
@@ -718,7 +718,7 @@ public class IndexingMeasurementsSetDocumentImpl extends org.apache.xmlbeans.imp
         /**
          * Sets array of all "qualifierMeasurements" element
          */
-        public void setQualifierMeasurementsArray(java.lang.String[] qualifierMeasurementsArray)
+        @Inject(optional=true) public void setQualifierMeasurementsArray(java.lang.String[] qualifierMeasurementsArray)
         {
             synchronized (monitor())
             {
@@ -730,7 +730,7 @@ public class IndexingMeasurementsSetDocumentImpl extends org.apache.xmlbeans.imp
         /**
          * Sets ith "qualifierMeasurements" element
          */
-        public void setQualifierMeasurementsArray(int i, java.lang.String qualifierMeasurements)
+        @Inject(optional=true) public void setQualifierMeasurementsArray(int i, java.lang.String qualifierMeasurements)
         {
             synchronized (monitor())
             {
@@ -1019,7 +1019,7 @@ public class IndexingMeasurementsSetDocumentImpl extends org.apache.xmlbeans.imp
         /**
          * Sets array of all "formatMeasurements" element
          */
-        public void setFormatMeasurementsArray(java.lang.String[] formatMeasurementsArray)
+        @Inject(optional=true) public void setFormatMeasurementsArray(java.lang.String[] formatMeasurementsArray)
         {
             synchronized (monitor())
             {
@@ -1031,7 +1031,7 @@ public class IndexingMeasurementsSetDocumentImpl extends org.apache.xmlbeans.imp
         /**
          * Sets ith "formatMeasurements" element
          */
-        public void setFormatMeasurementsArray(int i, java.lang.String formatMeasurements)
+        @Inject(optional=true) public void setFormatMeasurementsArray(int i, java.lang.String formatMeasurements)
         {
             synchronized (monitor())
             {
@@ -1320,7 +1320,7 @@ public class IndexingMeasurementsSetDocumentImpl extends org.apache.xmlbeans.imp
         /**
          * Sets array of all "shapeMeasurements" element
          */
-        public void setShapeMeasurementsArray(java.lang.String[] shapeMeasurementsArray)
+        @Inject(optional=true) public void setShapeMeasurementsArray(java.lang.String[] shapeMeasurementsArray)
         {
             synchronized (monitor())
             {
@@ -1332,7 +1332,7 @@ public class IndexingMeasurementsSetDocumentImpl extends org.apache.xmlbeans.imp
         /**
          * Sets ith "shapeMeasurements" element
          */
-        public void setShapeMeasurementsArray(int i, java.lang.String shapeMeasurements)
+        @Inject(optional=true) public void setShapeMeasurementsArray(int i, java.lang.String shapeMeasurements)
         {
             synchronized (monitor())
             {
@@ -1621,7 +1621,7 @@ public class IndexingMeasurementsSetDocumentImpl extends org.apache.xmlbeans.imp
         /**
          * Sets array of all "scaleMeasurements" element
          */
-        public void setScaleMeasurementsArray(java.lang.String[] scaleMeasurementsArray)
+        @Inject(optional=true) public void setScaleMeasurementsArray(java.lang.String[] scaleMeasurementsArray)
         {
             synchronized (monitor())
             {
@@ -1633,7 +1633,7 @@ public class IndexingMeasurementsSetDocumentImpl extends org.apache.xmlbeans.imp
         /**
          * Sets ith "scaleMeasurements" element
          */
-        public void setScaleMeasurementsArray(int i, java.lang.String scaleMeasurements)
+        @Inject(optional=true) public void setScaleMeasurementsArray(int i, java.lang.String scaleMeasurements)
         {
             synchronized (monitor())
             {

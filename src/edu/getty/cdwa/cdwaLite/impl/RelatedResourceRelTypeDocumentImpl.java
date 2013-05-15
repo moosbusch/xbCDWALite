@@ -6,7 +6,7 @@
  *
  * Automatically generated - do not modify.
  */
-package edu.getty.cdwa.cdwaLite.impl;
+package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
 /**
  * A document containing one relatedResourceRelType(@http://www.getty.edu/CDWA/CDWALite) element.
  *
@@ -60,7 +60,7 @@ public class RelatedResourceRelTypeDocumentImpl extends org.apache.xmlbeans.impl
     /**
      * Sets the "relatedResourceRelType" element
      */
-    public void setRelatedResourceRelType(java.lang.String relatedResourceRelType)
+    @Inject(optional=true) public void setRelatedResourceRelType(java.lang.String relatedResourceRelType)
     {
         synchronized (monitor())
         {

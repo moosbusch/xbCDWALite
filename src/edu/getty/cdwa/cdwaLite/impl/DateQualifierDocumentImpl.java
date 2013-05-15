@@ -6,7 +6,7 @@
  *
  * Automatically generated - do not modify.
  */
-package edu.getty.cdwa.cdwaLite.impl;
+package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
 /**
  * A document containing one dateQualifier(@http://www.getty.edu/CDWA/CDWALite) element.
  *
@@ -60,7 +60,7 @@ public class DateQualifierDocumentImpl extends org.apache.xmlbeans.impl.values.X
     /**
      * Sets the "dateQualifier" element
      */
-    public void setDateQualifier(java.lang.String dateQualifier)
+    @Inject(optional=true) public void setDateQualifier(java.lang.String dateQualifier)
     {
         synchronized (monitor())
         {

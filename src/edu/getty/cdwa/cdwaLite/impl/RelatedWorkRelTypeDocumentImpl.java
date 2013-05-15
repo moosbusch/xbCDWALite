@@ -6,7 +6,7 @@
  *
  * Automatically generated - do not modify.
  */
-package edu.getty.cdwa.cdwaLite.impl;
+package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
 /**
  * A document containing one relatedWorkRelType(@http://www.getty.edu/CDWA/CDWALite) element.
  *
@@ -60,7 +60,7 @@ public class RelatedWorkRelTypeDocumentImpl extends org.apache.xmlbeans.impl.val
     /**
      * Sets the "relatedWorkRelType" element
      */
-    public void setRelatedWorkRelType(java.lang.String relatedWorkRelType)
+    @Inject(optional=true) public void setRelatedWorkRelType(java.lang.String relatedWorkRelType)
     {
         synchronized (monitor())
         {

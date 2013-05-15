@@ -6,7 +6,7 @@
  *
  * Automatically generated - do not modify.
  */
-package edu.getty.cdwa.cdwaLite.impl;
+package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
 /**
  * A document containing one indexingCreatorWrap(@http://www.getty.edu/CDWA/CDWALite) element.
  *
@@ -46,7 +46,7 @@ public class IndexingCreatorWrapDocumentImpl extends org.apache.xmlbeans.impl.va
     /**
      * Sets the "indexingCreatorWrap" element
      */
-    public void setIndexingCreatorWrap(edu.getty.cdwa.cdwaLite.IndexingCreatorWrapDocument.IndexingCreatorWrap indexingCreatorWrap)
+    @Inject(optional=true) public void setIndexingCreatorWrap(edu.getty.cdwa.cdwaLite.IndexingCreatorWrapDocument.IndexingCreatorWrap indexingCreatorWrap)
     {
         generatedSetterHelperImpl(indexingCreatorWrap, INDEXINGCREATORWRAP$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -177,7 +177,7 @@ public class IndexingCreatorWrapDocumentImpl extends org.apache.xmlbeans.impl.va
         /**
          * Sets array of all "indexingCreatorSet" element  WARNING: This method is not atomicaly synchronized.
          */
-        public void setIndexingCreatorSetArray(edu.getty.cdwa.cdwaLite.IndexingCreatorSetDocument.IndexingCreatorSet[] indexingCreatorSetArray)
+        @Inject(optional=true) public void setIndexingCreatorSetArray(edu.getty.cdwa.cdwaLite.IndexingCreatorSetDocument.IndexingCreatorSet[] indexingCreatorSetArray)
         {
             check_orphaned();
             arraySetterHelper(indexingCreatorSetArray, INDEXINGCREATORSET$0);
@@ -186,7 +186,7 @@ public class IndexingCreatorWrapDocumentImpl extends org.apache.xmlbeans.impl.va
         /**
          * Sets ith "indexingCreatorSet" element
          */
-        public void setIndexingCreatorSetArray(int i, edu.getty.cdwa.cdwaLite.IndexingCreatorSetDocument.IndexingCreatorSet indexingCreatorSet)
+        @Inject(optional=true) public void setIndexingCreatorSetArray(int i, edu.getty.cdwa.cdwaLite.IndexingCreatorSetDocument.IndexingCreatorSet indexingCreatorSet)
         {
             generatedSetterHelperImpl(indexingCreatorSet, INDEXINGCREATORSET$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }

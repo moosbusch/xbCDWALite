@@ -6,7 +6,7 @@
  *
  * Automatically generated - do not modify.
  */
-package edu.getty.cdwa.cdwaLite.impl;
+package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
 /**
  * A document containing one scaleMeasurements(@http://www.getty.edu/CDWA/CDWALite) element.
  *
@@ -60,7 +60,7 @@ public class ScaleMeasurementsDocumentImpl extends org.apache.xmlbeans.impl.valu
     /**
      * Sets the "scaleMeasurements" element
      */
-    public void setScaleMeasurements(java.lang.String scaleMeasurements)
+    @Inject(optional=true) public void setScaleMeasurements(java.lang.String scaleMeasurements)
     {
         synchronized (monitor())
         {

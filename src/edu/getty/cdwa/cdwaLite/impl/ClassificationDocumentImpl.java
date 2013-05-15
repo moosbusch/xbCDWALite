@@ -6,7 +6,7 @@
  *
  * Automatically generated - do not modify.
  */
-package edu.getty.cdwa.cdwaLite.impl;
+package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
 /**
  * A document containing one classification(@http://www.getty.edu/CDWA/CDWALite) element.
  *
@@ -46,7 +46,7 @@ public class ClassificationDocumentImpl extends org.apache.xmlbeans.impl.values.
     /**
      * Sets the "classification" element
      */
-    public void setClassification(edu.getty.cdwa.cdwaLite.ClassificationDocument.Classification classification)
+    @Inject(optional=true) public void setClassification(edu.getty.cdwa.cdwaLite.ClassificationDocument.Classification classification)
     {
         generatedSetterHelperImpl(classification, CLASSIFICATION$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -136,7 +136,7 @@ public class ClassificationDocumentImpl extends org.apache.xmlbeans.impl.values.
         /**
          * Sets the "termsource" attribute
          */
-        public void setTermsource(java.lang.String termsource)
+        @Inject(optional=true) public void setTermsource(java.lang.String termsource)
         {
             synchronized (monitor())
             {
@@ -228,7 +228,7 @@ public class ClassificationDocumentImpl extends org.apache.xmlbeans.impl.values.
         /**
          * Sets the "termsourceID" attribute
          */
-        public void setTermsourceID(java.lang.String termsourceID)
+        @Inject(optional=true) public void setTermsourceID(java.lang.String termsourceID)
         {
             synchronized (monitor())
             {

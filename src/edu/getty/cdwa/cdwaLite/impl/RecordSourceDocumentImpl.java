@@ -6,7 +6,7 @@
  *
  * Automatically generated - do not modify.
  */
-package edu.getty.cdwa.cdwaLite.impl;
+package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
 /**
  * A document containing one recordSource(@http://www.getty.edu/CDWA/CDWALite) element.
  *
@@ -60,7 +60,7 @@ public class RecordSourceDocumentImpl extends org.apache.xmlbeans.impl.values.Xm
     /**
      * Sets the "recordSource" element
      */
-    public void setRecordSource(java.lang.String recordSource)
+    @Inject(optional=true) public void setRecordSource(java.lang.String recordSource)
     {
         synchronized (monitor())
         {

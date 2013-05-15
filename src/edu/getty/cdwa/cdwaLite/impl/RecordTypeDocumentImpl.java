@@ -6,7 +6,7 @@
  *
  * Automatically generated - do not modify.
  */
-package edu.getty.cdwa.cdwaLite.impl;
+package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
 /**
  * A document containing one recordType(@http://www.getty.edu/CDWA/CDWALite) element.
  *
@@ -60,7 +60,7 @@ public class RecordTypeDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
     /**
      * Sets the "recordType" element
      */
-    public void setRecordType(java.lang.String recordType)
+    @Inject(optional=true) public void setRecordType(java.lang.String recordType)
     {
         synchronized (monitor())
         {

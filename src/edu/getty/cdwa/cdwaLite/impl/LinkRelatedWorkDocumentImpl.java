@@ -6,7 +6,7 @@
  *
  * Automatically generated - do not modify.
  */
-package edu.getty.cdwa.cdwaLite.impl;
+package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
 /**
  * A document containing one linkRelatedWork(@http://www.getty.edu/CDWA/CDWALite) element.
  *
@@ -46,7 +46,7 @@ public class LinkRelatedWorkDocumentImpl extends org.apache.xmlbeans.impl.values
     /**
      * Sets the "linkRelatedWork" element
      */
-    public void setLinkRelatedWork(edu.getty.cdwa.cdwaLite.LinkRelatedWorkDocument.LinkRelatedWork linkRelatedWork)
+    @Inject(optional=true) public void setLinkRelatedWork(edu.getty.cdwa.cdwaLite.LinkRelatedWorkDocument.LinkRelatedWork linkRelatedWork)
     {
         generatedSetterHelperImpl(linkRelatedWork, LINKRELATEDWORK$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -134,7 +134,7 @@ public class LinkRelatedWorkDocumentImpl extends org.apache.xmlbeans.impl.values
         /**
          * Sets the "linkscheme" attribute
          */
-        public void setLinkscheme(java.lang.String linkscheme)
+        @Inject(optional=true) public void setLinkscheme(java.lang.String linkscheme)
         {
             synchronized (monitor())
             {

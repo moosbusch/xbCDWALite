@@ -6,7 +6,7 @@
  *
  * Automatically generated - do not modify.
  */
-package edu.getty.cdwa.cdwaLite.impl;
+package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
 /**
  * A document containing one sourceMaterialsTech(@http://www.getty.edu/CDWA/CDWALite) element.
  *
@@ -60,7 +60,7 @@ public class SourceMaterialsTechDocumentImpl extends org.apache.xmlbeans.impl.va
     /**
      * Sets the "sourceMaterialsTech" element
      */
-    public void setSourceMaterialsTech(java.lang.String sourceMaterialsTech)
+    @Inject(optional=true) public void setSourceMaterialsTech(java.lang.String sourceMaterialsTech)
     {
         synchronized (monitor())
         {

@@ -6,7 +6,7 @@
  *
  * Automatically generated - do not modify.
  */
-package edu.getty.cdwa.cdwaLite.impl;
+package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
 /**
  * A document containing one recordMetadataLoc(@http://www.getty.edu/CDWA/CDWALite) element.
  *
@@ -46,7 +46,7 @@ public class RecordMetadataLocDocumentImpl extends org.apache.xmlbeans.impl.valu
     /**
      * Sets the "recordMetadataLoc" element
      */
-    public void setRecordMetadataLoc(edu.getty.cdwa.cdwaLite.RecordMetadataLocDocument.RecordMetadataLoc recordMetadataLoc)
+    @Inject(optional=true) public void setRecordMetadataLoc(edu.getty.cdwa.cdwaLite.RecordMetadataLocDocument.RecordMetadataLoc recordMetadataLoc)
     {
         generatedSetterHelperImpl(recordMetadataLoc, RECORDMETADATALOC$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -134,7 +134,7 @@ public class RecordMetadataLocDocumentImpl extends org.apache.xmlbeans.impl.valu
         /**
          * Sets the "type" attribute
          */
-        public void setType(java.lang.String type)
+        @Inject(optional=true) public void setType(java.lang.String type)
         {
             synchronized (monitor())
             {

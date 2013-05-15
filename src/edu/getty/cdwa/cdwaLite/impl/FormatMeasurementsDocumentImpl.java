@@ -6,7 +6,7 @@
  *
  * Automatically generated - do not modify.
  */
-package edu.getty.cdwa.cdwaLite.impl;
+package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
 /**
  * A document containing one formatMeasurements(@http://www.getty.edu/CDWA/CDWALite) element.
  *
@@ -60,7 +60,7 @@ public class FormatMeasurementsDocumentImpl extends org.apache.xmlbeans.impl.val
     /**
      * Sets the "formatMeasurements" element
      */
-    public void setFormatMeasurements(java.lang.String formatMeasurements)
+    @Inject(optional=true) public void setFormatMeasurements(java.lang.String formatMeasurements)
     {
         synchronized (monitor())
         {

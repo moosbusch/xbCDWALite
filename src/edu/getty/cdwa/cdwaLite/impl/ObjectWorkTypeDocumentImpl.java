@@ -6,7 +6,7 @@
  *
  * Automatically generated - do not modify.
  */
-package edu.getty.cdwa.cdwaLite.impl;
+package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
 /**
  * A document containing one objectWorkType(@http://www.getty.edu/CDWA/CDWALite) element.
  *
@@ -46,7 +46,7 @@ public class ObjectWorkTypeDocumentImpl extends org.apache.xmlbeans.impl.values.
     /**
      * Sets the "objectWorkType" element
      */
-    public void setObjectWorkType(edu.getty.cdwa.cdwaLite.ObjectWorkTypeDocument.ObjectWorkType objectWorkType)
+    @Inject(optional=true) public void setObjectWorkType(edu.getty.cdwa.cdwaLite.ObjectWorkTypeDocument.ObjectWorkType objectWorkType)
     {
         generatedSetterHelperImpl(objectWorkType, OBJECTWORKTYPE$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -136,7 +136,7 @@ public class ObjectWorkTypeDocumentImpl extends org.apache.xmlbeans.impl.values.
         /**
          * Sets the "termsource" attribute
          */
-        public void setTermsource(java.lang.String termsource)
+        @Inject(optional=true) public void setTermsource(java.lang.String termsource)
         {
             synchronized (monitor())
             {
@@ -228,7 +228,7 @@ public class ObjectWorkTypeDocumentImpl extends org.apache.xmlbeans.impl.values.
         /**
          * Sets the "termsourceID" attribute
          */
-        public void setTermsourceID(java.lang.String termsourceID)
+        @Inject(optional=true) public void setTermsourceID(java.lang.String termsourceID)
         {
             synchronized (monitor())
             {

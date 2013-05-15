@@ -6,7 +6,7 @@
  *
  * Automatically generated - do not modify.
  */
-package edu.getty.cdwa.cdwaLite.impl;
+package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
 /**
  * A document containing one displayEdition(@http://www.getty.edu/CDWA/CDWALite) element.
  *
@@ -60,7 +60,7 @@ public class DisplayEditionDocumentImpl extends org.apache.xmlbeans.impl.values.
     /**
      * Sets the "displayEdition" element
      */
-    public void setDisplayEdition(java.lang.String displayEdition)
+    @Inject(optional=true) public void setDisplayEdition(java.lang.String displayEdition)
     {
         synchronized (monitor())
         {

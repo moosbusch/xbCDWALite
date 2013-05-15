@@ -6,7 +6,7 @@
  *
  * Automatically generated - do not modify.
  */
-package edu.getty.cdwa.cdwaLite.impl;
+package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
 /**
  * A document containing one relatedWorkSet(@http://www.getty.edu/CDWA/CDWALite) element.
  *
@@ -46,7 +46,7 @@ public class RelatedWorkSetDocumentImpl extends org.apache.xmlbeans.impl.values.
     /**
      * Sets the "relatedWorkSet" element
      */
-    public void setRelatedWorkSet(edu.getty.cdwa.cdwaLite.RelatedWorkSetDocument.RelatedWorkSet relatedWorkSet)
+    @Inject(optional=true) public void setRelatedWorkSet(edu.getty.cdwa.cdwaLite.RelatedWorkSetDocument.RelatedWorkSet relatedWorkSet)
     {
         generatedSetterHelperImpl(relatedWorkSet, RELATEDWORKSET$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -183,7 +183,7 @@ public class RelatedWorkSetDocumentImpl extends org.apache.xmlbeans.impl.values.
         /**
          * Sets array of all "linkRelatedWork" element  WARNING: This method is not atomicaly synchronized.
          */
-        public void setLinkRelatedWorkArray(edu.getty.cdwa.cdwaLite.LinkRelatedWorkDocument.LinkRelatedWork[] linkRelatedWorkArray)
+        @Inject(optional=true) public void setLinkRelatedWorkArray(edu.getty.cdwa.cdwaLite.LinkRelatedWorkDocument.LinkRelatedWork[] linkRelatedWorkArray)
         {
             check_orphaned();
             arraySetterHelper(linkRelatedWorkArray, LINKRELATEDWORK$0);
@@ -192,7 +192,7 @@ public class RelatedWorkSetDocumentImpl extends org.apache.xmlbeans.impl.values.
         /**
          * Sets ith "linkRelatedWork" element
          */
-        public void setLinkRelatedWorkArray(int i, edu.getty.cdwa.cdwaLite.LinkRelatedWorkDocument.LinkRelatedWork linkRelatedWork)
+        @Inject(optional=true) public void setLinkRelatedWorkArray(int i, edu.getty.cdwa.cdwaLite.LinkRelatedWorkDocument.LinkRelatedWork linkRelatedWork)
         {
             generatedSetterHelperImpl(linkRelatedWork, LINKRELATEDWORK$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }
@@ -284,7 +284,7 @@ public class RelatedWorkSetDocumentImpl extends org.apache.xmlbeans.impl.values.
         /**
          * Sets the "relatedWorkRelType" element
          */
-        public void setRelatedWorkRelType(java.lang.String relatedWorkRelType)
+        @Inject(optional=true) public void setRelatedWorkRelType(java.lang.String relatedWorkRelType)
         {
             synchronized (monitor())
             {
@@ -505,7 +505,7 @@ public class RelatedWorkSetDocumentImpl extends org.apache.xmlbeans.impl.values.
         /**
          * Sets array of all "labelRelatedWork" element
          */
-        public void setLabelRelatedWorkArray(java.lang.String[] labelRelatedWorkArray)
+        @Inject(optional=true) public void setLabelRelatedWorkArray(java.lang.String[] labelRelatedWorkArray)
         {
             synchronized (monitor())
             {
@@ -517,7 +517,7 @@ public class RelatedWorkSetDocumentImpl extends org.apache.xmlbeans.impl.values.
         /**
          * Sets ith "labelRelatedWork" element
          */
-        public void setLabelRelatedWorkArray(int i, java.lang.String labelRelatedWork)
+        @Inject(optional=true) public void setLabelRelatedWorkArray(int i, java.lang.String labelRelatedWork)
         {
             synchronized (monitor())
             {
@@ -725,7 +725,7 @@ public class RelatedWorkSetDocumentImpl extends org.apache.xmlbeans.impl.values.
         /**
          * Sets array of all "locRelatedWork" element  WARNING: This method is not atomicaly synchronized.
          */
-        public void setLocRelatedWorkArray(edu.getty.cdwa.cdwaLite.LocRelatedWorkDocument.LocRelatedWork[] locRelatedWorkArray)
+        @Inject(optional=true) public void setLocRelatedWorkArray(edu.getty.cdwa.cdwaLite.LocRelatedWorkDocument.LocRelatedWork[] locRelatedWorkArray)
         {
             check_orphaned();
             arraySetterHelper(locRelatedWorkArray, LOCRELATEDWORK$6);
@@ -734,7 +734,7 @@ public class RelatedWorkSetDocumentImpl extends org.apache.xmlbeans.impl.values.
         /**
          * Sets ith "locRelatedWork" element
          */
-        public void setLocRelatedWorkArray(int i, edu.getty.cdwa.cdwaLite.LocRelatedWorkDocument.LocRelatedWork locRelatedWork)
+        @Inject(optional=true) public void setLocRelatedWorkArray(int i, edu.getty.cdwa.cdwaLite.LocRelatedWorkDocument.LocRelatedWork locRelatedWork)
         {
             generatedSetterHelperImpl(locRelatedWork, LOCRELATEDWORK$6, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }

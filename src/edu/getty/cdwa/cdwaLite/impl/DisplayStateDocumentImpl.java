@@ -6,7 +6,7 @@
  *
  * Automatically generated - do not modify.
  */
-package edu.getty.cdwa.cdwaLite.impl;
+package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
 /**
  * A document containing one displayState(@http://www.getty.edu/CDWA/CDWALite) element.
  *
@@ -60,7 +60,7 @@ public class DisplayStateDocumentImpl extends org.apache.xmlbeans.impl.values.Xm
     /**
      * Sets the "displayState" element
      */
-    public void setDisplayState(java.lang.String displayState)
+    @Inject(optional=true) public void setDisplayState(java.lang.String displayState)
     {
         synchronized (monitor())
         {

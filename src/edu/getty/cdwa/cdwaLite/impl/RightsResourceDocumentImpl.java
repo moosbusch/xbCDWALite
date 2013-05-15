@@ -6,7 +6,7 @@
  *
  * Automatically generated - do not modify.
  */
-package edu.getty.cdwa.cdwaLite.impl;
+package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
 /**
  * A document containing one rightsResource(@http://www.getty.edu/CDWA/CDWALite) element.
  *
@@ -46,7 +46,7 @@ public class RightsResourceDocumentImpl extends org.apache.xmlbeans.impl.values.
     /**
      * Sets the "rightsResource" element
      */
-    public void setRightsResource(edu.getty.cdwa.cdwaLite.RightsResourceDocument.RightsResource rightsResource)
+    @Inject(optional=true) public void setRightsResource(edu.getty.cdwa.cdwaLite.RightsResourceDocument.RightsResource rightsResource)
     {
         generatedSetterHelperImpl(rightsResource, RIGHTSRESOURCE$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -134,7 +134,7 @@ public class RightsResourceDocumentImpl extends org.apache.xmlbeans.impl.values.
         /**
          * Sets the "type" attribute
          */
-        public void setType(java.lang.String type)
+        @Inject(optional=true) public void setType(java.lang.String type)
         {
             synchronized (monitor())
             {

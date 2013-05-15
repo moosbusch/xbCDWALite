@@ -6,7 +6,7 @@
  *
  * Automatically generated - do not modify.
  */
-package edu.getty.cdwa.cdwaLite.impl;
+package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
 /**
  * A document containing one recordInfoID(@http://www.getty.edu/CDWA/CDWALite) element.
  *
@@ -46,7 +46,7 @@ public class RecordInfoIDDocumentImpl extends org.apache.xmlbeans.impl.values.Xm
     /**
      * Sets the "recordInfoID" element
      */
-    public void setRecordInfoID(edu.getty.cdwa.cdwaLite.RecordInfoIDDocument.RecordInfoID recordInfoID)
+    @Inject(optional=true) public void setRecordInfoID(edu.getty.cdwa.cdwaLite.RecordInfoIDDocument.RecordInfoID recordInfoID)
     {
         generatedSetterHelperImpl(recordInfoID, RECORDINFOID$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -134,7 +134,7 @@ public class RecordInfoIDDocumentImpl extends org.apache.xmlbeans.impl.values.Xm
         /**
          * Sets the "type" attribute
          */
-        public void setType(java.lang.String type)
+        @Inject(optional=true) public void setType(java.lang.String type)
         {
             synchronized (monitor())
             {

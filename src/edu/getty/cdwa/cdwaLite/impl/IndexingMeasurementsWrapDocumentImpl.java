@@ -6,7 +6,7 @@
  *
  * Automatically generated - do not modify.
  */
-package edu.getty.cdwa.cdwaLite.impl;
+package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
 /**
  * A document containing one indexingMeasurementsWrap(@http://www.getty.edu/CDWA/CDWALite) element.
  *
@@ -46,7 +46,7 @@ public class IndexingMeasurementsWrapDocumentImpl extends org.apache.xmlbeans.im
     /**
      * Sets the "indexingMeasurementsWrap" element
      */
-    public void setIndexingMeasurementsWrap(edu.getty.cdwa.cdwaLite.IndexingMeasurementsWrapDocument.IndexingMeasurementsWrap indexingMeasurementsWrap)
+    @Inject(optional=true) public void setIndexingMeasurementsWrap(edu.getty.cdwa.cdwaLite.IndexingMeasurementsWrapDocument.IndexingMeasurementsWrap indexingMeasurementsWrap)
     {
         generatedSetterHelperImpl(indexingMeasurementsWrap, INDEXINGMEASUREMENTSWRAP$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -177,7 +177,7 @@ public class IndexingMeasurementsWrapDocumentImpl extends org.apache.xmlbeans.im
         /**
          * Sets array of all "indexingMeasurementsSet" element  WARNING: This method is not atomicaly synchronized.
          */
-        public void setIndexingMeasurementsSetArray(edu.getty.cdwa.cdwaLite.IndexingMeasurementsSetDocument.IndexingMeasurementsSet[] indexingMeasurementsSetArray)
+        @Inject(optional=true) public void setIndexingMeasurementsSetArray(edu.getty.cdwa.cdwaLite.IndexingMeasurementsSetDocument.IndexingMeasurementsSet[] indexingMeasurementsSetArray)
         {
             check_orphaned();
             arraySetterHelper(indexingMeasurementsSetArray, INDEXINGMEASUREMENTSSET$0);
@@ -186,7 +186,7 @@ public class IndexingMeasurementsWrapDocumentImpl extends org.apache.xmlbeans.im
         /**
          * Sets ith "indexingMeasurementsSet" element
          */
-        public void setIndexingMeasurementsSetArray(int i, edu.getty.cdwa.cdwaLite.IndexingMeasurementsSetDocument.IndexingMeasurementsSet indexingMeasurementsSet)
+        @Inject(optional=true) public void setIndexingMeasurementsSetArray(int i, edu.getty.cdwa.cdwaLite.IndexingMeasurementsSetDocument.IndexingMeasurementsSet indexingMeasurementsSet)
         {
             generatedSetterHelperImpl(indexingMeasurementsSet, INDEXINGMEASUREMENTSSET$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }

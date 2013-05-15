@@ -6,7 +6,7 @@
  *
  * Automatically generated - do not modify.
  */
-package edu.getty.cdwa.cdwaLite.impl;
+package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
 /**
  * A document containing one sourceNameCreator(@http://www.getty.edu/CDWA/CDWALite) element.
  *
@@ -60,7 +60,7 @@ public class SourceNameCreatorDocumentImpl extends org.apache.xmlbeans.impl.valu
     /**
      * Sets the "sourceNameCreator" element
      */
-    public void setSourceNameCreator(java.lang.String sourceNameCreator)
+    @Inject(optional=true) public void setSourceNameCreator(java.lang.String sourceNameCreator)
     {
         synchronized (monitor())
         {

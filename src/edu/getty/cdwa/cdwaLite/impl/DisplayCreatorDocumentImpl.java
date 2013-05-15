@@ -6,7 +6,7 @@
  *
  * Automatically generated - do not modify.
  */
-package edu.getty.cdwa.cdwaLite.impl;
+package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
 /**
  * A document containing one displayCreator(@http://www.getty.edu/CDWA/CDWALite) element.
  *
@@ -60,7 +60,7 @@ public class DisplayCreatorDocumentImpl extends org.apache.xmlbeans.impl.values.
     /**
      * Sets the "displayCreator" element
      */
-    public void setDisplayCreator(java.lang.String displayCreator)
+    @Inject(optional=true) public void setDisplayCreator(java.lang.String displayCreator)
     {
         synchronized (monitor())
         {

@@ -6,7 +6,7 @@
  *
  * Automatically generated - do not modify.
  */
-package edu.getty.cdwa.cdwaLite.impl;
+package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
 /**
  * A document containing one classWrap(@http://www.getty.edu/CDWA/CDWALite) element.
  *
@@ -46,7 +46,7 @@ public class ClassWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCo
     /**
      * Sets the "classWrap" element
      */
-    public void setClassWrap(edu.getty.cdwa.cdwaLite.ClassWrapDocument.ClassWrap classWrap)
+    @Inject(optional=true) public void setClassWrap(edu.getty.cdwa.cdwaLite.ClassWrapDocument.ClassWrap classWrap)
     {
         generatedSetterHelperImpl(classWrap, CLASSWRAP$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -177,7 +177,7 @@ public class ClassWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCo
         /**
          * Sets array of all "classification" element  WARNING: This method is not atomicaly synchronized.
          */
-        public void setClassificationArray(edu.getty.cdwa.cdwaLite.ClassificationDocument.Classification[] classificationArray)
+        @Inject(optional=true) public void setClassificationArray(edu.getty.cdwa.cdwaLite.ClassificationDocument.Classification[] classificationArray)
         {
             check_orphaned();
             arraySetterHelper(classificationArray, CLASSIFICATION$0);
@@ -186,7 +186,7 @@ public class ClassWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCo
         /**
          * Sets ith "classification" element
          */
-        public void setClassificationArray(int i, edu.getty.cdwa.cdwaLite.ClassificationDocument.Classification classification)
+        @Inject(optional=true) public void setClassificationArray(int i, edu.getty.cdwa.cdwaLite.ClassificationDocument.Classification classification)
         {
             generatedSetterHelperImpl(classification, CLASSIFICATION$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }

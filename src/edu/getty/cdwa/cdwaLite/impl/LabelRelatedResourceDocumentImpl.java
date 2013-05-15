@@ -6,7 +6,7 @@
  *
  * Automatically generated - do not modify.
  */
-package edu.getty.cdwa.cdwaLite.impl;
+package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
 /**
  * A document containing one labelRelatedResource(@http://www.getty.edu/CDWA/CDWALite) element.
  *
@@ -60,7 +60,7 @@ public class LabelRelatedResourceDocumentImpl extends org.apache.xmlbeans.impl.v
     /**
      * Sets the "labelRelatedResource" element
      */
-    public void setLabelRelatedResource(java.lang.String labelRelatedResource)
+    @Inject(optional=true) public void setLabelRelatedResource(java.lang.String labelRelatedResource)
     {
         synchronized (monitor())
         {

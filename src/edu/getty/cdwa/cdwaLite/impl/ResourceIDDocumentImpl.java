@@ -6,7 +6,7 @@
  *
  * Automatically generated - do not modify.
  */
-package edu.getty.cdwa.cdwaLite.impl;
+package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
 /**
  * A document containing one resourceID(@http://www.getty.edu/CDWA/CDWALite) element.
  *
@@ -46,7 +46,7 @@ public class ResourceIDDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
     /**
      * Sets the "resourceID" element
      */
-    public void setResourceID(edu.getty.cdwa.cdwaLite.ResourceIDDocument.ResourceID resourceID)
+    @Inject(optional=true) public void setResourceID(edu.getty.cdwa.cdwaLite.ResourceIDDocument.ResourceID resourceID)
     {
         generatedSetterHelperImpl(resourceID, RESOURCEID$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -134,7 +134,7 @@ public class ResourceIDDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
         /**
          * Sets the "type" attribute
          */
-        public void setType(java.lang.String type)
+        @Inject(optional=true) public void setType(java.lang.String type)
         {
             synchronized (monitor())
             {

@@ -6,7 +6,7 @@
  *
  * Automatically generated - do not modify.
  */
-package edu.getty.cdwa.cdwaLite.impl;
+package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
 /**
  * A document containing one langtermsource(@http://www.getty.edu/CDWA/CDWALite) attribute.
  *
@@ -72,7 +72,7 @@ public class LangtermsourceAttributeImpl extends org.apache.xmlbeans.impl.values
     /**
      * Sets the "langtermsource" attribute
      */
-    public void setLangtermsource(java.lang.String langtermsource)
+    @Inject(optional=true) public void setLangtermsource(java.lang.String langtermsource)
     {
         synchronized (monitor())
         {

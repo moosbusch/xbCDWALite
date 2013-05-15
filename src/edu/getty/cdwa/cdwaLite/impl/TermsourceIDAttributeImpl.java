@@ -6,7 +6,7 @@
  *
  * Automatically generated - do not modify.
  */
-package edu.getty.cdwa.cdwaLite.impl;
+package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
 /**
  * A document containing one termsourceID(@http://www.getty.edu/CDWA/CDWALite) attribute.
  *
@@ -72,7 +72,7 @@ public class TermsourceIDAttributeImpl extends org.apache.xmlbeans.impl.values.X
     /**
      * Sets the "termsourceID" attribute
      */
-    public void setTermsourceID(java.lang.String termsourceID)
+    @Inject(optional=true) public void setTermsourceID(java.lang.String termsourceID)
     {
         synchronized (monitor())
         {

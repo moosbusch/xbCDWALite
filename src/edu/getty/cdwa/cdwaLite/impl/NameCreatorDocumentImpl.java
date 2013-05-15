@@ -6,7 +6,7 @@
  *
  * Automatically generated - do not modify.
  */
-package edu.getty.cdwa.cdwaLite.impl;
+package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
 /**
  * A document containing one nameCreator(@http://www.getty.edu/CDWA/CDWALite) element.
  *
@@ -46,7 +46,7 @@ public class NameCreatorDocumentImpl extends org.apache.xmlbeans.impl.values.Xml
     /**
      * Sets the "nameCreator" element
      */
-    public void setNameCreator(edu.getty.cdwa.cdwaLite.NameCreatorDocument.NameCreator nameCreator)
+    @Inject(optional=true) public void setNameCreator(edu.getty.cdwa.cdwaLite.NameCreatorDocument.NameCreator nameCreator)
     {
         generatedSetterHelperImpl(nameCreator, NAMECREATOR$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -138,7 +138,7 @@ public class NameCreatorDocumentImpl extends org.apache.xmlbeans.impl.values.Xml
         /**
          * Sets the "termsource" attribute
          */
-        public void setTermsource(java.lang.String termsource)
+        @Inject(optional=true) public void setTermsource(java.lang.String termsource)
         {
             synchronized (monitor())
             {
@@ -230,7 +230,7 @@ public class NameCreatorDocumentImpl extends org.apache.xmlbeans.impl.values.Xml
         /**
          * Sets the "type" attribute
          */
-        public void setType(edu.getty.cdwa.cdwaLite.NameCreatorDocument.NameCreator.Type.Enum type)
+        @Inject(optional=true) public void setType(edu.getty.cdwa.cdwaLite.NameCreatorDocument.NameCreator.Type.Enum type)
         {
             synchronized (monitor())
             {
@@ -322,7 +322,7 @@ public class NameCreatorDocumentImpl extends org.apache.xmlbeans.impl.values.Xml
         /**
          * Sets the "termsourceID" attribute
          */
-        public void setTermsourceID(java.lang.String termsourceID)
+        @Inject(optional=true) public void setTermsourceID(java.lang.String termsourceID)
         {
             synchronized (monitor())
             {

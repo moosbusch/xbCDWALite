@@ -6,7 +6,7 @@
  *
  * Automatically generated - do not modify.
  */
-package edu.getty.cdwa.cdwaLite.impl;
+package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
 /**
  * A document containing one resourceRelType(@http://www.getty.edu/CDWA/CDWALite) element.
  *
@@ -46,7 +46,7 @@ public class ResourceRelTypeDocumentImpl extends org.apache.xmlbeans.impl.values
     /**
      * Sets the "resourceRelType" element
      */
-    public void setResourceRelType(edu.getty.cdwa.cdwaLite.ResourceRelTypeDocument.ResourceRelType resourceRelType)
+    @Inject(optional=true) public void setResourceRelType(edu.getty.cdwa.cdwaLite.ResourceRelTypeDocument.ResourceRelType resourceRelType)
     {
         generatedSetterHelperImpl(resourceRelType, RESOURCERELTYPE$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -134,7 +134,7 @@ public class ResourceRelTypeDocumentImpl extends org.apache.xmlbeans.impl.values
         /**
          * Sets the "type" attribute
          */
-        public void setType(java.lang.String type)
+        @Inject(optional=true) public void setType(java.lang.String type)
         {
             synchronized (monitor())
             {

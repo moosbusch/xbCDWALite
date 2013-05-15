@@ -6,7 +6,7 @@
  *
  * Automatically generated - do not modify.
  */
-package edu.getty.cdwa.cdwaLite.impl;
+package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
 /**
  * A document containing one titleSet(@http://www.getty.edu/CDWA/CDWALite) element.
  *
@@ -46,7 +46,7 @@ public class TitleSetDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCom
     /**
      * Sets the "titleSet" element
      */
-    public void setTitleSet(edu.getty.cdwa.cdwaLite.TitleSetDocument.TitleSet titleSet)
+    @Inject(optional=true) public void setTitleSet(edu.getty.cdwa.cdwaLite.TitleSetDocument.TitleSet titleSet)
     {
         generatedSetterHelperImpl(titleSet, TITLESET$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -105,7 +105,7 @@ public class TitleSetDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCom
         /**
          * Sets the "title" element
          */
-        public void setTitle(edu.getty.cdwa.cdwaLite.TitleDocument.Title title)
+        @Inject(optional=true) public void setTitle(edu.getty.cdwa.cdwaLite.TitleDocument.Title title)
         {
             generatedSetterHelperImpl(title, TITLE$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
         }
@@ -300,7 +300,7 @@ public class TitleSetDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCom
         /**
          * Sets array of all "sourceTitle" element
          */
-        public void setSourceTitleArray(java.lang.String[] sourceTitleArray)
+        @Inject(optional=true) public void setSourceTitleArray(java.lang.String[] sourceTitleArray)
         {
             synchronized (monitor())
             {
@@ -312,7 +312,7 @@ public class TitleSetDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCom
         /**
          * Sets ith "sourceTitle" element
          */
-        public void setSourceTitleArray(int i, java.lang.String sourceTitle)
+        @Inject(optional=true) public void setSourceTitleArray(int i, java.lang.String sourceTitle)
         {
             synchronized (monitor())
             {

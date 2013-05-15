@@ -6,7 +6,7 @@
  *
  * Automatically generated - do not modify.
  */
-package edu.getty.cdwa.cdwaLite.impl;
+package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
 /**
  * A document containing one vitalDatesCreator(@http://www.getty.edu/CDWA/CDWALite) element.
  *
@@ -46,7 +46,7 @@ public class VitalDatesCreatorDocumentImpl extends org.apache.xmlbeans.impl.valu
     /**
      * Sets the "vitalDatesCreator" element
      */
-    public void setVitalDatesCreator(edu.getty.cdwa.cdwaLite.VitalDatesCreatorDocument.VitalDatesCreator vitalDatesCreator)
+    @Inject(optional=true) public void setVitalDatesCreator(edu.getty.cdwa.cdwaLite.VitalDatesCreatorDocument.VitalDatesCreator vitalDatesCreator)
     {
         generatedSetterHelperImpl(vitalDatesCreator, VITALDATESCREATOR$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -138,7 +138,7 @@ public class VitalDatesCreatorDocumentImpl extends org.apache.xmlbeans.impl.valu
         /**
          * Sets the "birthDate" attribute
          */
-        public void setBirthDate(java.lang.String birthDate)
+        @Inject(optional=true) public void setBirthDate(java.lang.String birthDate)
         {
             synchronized (monitor())
             {
@@ -230,7 +230,7 @@ public class VitalDatesCreatorDocumentImpl extends org.apache.xmlbeans.impl.valu
         /**
          * Sets the "deathDate" attribute
          */
-        public void setDeathDate(java.lang.String deathDate)
+        @Inject(optional=true) public void setDeathDate(java.lang.String deathDate)
         {
             synchronized (monitor())
             {
@@ -322,7 +322,7 @@ public class VitalDatesCreatorDocumentImpl extends org.apache.xmlbeans.impl.valu
         /**
          * Sets the "termsource" attribute
          */
-        public void setTermsource(java.lang.String termsource)
+        @Inject(optional=true) public void setTermsource(java.lang.String termsource)
         {
             synchronized (monitor())
             {

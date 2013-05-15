@@ -6,7 +6,7 @@
  *
  * Automatically generated - do not modify.
  */
-package edu.getty.cdwa.cdwaLite.impl;
+package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
 /**
  * A document containing one type(@http://www.getty.edu/CDWA/CDWALite) attribute.
  *
@@ -72,7 +72,7 @@ public class TypeAttributeImpl extends org.apache.xmlbeans.impl.values.XmlComple
     /**
      * Sets the "type" attribute
      */
-    public void setType(java.lang.String type)
+    @Inject(optional=true) public void setType(java.lang.String type)
     {
         synchronized (monitor())
         {
