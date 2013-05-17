@@ -1,4 +1,4 @@
-xbLIDO
+xbCDWALite
 ======
 
-A Java library for reading and writing LIDO documents
+A Java library for reading and writing CDWALite documents
