@@ -30,6 +30,8 @@ public abstract class AbstractDocument<T extends CDWALiteObjectFactory>
         super(in);
     }
 
+    protected abstract void addSchemaLocation(CdwaliteWrapDocument cdwaliteWrapDocument);
+
     @Override
     public CdwaliteWrap getRootElement() {
         synchronized (getRootWrapperElement().monitor()) {
