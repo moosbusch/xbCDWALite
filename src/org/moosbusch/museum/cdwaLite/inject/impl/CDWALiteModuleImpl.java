@@ -6,6 +6,7 @@ package org.moosbusch.museum.cdwaLite.inject.impl;
 
 import com.google.inject.Provides;
 import edu.getty.cdwa.cdwaLite.AdministrativeMetadataDocument;
+import edu.getty.cdwa.cdwaLite.AdministrativeMetadataDocument.AdministrativeMetadata;
 import edu.getty.cdwa.cdwaLite.AttributionQualifierCreatorDocument;
 import edu.getty.cdwa.cdwaLite.CdwaliteDocument;
 import edu.getty.cdwa.cdwaLite.CdwaliteWrapDocument;
@@ -15,6 +16,7 @@ import edu.getty.cdwa.cdwaLite.CultureDocument;
 import edu.getty.cdwa.cdwaLite.CultureWrapDocument;
 import edu.getty.cdwa.cdwaLite.DateQualifierDocument;
 import edu.getty.cdwa.cdwaLite.DescriptiveMetadataDocument;
+import edu.getty.cdwa.cdwaLite.DescriptiveMetadataDocument.DescriptiveMetadata;
 import edu.getty.cdwa.cdwaLite.DescriptiveNoteDocument;
 import edu.getty.cdwa.cdwaLite.DescriptiveNoteSetDocument;
 import edu.getty.cdwa.cdwaLite.DescriptiveNoteWrapDocument;
@@ -93,6 +95,7 @@ import edu.getty.cdwa.cdwaLite.ResourceViewDescriptionDocument;
 import edu.getty.cdwa.cdwaLite.ResourceViewSubjectTermDocument;
 import edu.getty.cdwa.cdwaLite.ResourceViewTypeDocument;
 import edu.getty.cdwa.cdwaLite.ResourceWrapDocument;
+import edu.getty.cdwa.cdwaLite.ResourceWrapDocument.ResourceWrap;
 import edu.getty.cdwa.cdwaLite.RightsResourceDocument;
 import edu.getty.cdwa.cdwaLite.RightsWorkDocument;
 import edu.getty.cdwa.cdwaLite.RoleCreatorDocument;
@@ -105,6 +108,7 @@ import edu.getty.cdwa.cdwaLite.SourceStateEditionDocument;
 import edu.getty.cdwa.cdwaLite.SourceTitleDocument;
 import edu.getty.cdwa.cdwaLite.StyleDocument;
 import edu.getty.cdwa.cdwaLite.StyleWrapDocument;
+import edu.getty.cdwa.cdwaLite.StyleWrapDocument.StyleWrap;
 import edu.getty.cdwa.cdwaLite.SubjectTermDocument;
 import edu.getty.cdwa.cdwaLite.TermMaterialsTechDocument;
 import edu.getty.cdwa.cdwaLite.TermsourceAttribute;
@@ -112,6 +116,7 @@ import edu.getty.cdwa.cdwaLite.TermsourceIDAttribute;
 import edu.getty.cdwa.cdwaLite.TitleDocument;
 import edu.getty.cdwa.cdwaLite.TitleSetDocument;
 import edu.getty.cdwa.cdwaLite.TitleWrapDocument;
+import edu.getty.cdwa.cdwaLite.TitleWrapDocument.TitleWrap;
 import edu.getty.cdwa.cdwaLite.TypeAttribute;
 import edu.getty.cdwa.cdwaLite.VitalDatesCreatorDocument;
 import edu.getty.cdwa.cdwaLite.WorkIDDocument;
@@ -137,6 +142,41 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public Document<? extends CDWALiteObjectFactory> createDocument() {
         return new DocumentImpl();
+    }
+
+    @Provides
+    public AdministrativeMetadata createAdministrativeMetadata() {
+        AdministrativeMetadata result = AdministrativeMetadata.Factory.newInstance();
+        getObjectFactory().injectChildMembers(result);
+        return result;
+    }
+
+    @Provides
+    public ResourceWrap createResourceWrap() {
+        ResourceWrap result = ResourceWrap.Factory.newInstance();
+        getObjectFactory().injectChildMembers(result);
+        return result;
+    }
+
+    @Provides
+    public DescriptiveMetadata createDescriptiveMetadata() {
+        DescriptiveMetadata result = DescriptiveMetadata.Factory.newInstance();
+        getObjectFactory().injectChildMembers(result);
+        return result;
+    }
+
+    @Provides
+    public StyleWrap createStyleWrap() {
+        StyleWrap result = StyleWrap.Factory.newInstance();
+        getObjectFactory().injectChildMembers(result);
+        return result;
+    }
+
+    @Provides
+    public TitleWrap createTitleWrap() {
+        TitleWrap result = TitleWrap.Factory.newInstance();
+        getObjectFactory().injectChildMembers(result);
+        return result;
     }
 
     @Provides
