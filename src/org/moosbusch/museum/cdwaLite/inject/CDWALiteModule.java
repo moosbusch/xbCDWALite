@@ -143,6 +143,21 @@ import org.moosbusch.museum.inject.MuseumXmlModule;
 public interface CDWALiteModule extends MuseumXmlModule {
 
     @Provides
+    public AdministrativeMetadataDocument.AdministrativeMetadata createAdministrativeMetadata();
+
+    @Provides
+    public ResourceWrapDocument.ResourceWrap createResourceWrap();
+
+    @Provides
+    public DescriptiveMetadataDocument.DescriptiveMetadata createDescriptiveMetadata();
+
+    @Provides
+    public StyleWrapDocument.StyleWrap createStyleWrap();
+
+    @Provides
+    public TitleWrapDocument.TitleWrap createTitleWrap();
+
+    @Provides
     public AdministrativeMetadataDocument createAdministrativeMetadataDocument();
 
     @Provides

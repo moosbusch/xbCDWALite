@@ -34,15 +34,11 @@ public abstract class AbstractDocument<T extends CDWALiteObjectFactory>
 
     @Override
     public CdwaliteWrap getRootElement() {
-        synchronized (getRootWrapperElement().monitor()) {
-            return getRootWrapperElement().getCdwaliteWrap();
-        }
+        return getRootWrapperElement().getCdwaliteWrap();
     }
 
     @Override
     public Collection<Cdwalite> getItems() {
-        synchronized (getRootWrapperElement().monitor()) {
-            return getRootElement().getCdwaliteList();
-        }
+        return getRootElement().getCdwaliteList();
     }
 }
