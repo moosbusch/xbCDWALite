@@ -11,7 +11,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.Collection;
 import org.apache.xmlbeans.XmlException;
-import org.moosbusch.museum.document.spi.AbstractMuseumXmlDocument;
+import org.moosbusch.museum.document.spi.AbstractXmlDocument;
 import org.moosbusch.museum.cdwaLite.document.Document;
 import org.moosbusch.museum.cdwaLite.inject.impl.CDWALiteObjectFactory;
 
@@ -20,7 +20,7 @@ import org.moosbusch.museum.cdwaLite.inject.impl.CDWALiteObjectFactory;
  * @author moosbusch
  */
 public abstract class AbstractDocument<T extends CDWALiteObjectFactory>
-        extends AbstractMuseumXmlDocument<CdwaliteWrapDocument, T, CdwaliteWrap, Cdwalite>
+        extends AbstractXmlDocument<CdwaliteWrapDocument, T, CdwaliteWrap, Cdwalite>
         implements Document<T> {
 
     public AbstractDocument() {
@@ -38,7 +38,7 @@ public abstract class AbstractDocument<T extends CDWALiteObjectFactory>
     }
 
     @Override
-    public Collection<Cdwalite> getItems() {
+    public Collection<Cdwalite> getRecords() {
         return getRootElement().getCdwaliteList();
     }
 }

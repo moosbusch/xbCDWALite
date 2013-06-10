@@ -134,13 +134,13 @@ import edu.getty.cdwa.cdwaLite.TitleWrapDocument;
 import edu.getty.cdwa.cdwaLite.TypeAttribute;
 import edu.getty.cdwa.cdwaLite.VitalDatesCreatorDocument;
 import edu.getty.cdwa.cdwaLite.WorkIDDocument;
-import org.moosbusch.museum.inject.MuseumXmlModule;
+import org.moosbusch.museum.inject.XmlModule;
 
 /**
  *
  * @author moosbusch
  */
-public interface CDWALiteModule extends MuseumXmlModule {
+public interface CDWALiteModule extends XmlModule {
 
     @Provides
     public AdministrativeMetadataDocument.AdministrativeMetadata createAdministrativeMetadata();

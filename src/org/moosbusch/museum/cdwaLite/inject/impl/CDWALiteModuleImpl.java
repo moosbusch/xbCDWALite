@@ -130,10 +130,6 @@ import org.moosbusch.museum.cdwaLite.inject.spi.AbstractCDWALiteModule;
  */
 public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
 
-    public CDWALiteModuleImpl(CDWALiteObjectFactory objFactory) {
-        super(objFactory);
-    }
-
     @Override
     protected void configureImpl() {
     }
@@ -148,7 +144,6 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public AdministrativeMetadata createAdministrativeMetadata() {
         AdministrativeMetadata result = AdministrativeMetadata.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
         return result;
     }
 
@@ -156,7 +151,6 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public ResourceWrap createResourceWrap() {
         ResourceWrap result = ResourceWrap.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
         return result;
     }
 
@@ -164,7 +158,6 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public DescriptiveMetadata createDescriptiveMetadata() {
         DescriptiveMetadata result = DescriptiveMetadata.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
         return result;
     }
 
@@ -172,7 +165,6 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public StyleWrap createStyleWrap() {
         StyleWrap result = StyleWrap.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
         return result;
     }
 
@@ -180,7 +172,6 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public TitleWrap createTitleWrap() {
         TitleWrap result = TitleWrap.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
         return result;
     }
 
@@ -188,7 +179,6 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public IndexingSubjectWrapDocument createIndexingSubjectWrapDocument() {
         IndexingSubjectWrapDocument result = IndexingSubjectWrapDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
         return result;
     }
 
@@ -196,7 +186,6 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public InscriptionsDocument createInscriptionsDocument() {
         InscriptionsDocument result = InscriptionsDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
         return result;
     }
 
@@ -204,7 +193,6 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public InscriptionsWrapDocument createInscriptionsWrapDocument() {
         InscriptionsWrapDocument result = InscriptionsWrapDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
         return result;
     }
 
@@ -212,7 +200,6 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public LabelRelatedResourceDocument createLabelRelatedResourceDocument() {
         LabelRelatedResourceDocument result = LabelRelatedResourceDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
         return result;
     }
 
@@ -220,7 +207,6 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public LabelRelatedWorkDocument createLabelRelatedWorkDocument() {
         LabelRelatedWorkDocument result = LabelRelatedWorkDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
         return result;
     }
 
@@ -228,7 +214,6 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public LangAttribute createLangAttribute() {
         LangAttribute result = LangAttribute.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
         return result;
     }
 
@@ -236,7 +221,6 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public LangtermsourceAttribute createLangtermsourceAttribute() {
         LangtermsourceAttribute result = LangtermsourceAttribute.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
         return result;
     }
 
@@ -244,7 +228,6 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public LatestDateDocument createLatestDateDocument() {
         LatestDateDocument result = LatestDateDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
         return result;
     }
 
@@ -252,7 +235,6 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public LinkRelatedResourceDocument createLinkRelatedResourceDocument() {
         LinkRelatedResourceDocument result = LinkRelatedResourceDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
         return result;
     }
 
@@ -260,7 +242,6 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public LinkRelatedWorkDocument createLinkRelatedWorkDocument() {
         LinkRelatedWorkDocument result = LinkRelatedWorkDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
         return result;
     }
 
@@ -268,7 +249,6 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public LinkResourceDocument createLinkResourceDocument() {
         LinkResourceDocument result = LinkResourceDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
         return result;
     }
 
@@ -276,7 +256,6 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public LinkschemeAttribute createLinkschemeAttribute() {
         LinkschemeAttribute result = LinkschemeAttribute.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
         return result;
     }
 
@@ -284,7 +263,6 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public LocationNameDocument createLocationNameDocument() {
         LocationNameDocument result = LocationNameDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
         return result;
     }
 
@@ -292,7 +270,6 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public LocationSetDocument createLocationSetDocument() {
         LocationSetDocument result = LocationSetDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
         return result;
     }
 
@@ -300,7 +277,6 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public LocationWrapDocument createLocationWrapDocument() {
         LocationWrapDocument result = LocationWrapDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
         return result;
     }
 
@@ -308,7 +284,6 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public LocIDAttribute createLocIDAttribute() {
         LocIDAttribute result = LocIDAttribute.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
         return result;
     }
 
@@ -316,7 +291,6 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public LocIDtypeAttribute createLocIDtypeAttribute() {
         LocIDtypeAttribute result = LocIDtypeAttribute.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
         return result;
     }
 
@@ -324,7 +298,6 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public LocRelatedWorkDocument createLocRelatedWorkDocument() {
         LocRelatedWorkDocument result = LocRelatedWorkDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
         return result;
     }
 
@@ -332,7 +305,6 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public MeasurementsSetDocument createMeasurementsSetDocument() {
         MeasurementsSetDocument result = MeasurementsSetDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
         return result;
     }
 
@@ -340,7 +312,6 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public NameCreatorDocument createNameCreatorDocument() {
         NameCreatorDocument result = NameCreatorDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
         return result;
     }
 
@@ -348,7 +319,6 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public NameCreatorSetDocument createNameCreatorSetDocument() {
         NameCreatorSetDocument result = NameCreatorSetDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
         return result;
     }
 
@@ -356,7 +326,6 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public NationalityCreatorDocument createNationalityCreatorDocument() {
         NationalityCreatorDocument result = NationalityCreatorDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
         return result;
     }
 
@@ -364,7 +333,6 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public ObjectWorkTypeDocument createObjectWorkTypeDocument() {
         ObjectWorkTypeDocument result = ObjectWorkTypeDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
         return result;
     }
 
@@ -372,7 +340,6 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public ObjectWorkTypeWrapDocument createObjectWorkTypeWrapDocument() {
         ObjectWorkTypeWrapDocument result = ObjectWorkTypeWrapDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
         return result;
     }
 
@@ -380,7 +347,6 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public PrefAttribute createPrefAttribute() {
         PrefAttribute result = PrefAttribute.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
         return result;
     }
 
@@ -388,7 +354,6 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public QualifierMeasurementsDocument createQualifierMeasurementsDocument() {
         QualifierMeasurementsDocument result = QualifierMeasurementsDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
         return result;
     }
 
@@ -396,7 +361,7 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public RecordIDDocument createRecordIDDocument() {
         RecordIDDocument result = RecordIDDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -404,7 +369,7 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public RecordInfoIDDocument createRecordInfoIDDocument() {
         RecordInfoIDDocument result = RecordInfoIDDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -412,7 +377,7 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public RecordInfoLinkDocument createRecordInfoLinkDocument() {
         RecordInfoLinkDocument result = RecordInfoLinkDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -420,7 +385,7 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public RecordInfoWrapDocument createRecordInfoWrapDocument() {
         RecordInfoWrapDocument result = RecordInfoWrapDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -428,7 +393,7 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public RecordMetadataDateDocument createRecordMetadataDateDocument() {
         RecordMetadataDateDocument result = RecordMetadataDateDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -436,7 +401,7 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public RecordMetadataLocDocument createRecordMetadataLocDocument() {
         RecordMetadataLocDocument result = RecordMetadataLocDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -444,7 +409,7 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public RecordRelIDDocument createRecordRelIDDocument() {
         RecordRelIDDocument result = RecordRelIDDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -452,7 +417,7 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public RecordSourceDocument createRecordSourceDocument() {
         RecordSourceDocument result = RecordSourceDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -460,7 +425,7 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public RecordTypeDocument createRecordTypeDocument() {
         RecordTypeDocument result = RecordTypeDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -468,7 +433,7 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public RecordWrapDocument createRecordWrapDocument() {
         RecordWrapDocument result = RecordWrapDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -476,7 +441,7 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public RelatedResourceRelTypeDocument createRelatedResourceRelTypeDocument() {
         RelatedResourceRelTypeDocument result = RelatedResourceRelTypeDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -484,7 +449,7 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public RelatedWorkRelTypeDocument createRelatedWorkRelTypeDocument() {
         RelatedWorkRelTypeDocument result = RelatedWorkRelTypeDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -492,7 +457,7 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public RelatedWorkSetDocument createRelatedWorkSetDocument() {
         RelatedWorkSetDocument result = RelatedWorkSetDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -500,7 +465,7 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public RelatedWorksWrapDocument createRelatedWorksWrapDocument() {
         RelatedWorksWrapDocument result = RelatedWorksWrapDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -508,7 +473,7 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public ResourceIDDocument createResourceIDDocument() {
         ResourceIDDocument result = ResourceIDDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -516,7 +481,7 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public ResourceMetadataLocDocument createResourceMetadataLocDocument() {
         ResourceMetadataLocDocument result = ResourceMetadataLocDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -524,7 +489,7 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public ResourceRelTypeDocument createResourceRelTypeDocument() {
         ResourceRelTypeDocument result = ResourceRelTypeDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -532,7 +497,7 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public ResourceSetDocument createResourceSetDocument() {
         ResourceSetDocument result = ResourceSetDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -540,7 +505,7 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public ResourceSourceDocument createResourceSourceDocument() {
         ResourceSourceDocument result = ResourceSourceDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -548,7 +513,7 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public ResourceTypeDocument createResourceTypeDocument() {
         ResourceTypeDocument result = ResourceTypeDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -556,7 +521,7 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public ResourceViewDateDocument createResourceViewDateDocument() {
         ResourceViewDateDocument result = ResourceViewDateDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -564,7 +529,7 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public ResourceViewDescriptionDocument createResourceViewDescriptionDocument() {
         ResourceViewDescriptionDocument result = ResourceViewDescriptionDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -572,7 +537,7 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public ResourceViewSubjectTermDocument createResourceViewSubjectTermDocument() {
         ResourceViewSubjectTermDocument result = ResourceViewSubjectTermDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -580,7 +545,7 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public ResourceViewTypeDocument createResourceViewTypeDocument() {
         ResourceViewTypeDocument result = ResourceViewTypeDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -588,7 +553,7 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public ResourceWrapDocument createResourceWrapDocument() {
         ResourceWrapDocument result = ResourceWrapDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -596,7 +561,7 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public RightsResourceDocument createRightsResourceDocument() {
         RightsResourceDocument result = RightsResourceDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -604,7 +569,7 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public RightsWorkDocument createRightsWorkDocument() {
         RightsWorkDocument result = RightsWorkDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -612,7 +577,7 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public RoleCreatorDocument createRoleCreatorDocument() {
         RoleCreatorDocument result = RoleCreatorDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -620,7 +585,7 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public ScaleMeasurementsDocument createScaleMeasurementsDocument() {
         ScaleMeasurementsDocument result = ScaleMeasurementsDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -628,7 +593,7 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public ShapeMeasurementsDocument createShapeMeasurementsDocument() {
         ShapeMeasurementsDocument result = ShapeMeasurementsDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -636,7 +601,7 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public SourceDescriptiveNoteDocument createSourceDescriptiveNoteDocument() {
         SourceDescriptiveNoteDocument result = SourceDescriptiveNoteDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -644,7 +609,7 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public SourceMaterialsTechDocument createSourceMaterialsTechDocument() {
         SourceMaterialsTechDocument result = SourceMaterialsTechDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -652,7 +617,7 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public SourceNameCreatorDocument createSourceNameCreatorDocument() {
         SourceNameCreatorDocument result = SourceNameCreatorDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -660,7 +625,7 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public SourceStateEditionDocument createSourceStateEditionDocument() {
         SourceStateEditionDocument result = SourceStateEditionDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -668,7 +633,7 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public SourceTitleDocument createSourceTitleDocument() {
         SourceTitleDocument result = SourceTitleDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -676,7 +641,7 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public StyleDocument createStyleDocument() {
         StyleDocument result = StyleDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -684,7 +649,7 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public StyleWrapDocument createStyleWrapDocument() {
         StyleWrapDocument result = StyleWrapDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -692,7 +657,7 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public SubjectTermDocument createSubjectTermDocument() {
         SubjectTermDocument result = SubjectTermDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -700,7 +665,7 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public TermMaterialsTechDocument createTermMaterialsTechDocument() {
         TermMaterialsTechDocument result = TermMaterialsTechDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -708,7 +673,7 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public TermsourceAttribute createTermsourceAttribute() {
         TermsourceAttribute result = TermsourceAttribute.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -716,7 +681,7 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public TermsourceIDAttribute createTermsourceIDAttribute() {
         TermsourceIDAttribute result = TermsourceIDAttribute.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -724,7 +689,7 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public TitleDocument createTitleDocument() {
         TitleDocument result = TitleDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -732,7 +697,7 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public TitleSetDocument createTitleSetDocument() {
         TitleSetDocument result = TitleSetDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -740,7 +705,7 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public TitleWrapDocument createTitleWrapDocument() {
         TitleWrapDocument result = TitleWrapDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -748,7 +713,7 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public TypeAttribute createTypeAttribute() {
         TypeAttribute result = TypeAttribute.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -756,7 +721,7 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public VitalDatesCreatorDocument createVitalDatesCreatorDocument() {
         VitalDatesCreatorDocument result = VitalDatesCreatorDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -764,7 +729,7 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public WorkIDDocument createWorkIDDocument() {
         WorkIDDocument result = WorkIDDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -772,7 +737,7 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public AdministrativeMetadataDocument createAdministrativeMetadataDocument() {
         AdministrativeMetadataDocument result = AdministrativeMetadataDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -780,7 +745,7 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public AttributionQualifierCreatorDocument createAttributionQualifierCreatorDocument() {
         AttributionQualifierCreatorDocument result = AttributionQualifierCreatorDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -788,7 +753,7 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public CdwaliteDocument createCdwaliteDocument() {
         CdwaliteDocument result = CdwaliteDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -796,7 +761,7 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public CdwaliteWrapDocument createCdwaliteWrapDocument() {
         CdwaliteWrapDocument result = CdwaliteWrapDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -804,7 +769,7 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public CdwaliteWrapDocument.CdwaliteWrap createCdwaliteWrap() {
         CdwaliteWrapDocument.CdwaliteWrap result = CdwaliteWrapDocument.CdwaliteWrap.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -812,7 +777,7 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public CdwaliteDocument.Cdwalite createCdwalite() {
         CdwaliteDocument.Cdwalite result = CdwaliteDocument.Cdwalite.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -820,7 +785,7 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public ClassificationDocument createClassificationDocument() {
         ClassificationDocument result = ClassificationDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -828,7 +793,7 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public ClassWrapDocument createClassWrapDocument() {
         ClassWrapDocument result = ClassWrapDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -836,7 +801,7 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public ClassWrapDocument.ClassWrap createClassWrap() {
         ClassWrapDocument.ClassWrap result = ClassWrapDocument.ClassWrap.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -844,7 +809,7 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public CultureDocument createCultureDocument() {
         CultureDocument result = CultureDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -852,7 +817,7 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public CultureWrapDocument createCultureWrapDocument() {
         CultureWrapDocument result = CultureWrapDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -860,7 +825,7 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public CultureWrapDocument.CultureWrap createCultureWrap() {
         CultureWrapDocument.CultureWrap result = CultureWrapDocument.CultureWrap.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -868,7 +833,7 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public CultureDocument.Culture createCulture() {
         CultureDocument.Culture result = CultureDocument.Culture.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -876,7 +841,7 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public DateQualifierDocument createDateQualifierDocument() {
         DateQualifierDocument result = DateQualifierDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -884,7 +849,7 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public DescriptiveMetadataDocument createDescriptiveMetadataDocument() {
         DescriptiveMetadataDocument result = DescriptiveMetadataDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -892,7 +857,7 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public DescriptiveNoteDocument createDescriptiveNoteDocument() {
         DescriptiveNoteDocument result = DescriptiveNoteDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -900,7 +865,7 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public DescriptiveNoteSetDocument createDescriptiveNoteSetDocument() {
         DescriptiveNoteSetDocument result = DescriptiveNoteSetDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -908,7 +873,7 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public DescriptiveNoteWrapDocument createDescriptiveNoteWrapDocument() {
         DescriptiveNoteWrapDocument result = DescriptiveNoteWrapDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -917,7 +882,7 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     public DescriptiveNoteWrapDocument.DescriptiveNoteWrap createDescriptiveNoteWrap() {
         DescriptiveNoteWrapDocument.DescriptiveNoteWrap result =
                 DescriptiveNoteWrapDocument.DescriptiveNoteWrap.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -925,7 +890,7 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public DisplayCreationDateDocument createDisplayCreationDateDocument() {
         DisplayCreationDateDocument result = DisplayCreationDateDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -933,7 +898,7 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public DisplayCreatorDocument createDisplayCreatorDocument() {
         DisplayCreatorDocument result = DisplayCreatorDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -941,7 +906,7 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public DisplayEditionDocument createDisplayEditionDocument() {
         DisplayEditionDocument result = DisplayEditionDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -949,7 +914,7 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public DisplayMaterialsTechDocument createDisplayMaterialsTechDocument() {
         DisplayMaterialsTechDocument result = DisplayMaterialsTechDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -957,7 +922,7 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public DisplayMeasurementsDocument createDisplayMeasurementsDocument() {
         DisplayMeasurementsDocument result = DisplayMeasurementsDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -965,7 +930,7 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public DisplayStateDocument createDisplayStateDocument() {
         DisplayStateDocument result = DisplayStateDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -973,7 +938,7 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public DisplayStateEditionWrapDocument createDisplayStateEditionWrapDocument() {
         DisplayStateEditionWrapDocument result = DisplayStateEditionWrapDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -982,7 +947,7 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     public DisplayStateEditionWrapDocument.DisplayStateEditionWrap createDisplayStateEditionWrap() {
         DisplayStateEditionWrapDocument.DisplayStateEditionWrap result =
                 DisplayStateEditionWrapDocument.DisplayStateEditionWrap.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -990,7 +955,7 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public EarliestDateDocument createEarliestDateDocument() {
         EarliestDateDocument result = EarliestDateDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -998,7 +963,7 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public ExtentCreatorDocument createExtentCreatorDocument() {
         ExtentCreatorDocument result = ExtentCreatorDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1006,7 +971,7 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public ExtentMaterialsTechDocument createExtentMaterialsTechDocument() {
         ExtentMaterialsTechDocument result = ExtentMaterialsTechDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1014,7 +979,7 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public ExtentMeasurementsDocument createExtentMeasurementsDocument() {
         ExtentMeasurementsDocument result = ExtentMeasurementsDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1022,7 +987,7 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public ExtentSubjectDocument createExtentSubjectDocument() {
         ExtentSubjectDocument result = ExtentSubjectDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1030,7 +995,7 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public FormatMeasurementsDocument createFormatMeasurementsDocument() {
         FormatMeasurementsDocument result = FormatMeasurementsDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1038,7 +1003,7 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public GenderCreatorDocument createGenderCreatorDocument() {
         GenderCreatorDocument result = GenderCreatorDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1046,7 +1011,7 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public IndentifierAttribute createIndentifierAttribute() {
         IndentifierAttribute result = IndentifierAttribute.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1054,7 +1019,7 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public IndexingCreatorSetDocument createIndexingCreatorSetDocument() {
         IndexingCreatorSetDocument result = IndexingCreatorSetDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1062,7 +1027,7 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public IndexingCreatorWrapDocument createIndexingCreatorWrapDocument() {
         IndexingCreatorWrapDocument result = IndexingCreatorWrapDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1071,7 +1036,7 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     public IndexingCreatorWrapDocument.IndexingCreatorWrap createIndexingCreatorWrap() {
         IndexingCreatorWrapDocument.IndexingCreatorWrap result =
                 IndexingCreatorWrapDocument.IndexingCreatorWrap.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1079,7 +1044,7 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public IndexingDatesSetDocument createIndexingDatesSetDocument() {
         IndexingDatesSetDocument result = IndexingDatesSetDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1087,7 +1052,7 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public IndexingDatesWrapDocument createIndexingDatesWrapDocument() {
         IndexingDatesWrapDocument result = IndexingDatesWrapDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1096,7 +1061,7 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     public IndexingDatesWrapDocument.IndexingDatesWrap createIndexingDatesWrap() {
         IndexingDatesWrapDocument.IndexingDatesWrap result =
                 IndexingDatesWrapDocument.IndexingDatesWrap.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1104,7 +1069,7 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public IndexingMaterialsTechSetDocument createIndexingMaterialsTechSetDocument() {
         IndexingMaterialsTechSetDocument result = IndexingMaterialsTechSetDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1112,7 +1077,7 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public IndexingMaterialsTechWrapDocument createIndexingMaterialsTechWrapDocument() {
         IndexingMaterialsTechWrapDocument result = IndexingMaterialsTechWrapDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1121,7 +1086,7 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     public IndexingMaterialsTechWrapDocument.IndexingMaterialsTechWrap createIndexingMaterialsTechWrap() {
         IndexingMaterialsTechWrapDocument.IndexingMaterialsTechWrap result =
                 IndexingMaterialsTechWrapDocument.IndexingMaterialsTechWrap.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1129,7 +1094,7 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public IndexingMeasurementsSetDocument createIndexingMeasurementsSetDocument() {
         IndexingMeasurementsSetDocument result = IndexingMeasurementsSetDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1137,7 +1102,7 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public IndexingMeasurementsWrapDocument createIndexingMeasurementsWrapDocument() {
         IndexingMeasurementsWrapDocument result = IndexingMeasurementsWrapDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1146,7 +1111,7 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     public IndexingMeasurementsWrapDocument.IndexingMeasurementsWrap createIndexingMeasurementsWrap() {
         IndexingMeasurementsWrapDocument.IndexingMeasurementsWrap result =
                 IndexingMeasurementsWrapDocument.IndexingMeasurementsWrap.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1154,7 +1119,7 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public IndexingSubjectSetDocument createIndexingSubjectSetDocument() {
         IndexingSubjectSetDocument result = IndexingSubjectSetDocument.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1163,7 +1128,7 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     public IndexingSubjectWrapDocument.IndexingSubjectWrap createIndexingSubjectWrap() {
         IndexingSubjectWrapDocument.IndexingSubjectWrap result =
                 IndexingSubjectWrapDocument.IndexingSubjectWrap.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1172,7 +1137,7 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     public InscriptionsWrapDocument.InscriptionsWrap createInscriptionsWrap() {
         InscriptionsWrapDocument.InscriptionsWrap result =
                 InscriptionsWrapDocument.InscriptionsWrap.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1181,7 +1146,7 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     public LocationWrapDocument.LocationWrap createLocationWrap() {
         LocationWrapDocument.LocationWrap result =
                 LocationWrapDocument.LocationWrap.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1190,7 +1155,7 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     public ObjectWorkTypeWrapDocument.ObjectWorkTypeWrap createObjectWorkTypeWrap() {
         ObjectWorkTypeWrapDocument.ObjectWorkTypeWrap result =
                 ObjectWorkTypeWrapDocument.ObjectWorkTypeWrap.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1199,7 +1164,7 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     public ObjectWorkTypeDocument.ObjectWorkType createObjectWorkType() {
         ObjectWorkTypeDocument.ObjectWorkType result =
                 ObjectWorkTypeDocument.ObjectWorkType.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1208,7 +1173,7 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     public RecordInfoWrapDocument.RecordInfoWrap createRecordInfoWrap() {
         RecordInfoWrapDocument.RecordInfoWrap result =
                 RecordInfoWrapDocument.RecordInfoWrap.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1216,7 +1181,7 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     @Override
     public RecordWrapDocument.RecordWrap createRecordWrap() {
         RecordWrapDocument.RecordWrap result = RecordWrapDocument.RecordWrap.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 
@@ -1225,7 +1190,7 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
     public RelatedWorksWrapDocument.RelatedWorksWrap createRelatedWorksWrap() {
         RelatedWorksWrapDocument.RelatedWorksWrap result =
                 RelatedWorksWrapDocument.RelatedWorksWrap.Factory.newInstance();
-        getObjectFactory().injectChildMembers(result);
+
         return result;
     }
 }
