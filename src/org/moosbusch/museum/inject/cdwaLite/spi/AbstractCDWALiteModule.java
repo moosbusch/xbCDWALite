@@ -13,22 +13,23 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.moosbusch.museum.cdwaLite.inject.spi;
+package org.moosbusch.museum.inject.cdwaLite.spi;
 
-import org.moosbusch.museum.document.XmlDocument;
-import org.moosbusch.museum.inject.spi.AbstractXmlModule;
-import org.moosbusch.museum.cdwaLite.inject.CDWALiteModule;
+import org.moosbusch.museum.document.MuseumXmlDocument;
+import org.moosbusch.museum.inject.spi.AbstractMuseumXmlModule;
+import org.moosbusch.museum.inject.cdwaLite.CDWALiteModule;
+import org.moosbusch.museum.inject.spi.AbstractMuseumXmlModule;
 
 /**
  *
  * @author moosbusch
  */
-public abstract class AbstractCDWALiteModule extends AbstractXmlModule
+public abstract class AbstractCDWALiteModule extends AbstractMuseumXmlModule
     implements CDWALiteModule {
 
     @Override
     protected String createLanguage() {
-        return XmlDocument.DEFAULT_LANGUAGE;
+        return MuseumXmlDocument.DEFAULT_LANGUAGE;
     }
 
 }
