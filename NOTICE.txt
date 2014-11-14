@@ -29,7 +29,7 @@ developed by ARTstor and J Paul Getty Trust.
 This file is provided without warranties of any kind nor will the author be
 liable for any damage arising as the result of using the work.
 
-Copyright (C) 2013 Gunnar Kappei (gkappei@web.de). Verbatim copying
+Copyright (C) 2013-2014 Gunnar Kappei (gkappei@web.de). Verbatim copying
 and distribution of this entire article is permitted in any medium,
 provided this notice is preserved.
 --------------------------------------------------------------------------------

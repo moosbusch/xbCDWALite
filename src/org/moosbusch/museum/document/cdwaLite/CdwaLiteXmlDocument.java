@@ -26,7 +26,7 @@ import org.moosbusch.museum.inject.cdwaLite.impl.CDWALiteObjectFactory;
  *
  * @author moosbusch
  */
-public interface Document<T extends CDWALiteObjectFactory>
+public interface CdwaLiteXmlDocument<T extends CDWALiteObjectFactory>
     extends MuseumXmlDocument<CdwaliteWrapDocument, T, CdwaliteWrap, Cdwalite> {
 
     public static final String CDWALITE_NS_URI = "http://www.getty.edu/CDWA/CDWALite";

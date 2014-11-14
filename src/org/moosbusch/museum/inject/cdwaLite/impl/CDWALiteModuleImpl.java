@@ -131,8 +131,8 @@ import edu.getty.cdwa.cdwaLite.TitleWrapDocument.TitleWrap;
 import edu.getty.cdwa.cdwaLite.TypeAttribute;
 import edu.getty.cdwa.cdwaLite.VitalDatesCreatorDocument;
 import edu.getty.cdwa.cdwaLite.WorkIDDocument;
-import org.moosbusch.museum.document.cdwaLite.Document;
-import org.moosbusch.museum.document.cdwaLite.impl.DocumentImpl;
+import org.moosbusch.museum.document.cdwaLite.CdwaLiteXmlDocument;
+import org.moosbusch.museum.document.cdwaLite.impl.DefaultCdwaLiteXmlDocument;
 import org.moosbusch.museum.inject.cdwaLite.spi.AbstractCDWALiteModule;
 
 /**
@@ -147,1216 +147,825 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
 
     @Provides
     @Override
-    public Document<? extends CDWALiteObjectFactory> createDocument() {
-        return new DocumentImpl();
+    public CdwaLiteXmlDocument<? extends CDWALiteObjectFactory> createDocument() {
+        return new DefaultCdwaLiteXmlDocument();
     }
-
 
     @Provides
     @Override
     public AdministrativeMetadata createCdwaLiteAdministrativeMetadata() {
-        AdministrativeMetadata result = AdministrativeMetadata.Factory.newInstance();
-        return result;
+        return AdministrativeMetadata.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public ResourceWrap createCdwaLiteResourceWrap() {
-        ResourceWrap result = ResourceWrap.Factory.newInstance();
-        return result;
+        return ResourceWrap.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public DescriptiveMetadata createCdwaLiteDescriptiveMetadata() {
-        DescriptiveMetadata result = DescriptiveMetadata.Factory.newInstance();
-        return result;
+        return DescriptiveMetadata.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public StyleWrap createCdwaLiteStyleWrap() {
-        StyleWrap result = StyleWrap.Factory.newInstance();
-        return result;
+        return StyleWrap.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public TitleWrap createCdwaLiteTitleWrap() {
-        TitleWrap result = TitleWrap.Factory.newInstance();
-        return result;
+        return TitleWrap.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public IndexingSubjectWrapDocument createCdwaLiteIndexingSubjectWrapDocument() {
-        IndexingSubjectWrapDocument result = IndexingSubjectWrapDocument.Factory.newInstance();
-        return result;
+        return IndexingSubjectWrapDocument.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public InscriptionsDocument createCdwaLiteInscriptionsDocument() {
-        InscriptionsDocument result = InscriptionsDocument.Factory.newInstance();
-        return result;
+        return InscriptionsDocument.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public InscriptionsWrapDocument createCdwaLiteInscriptionsWrapDocument() {
-        InscriptionsWrapDocument result = InscriptionsWrapDocument.Factory.newInstance();
-        return result;
+        return InscriptionsWrapDocument.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public LabelRelatedResourceDocument createCdwaLiteLabelRelatedResourceDocument() {
-        LabelRelatedResourceDocument result = LabelRelatedResourceDocument.Factory.newInstance();
-        return result;
+        return LabelRelatedResourceDocument.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public LabelRelatedWorkDocument createCdwaLiteLabelRelatedWorkDocument() {
-        LabelRelatedWorkDocument result = LabelRelatedWorkDocument.Factory.newInstance();
-        return result;
+        return LabelRelatedWorkDocument.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public LangAttribute createCdwaLiteLangAttribute() {
-        LangAttribute result = LangAttribute.Factory.newInstance();
-        return result;
+        return LangAttribute.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public LangtermsourceAttribute createCdwaLiteLangtermsourceAttribute() {
-        LangtermsourceAttribute result = LangtermsourceAttribute.Factory.newInstance();
-        return result;
+        return LangtermsourceAttribute.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public LatestDateDocument createCdwaLiteLatestDateDocument() {
-        LatestDateDocument result = LatestDateDocument.Factory.newInstance();
-        return result;
+        return LatestDateDocument.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public LinkRelatedResourceDocument createCdwaLiteLinkRelatedResourceDocument() {
-        LinkRelatedResourceDocument result = LinkRelatedResourceDocument.Factory.newInstance();
-        return result;
+        return LinkRelatedResourceDocument.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public LinkRelatedWorkDocument createCdwaLiteLinkRelatedWorkDocument() {
-        LinkRelatedWorkDocument result = LinkRelatedWorkDocument.Factory.newInstance();
-        return result;
+        return LinkRelatedWorkDocument.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public LinkResourceDocument createCdwaLiteLinkResourceDocument() {
-        LinkResourceDocument result = LinkResourceDocument.Factory.newInstance();
-        return result;
+        return LinkResourceDocument.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public LinkschemeAttribute createCdwaLiteLinkschemeAttribute() {
-        LinkschemeAttribute result = LinkschemeAttribute.Factory.newInstance();
-        return result;
+        return LinkschemeAttribute.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public LocationNameDocument createCdwaLiteLocationNameDocument() {
-        LocationNameDocument result = LocationNameDocument.Factory.newInstance();
-        return result;
+        return LocationNameDocument.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public LocationSetDocument createCdwaLiteLocationSetDocument() {
-        LocationSetDocument result = LocationSetDocument.Factory.newInstance();
-        return result;
+        return LocationSetDocument.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public LocationWrapDocument createCdwaLiteLocationWrapDocument() {
-        LocationWrapDocument result = LocationWrapDocument.Factory.newInstance();
-        return result;
+        return LocationWrapDocument.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public LocIDAttribute createCdwaLiteLocIDAttribute() {
-        LocIDAttribute result = LocIDAttribute.Factory.newInstance();
-        return result;
+        return LocIDAttribute.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public LocIDtypeAttribute createCdwaLiteLocIDtypeAttribute() {
-        LocIDtypeAttribute result = LocIDtypeAttribute.Factory.newInstance();
-        return result;
+        return LocIDtypeAttribute.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public LocRelatedWorkDocument createCdwaLiteLocRelatedWorkDocument() {
-        LocRelatedWorkDocument result = LocRelatedWorkDocument.Factory.newInstance();
-        return result;
+        return LocRelatedWorkDocument.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public MeasurementsSetDocument createCdwaLiteMeasurementsSetDocument() {
-        MeasurementsSetDocument result = MeasurementsSetDocument.Factory.newInstance();
-        return result;
+        return MeasurementsSetDocument.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public NameCreatorDocument createCdwaLiteNameCreatorDocument() {
-        NameCreatorDocument result = NameCreatorDocument.Factory.newInstance();
-        return result;
+        return NameCreatorDocument.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public NameCreatorSetDocument createCdwaLiteNameCreatorSetDocument() {
-        NameCreatorSetDocument result = NameCreatorSetDocument.Factory.newInstance();
-        return result;
+        return NameCreatorSetDocument.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public NationalityCreatorDocument createCdwaLiteNationalityCreatorDocument() {
-        NationalityCreatorDocument result = NationalityCreatorDocument.Factory.newInstance();
-        return result;
+        return NationalityCreatorDocument.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public ObjectWorkTypeDocument createCdwaLiteObjectWorkTypeDocument() {
-        ObjectWorkTypeDocument result = ObjectWorkTypeDocument.Factory.newInstance();
-        return result;
+        return ObjectWorkTypeDocument.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public ObjectWorkTypeWrapDocument createCdwaLiteObjectWorkTypeWrapDocument() {
-        ObjectWorkTypeWrapDocument result = ObjectWorkTypeWrapDocument.Factory.newInstance();
-        return result;
+        return ObjectWorkTypeWrapDocument.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public PrefAttribute createCdwaLitePrefAttribute() {
-        PrefAttribute result = PrefAttribute.Factory.newInstance();
-        return result;
+        return PrefAttribute.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public QualifierMeasurementsDocument createCdwaLiteQualifierMeasurementsDocument() {
-        QualifierMeasurementsDocument result = QualifierMeasurementsDocument.Factory.newInstance();
-        return result;
+        return QualifierMeasurementsDocument.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public RecordIDDocument createCdwaLiteRecordIDDocument() {
-        RecordIDDocument result = RecordIDDocument.Factory.newInstance();
-
-        return result;
+        return RecordIDDocument.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public RecordInfoIDDocument createCdwaLiteRecordInfoIDDocument() {
-        RecordInfoIDDocument result = RecordInfoIDDocument.Factory.newInstance();
-
-        return result;
+        return RecordInfoIDDocument.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public RecordInfoLinkDocument createCdwaLiteRecordInfoLinkDocument() {
-        RecordInfoLinkDocument result = RecordInfoLinkDocument.Factory.newInstance();
-
-        return result;
+        return RecordInfoLinkDocument.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public RecordInfoWrapDocument createCdwaLiteRecordInfoWrapDocument() {
-        RecordInfoWrapDocument result = RecordInfoWrapDocument.Factory.newInstance();
-
-        return result;
+        return RecordInfoWrapDocument.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public RecordMetadataDateDocument createCdwaLiteRecordMetadataDateDocument() {
-        RecordMetadataDateDocument result = RecordMetadataDateDocument.Factory.newInstance();
-
-        return result;
+        return RecordMetadataDateDocument.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public RecordMetadataLocDocument createCdwaLiteRecordMetadataLocDocument() {
-        RecordMetadataLocDocument result = RecordMetadataLocDocument.Factory.newInstance();
-
-        return result;
+        return RecordMetadataLocDocument.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public RecordRelIDDocument createCdwaLiteRecordRelIDDocument() {
-        RecordRelIDDocument result = RecordRelIDDocument.Factory.newInstance();
-
-        return result;
+        return RecordRelIDDocument.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public RecordSourceDocument createCdwaLiteRecordSourceDocument() {
-        RecordSourceDocument result = RecordSourceDocument.Factory.newInstance();
-
-        return result;
+        return RecordSourceDocument.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public RecordTypeDocument createCdwaLiteRecordTypeDocument() {
-        RecordTypeDocument result = RecordTypeDocument.Factory.newInstance();
-
-        return result;
+        return RecordTypeDocument.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public RecordWrapDocument createCdwaLiteRecordWrapDocument() {
-        RecordWrapDocument result = RecordWrapDocument.Factory.newInstance();
-
-        return result;
+        return RecordWrapDocument.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public RelatedResourceRelTypeDocument createCdwaLiteRelatedResourceRelTypeDocument() {
-        RelatedResourceRelTypeDocument result = RelatedResourceRelTypeDocument.Factory.newInstance();
-
-        return result;
+        return RelatedResourceRelTypeDocument.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public RelatedWorkRelTypeDocument createCdwaLiteRelatedWorkRelTypeDocument() {
-        RelatedWorkRelTypeDocument result = RelatedWorkRelTypeDocument.Factory.newInstance();
-
-        return result;
+        return RelatedWorkRelTypeDocument.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public RelatedWorkSetDocument createCdwaLiteRelatedWorkSetDocument() {
-        RelatedWorkSetDocument result = RelatedWorkSetDocument.Factory.newInstance();
-
-        return result;
+        return RelatedWorkSetDocument.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public RelatedWorksWrapDocument createCdwaLiteRelatedWorksWrapDocument() {
-        RelatedWorksWrapDocument result = RelatedWorksWrapDocument.Factory.newInstance();
-
-        return result;
+        return RelatedWorksWrapDocument.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public ResourceIDDocument createCdwaLiteResourceIDDocument() {
-        ResourceIDDocument result = ResourceIDDocument.Factory.newInstance();
-
-        return result;
+        return ResourceIDDocument.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public ResourceMetadataLocDocument createCdwaLiteResourceMetadataLocDocument() {
-        ResourceMetadataLocDocument result = ResourceMetadataLocDocument.Factory.newInstance();
-
-        return result;
+        return ResourceMetadataLocDocument.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public ResourceRelTypeDocument createCdwaLiteResourceRelTypeDocument() {
-        ResourceRelTypeDocument result = ResourceRelTypeDocument.Factory.newInstance();
-
-        return result;
+        return ResourceRelTypeDocument.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public ResourceSetDocument createCdwaLiteResourceSetDocument() {
-        ResourceSetDocument result = ResourceSetDocument.Factory.newInstance();
-
-        return result;
+        return ResourceSetDocument.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public ResourceSourceDocument createCdwaLiteResourceSourceDocument() {
-        ResourceSourceDocument result = ResourceSourceDocument.Factory.newInstance();
-
-        return result;
+        return ResourceSourceDocument.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public ResourceTypeDocument createCdwaLiteResourceTypeDocument() {
-        ResourceTypeDocument result = ResourceTypeDocument.Factory.newInstance();
-
-        return result;
+        return ResourceTypeDocument.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public ResourceViewDateDocument createCdwaLiteResourceViewDateDocument() {
-        ResourceViewDateDocument result = ResourceViewDateDocument.Factory.newInstance();
-
-        return result;
+        return ResourceViewDateDocument.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public ResourceViewDescriptionDocument createCdwaLiteResourceViewDescriptionDocument() {
-        ResourceViewDescriptionDocument result = ResourceViewDescriptionDocument.Factory.newInstance();
-
-        return result;
+        return ResourceViewDescriptionDocument.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public ResourceViewSubjectTermDocument createCdwaLiteResourceViewSubjectTermDocument() {
-        ResourceViewSubjectTermDocument result = ResourceViewSubjectTermDocument.Factory.newInstance();
-
-        return result;
+        return ResourceViewSubjectTermDocument.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public ResourceViewTypeDocument createCdwaLiteResourceViewTypeDocument() {
-        ResourceViewTypeDocument result = ResourceViewTypeDocument.Factory.newInstance();
-
-        return result;
+        return ResourceViewTypeDocument.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public ResourceWrapDocument createCdwaLiteResourceWrapDocument() {
-        ResourceWrapDocument result = ResourceWrapDocument.Factory.newInstance();
-
-        return result;
+        return ResourceWrapDocument.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public RightsResourceDocument createCdwaLiteRightsResourceDocument() {
-        RightsResourceDocument result = RightsResourceDocument.Factory.newInstance();
-
-        return result;
+        return RightsResourceDocument.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public RightsWorkDocument createCdwaLiteRightsWorkDocument() {
-        RightsWorkDocument result = RightsWorkDocument.Factory.newInstance();
-
-        return result;
+        return RightsWorkDocument.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public RoleCreatorDocument createCdwaLiteRoleCreatorDocument() {
-        RoleCreatorDocument result = RoleCreatorDocument.Factory.newInstance();
-
-        return result;
+        return RoleCreatorDocument.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public ScaleMeasurementsDocument createCdwaLiteScaleMeasurementsDocument() {
-        ScaleMeasurementsDocument result = ScaleMeasurementsDocument.Factory.newInstance();
-
-        return result;
+        return ScaleMeasurementsDocument.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public ShapeMeasurementsDocument createCdwaLiteShapeMeasurementsDocument() {
-        ShapeMeasurementsDocument result = ShapeMeasurementsDocument.Factory.newInstance();
-
-        return result;
+        return ShapeMeasurementsDocument.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public SourceDescriptiveNoteDocument createCdwaLiteSourceDescriptiveNoteDocument() {
-        SourceDescriptiveNoteDocument result = SourceDescriptiveNoteDocument.Factory.newInstance();
-
-        return result;
+        return SourceDescriptiveNoteDocument.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public SourceMaterialsTechDocument createCdwaLiteSourceMaterialsTechDocument() {
-        SourceMaterialsTechDocument result = SourceMaterialsTechDocument.Factory.newInstance();
-
-        return result;
+        return SourceMaterialsTechDocument.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public SourceNameCreatorDocument createCdwaLiteSourceNameCreatorDocument() {
-        SourceNameCreatorDocument result = SourceNameCreatorDocument.Factory.newInstance();
-
-        return result;
+        return SourceNameCreatorDocument.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public SourceStateEditionDocument createCdwaLiteSourceStateEditionDocument() {
-        SourceStateEditionDocument result = SourceStateEditionDocument.Factory.newInstance();
-
-        return result;
+        return SourceStateEditionDocument.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public SourceTitleDocument createCdwaLiteSourceTitleDocument() {
-        SourceTitleDocument result = SourceTitleDocument.Factory.newInstance();
-
-        return result;
+        return SourceTitleDocument.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public StyleDocument createCdwaLiteStyleDocument() {
-        StyleDocument result = StyleDocument.Factory.newInstance();
-
-        return result;
+        return StyleDocument.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public StyleWrapDocument createCdwaLiteStyleWrapDocument() {
-        StyleWrapDocument result = StyleWrapDocument.Factory.newInstance();
-
-        return result;
+        return StyleWrapDocument.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public SubjectTermDocument createCdwaLiteSubjectTermDocument() {
-        SubjectTermDocument result = SubjectTermDocument.Factory.newInstance();
-
-        return result;
+        return SubjectTermDocument.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public TermMaterialsTechDocument createCdwaLiteTermMaterialsTechDocument() {
-        TermMaterialsTechDocument result = TermMaterialsTechDocument.Factory.newInstance();
-
-        return result;
+        return TermMaterialsTechDocument.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public TermsourceAttribute createCdwaLiteTermsourceAttribute() {
-        TermsourceAttribute result = TermsourceAttribute.Factory.newInstance();
-
-        return result;
+        return TermsourceAttribute.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public TermsourceIDAttribute createCdwaLiteTermsourceIDAttribute() {
-        TermsourceIDAttribute result = TermsourceIDAttribute.Factory.newInstance();
-
-        return result;
+        return TermsourceIDAttribute.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public TitleDocument createCdwaLiteTitleDocument() {
-        TitleDocument result = TitleDocument.Factory.newInstance();
-
-        return result;
+        return TitleDocument.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public TitleSetDocument createCdwaLiteTitleSetDocument() {
-        TitleSetDocument result = TitleSetDocument.Factory.newInstance();
-
-        return result;
+        return TitleSetDocument.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public TitleSetDocument.TitleSet createCdwaLiteTitleSet() {
-        TitleSetDocument.TitleSet result = TitleSetDocument.TitleSet.Factory.newInstance();
-
-        return result;
+        return TitleSetDocument.TitleSet.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public TitleDocument.Title createCdwaLiteTitle() {
-        TitleDocument.Title result = TitleDocument.Title.Factory.newInstance();
-
-        return result;
+        return TitleDocument.Title.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public TitleWrapDocument createCdwaLiteTitleWrapDocument() {
-        TitleWrapDocument result = TitleWrapDocument.Factory.newInstance();
-
-        return result;
+        return TitleWrapDocument.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public TypeAttribute createCdwaLiteTypeAttribute() {
-        TypeAttribute result = TypeAttribute.Factory.newInstance();
-
-        return result;
+        return TypeAttribute.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public VitalDatesCreatorDocument createCdwaLiteVitalDatesCreatorDocument() {
-        VitalDatesCreatorDocument result = VitalDatesCreatorDocument.Factory.newInstance();
-
-        return result;
+        return VitalDatesCreatorDocument.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public WorkIDDocument createCdwaLiteWorkIDDocument() {
-        WorkIDDocument result = WorkIDDocument.Factory.newInstance();
-
-        return result;
+        return WorkIDDocument.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public AdministrativeMetadataDocument createCdwaLiteAdministrativeMetadataDocument() {
-        AdministrativeMetadataDocument result = AdministrativeMetadataDocument.Factory.newInstance();
-
-        return result;
+        return AdministrativeMetadataDocument.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public AttributionQualifierCreatorDocument createCdwaLiteAttributionQualifierCreatorDocument() {
-        AttributionQualifierCreatorDocument result = AttributionQualifierCreatorDocument.Factory.newInstance();
-
-        return result;
+        return AttributionQualifierCreatorDocument.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public CdwaliteDocument createCdwaLiteCdwaliteDocument() {
-        CdwaliteDocument result = CdwaliteDocument.Factory.newInstance();
-
-        return result;
+        return CdwaliteDocument.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public CdwaliteWrapDocument createCdwaLiteCdwaliteWrapDocument() {
-        CdwaliteWrapDocument result = CdwaliteWrapDocument.Factory.newInstance();
-
-        return result;
+        return CdwaliteWrapDocument.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public CdwaliteWrapDocument.CdwaliteWrap createCdwaLiteCdwaliteWrap() {
-        CdwaliteWrapDocument.CdwaliteWrap result = CdwaliteWrapDocument.CdwaliteWrap.Factory.newInstance();
-
-        return result;
+        return CdwaliteWrapDocument.CdwaliteWrap.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public CdwaliteDocument.Cdwalite createCdwaLiteCdwalite() {
-        CdwaliteDocument.Cdwalite result = CdwaliteDocument.Cdwalite.Factory.newInstance();
-
-        return result;
+        return CdwaliteDocument.Cdwalite.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public ClassificationDocument createCdwaLiteClassificationDocument() {
-        ClassificationDocument result = ClassificationDocument.Factory.newInstance();
-
-        return result;
+        return ClassificationDocument.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public ClassWrapDocument createCdwaLiteClassWrapDocument() {
-        ClassWrapDocument result = ClassWrapDocument.Factory.newInstance();
-
-        return result;
+        return ClassWrapDocument.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public ClassWrapDocument.ClassWrap createCdwaLiteClassWrap() {
-        ClassWrapDocument.ClassWrap result = ClassWrapDocument.ClassWrap.Factory.newInstance();
-
-        return result;
+        return ClassWrapDocument.ClassWrap.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public CultureDocument createCdwaLiteCultureDocument() {
-        CultureDocument result = CultureDocument.Factory.newInstance();
-
-        return result;
+        return CultureDocument.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public CultureWrapDocument createCdwaLiteCultureWrapDocument() {
-        CultureWrapDocument result = CultureWrapDocument.Factory.newInstance();
-
-        return result;
+        return CultureWrapDocument.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public CultureWrapDocument.CultureWrap createCdwaLiteCultureWrap() {
-        CultureWrapDocument.CultureWrap result = CultureWrapDocument.CultureWrap.Factory.newInstance();
-
-        return result;
+        return CultureWrapDocument.CultureWrap.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public CultureDocument.Culture createCdwaLiteCulture() {
-        CultureDocument.Culture result = CultureDocument.Culture.Factory.newInstance();
-
-        return result;
+        return CultureDocument.Culture.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public DateQualifierDocument createCdwaLiteDateQualifierDocument() {
-        DateQualifierDocument result = DateQualifierDocument.Factory.newInstance();
-
-        return result;
+        return DateQualifierDocument.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public DescriptiveMetadataDocument createCdwaLiteDescriptiveMetadataDocument() {
-        DescriptiveMetadataDocument result = DescriptiveMetadataDocument.Factory.newInstance();
-
-        return result;
+        return DescriptiveMetadataDocument.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public DescriptiveNoteDocument createCdwaLiteDescriptiveNoteDocument() {
-        DescriptiveNoteDocument result = DescriptiveNoteDocument.Factory.newInstance();
-
-        return result;
+        return DescriptiveNoteDocument.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public DescriptiveNoteSetDocument createCdwaLiteDescriptiveNoteSetDocument() {
-        DescriptiveNoteSetDocument result = DescriptiveNoteSetDocument.Factory.newInstance();
-
-        return result;
+        return DescriptiveNoteSetDocument.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public DescriptiveNoteWrapDocument createCdwaLiteDescriptiveNoteWrapDocument() {
-        DescriptiveNoteWrapDocument result = DescriptiveNoteWrapDocument.Factory.newInstance();
-
-        return result;
+        return DescriptiveNoteWrapDocument.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public DescriptiveNoteWrapDocument.DescriptiveNoteWrap createCdwaLiteDescriptiveNoteWrap() {
-        DescriptiveNoteWrapDocument.DescriptiveNoteWrap result
-                = DescriptiveNoteWrapDocument.DescriptiveNoteWrap.Factory.newInstance();
-
-        return result;
+        return DescriptiveNoteWrapDocument.DescriptiveNoteWrap.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public DisplayCreationDateDocument createCdwaLiteDisplayCreationDateDocument() {
-        DisplayCreationDateDocument result = DisplayCreationDateDocument.Factory.newInstance();
-
-        return result;
+        return DisplayCreationDateDocument.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public DisplayCreatorDocument createCdwaLiteDisplayCreatorDocument() {
-        DisplayCreatorDocument result = DisplayCreatorDocument.Factory.newInstance();
-
-        return result;
+        return DisplayCreatorDocument.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public DisplayEditionDocument createCdwaLiteDisplayEditionDocument() {
-        DisplayEditionDocument result = DisplayEditionDocument.Factory.newInstance();
-
-        return result;
+        return DisplayEditionDocument.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public DisplayMaterialsTechDocument createCdwaLiteDisplayMaterialsTechDocument() {
-        DisplayMaterialsTechDocument result = DisplayMaterialsTechDocument.Factory.newInstance();
-
-        return result;
+        return DisplayMaterialsTechDocument.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public DisplayMeasurementsDocument createCdwaLiteDisplayMeasurementsDocument() {
-        DisplayMeasurementsDocument result = DisplayMeasurementsDocument.Factory.newInstance();
-
-        return result;
+        return DisplayMeasurementsDocument.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public DisplayStateDocument createCdwaLiteDisplayStateDocument() {
-        DisplayStateDocument result = DisplayStateDocument.Factory.newInstance();
-
-        return result;
+        return DisplayStateDocument.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public DisplayStateEditionWrapDocument createCdwaLiteDisplayStateEditionWrapDocument() {
-        DisplayStateEditionWrapDocument result = DisplayStateEditionWrapDocument.Factory.newInstance();
-
-        return result;
+        return DisplayStateEditionWrapDocument.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public DisplayStateEditionWrapDocument.DisplayStateEditionWrap createCdwaLiteDisplayStateEditionWrap() {
-        DisplayStateEditionWrapDocument.DisplayStateEditionWrap result
-                = DisplayStateEditionWrapDocument.DisplayStateEditionWrap.Factory.newInstance();
-
-        return result;
+        return DisplayStateEditionWrapDocument.DisplayStateEditionWrap.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public EarliestDateDocument createCdwaLiteEarliestDateDocument() {
-        EarliestDateDocument result = EarliestDateDocument.Factory.newInstance();
-
-        return result;
+        return EarliestDateDocument.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public ExtentCreatorDocument createCdwaLiteExtentCreatorDocument() {
-        ExtentCreatorDocument result = ExtentCreatorDocument.Factory.newInstance();
-
-        return result;
+        return ExtentCreatorDocument.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public ExtentMaterialsTechDocument createCdwaLiteExtentMaterialsTechDocument() {
-        ExtentMaterialsTechDocument result = ExtentMaterialsTechDocument.Factory.newInstance();
-
-        return result;
+        return ExtentMaterialsTechDocument.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public ExtentMeasurementsDocument createCdwaLiteExtentMeasurementsDocument() {
-        ExtentMeasurementsDocument result = ExtentMeasurementsDocument.Factory.newInstance();
-
-        return result;
+        return ExtentMeasurementsDocument.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public ExtentSubjectDocument createCdwaLiteExtentSubjectDocument() {
-        ExtentSubjectDocument result = ExtentSubjectDocument.Factory.newInstance();
-
-        return result;
+        return ExtentSubjectDocument.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public FormatMeasurementsDocument createCdwaLiteFormatMeasurementsDocument() {
-        FormatMeasurementsDocument result = FormatMeasurementsDocument.Factory.newInstance();
-
-        return result;
+        return FormatMeasurementsDocument.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public GenderCreatorDocument createCdwaLiteGenderCreatorDocument() {
-        GenderCreatorDocument result = GenderCreatorDocument.Factory.newInstance();
-
-        return result;
+        return GenderCreatorDocument.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public IndentifierAttribute createCdwaLiteIndentifierAttribute() {
-        IndentifierAttribute result = IndentifierAttribute.Factory.newInstance();
-
-        return result;
+        return IndentifierAttribute.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public IndexingCreatorSetDocument createCdwaLiteIndexingCreatorSetDocument() {
-        IndexingCreatorSetDocument result = IndexingCreatorSetDocument.Factory.newInstance();
-
-        return result;
+        return IndexingCreatorSetDocument.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public IndexingCreatorWrapDocument createCdwaLiteIndexingCreatorWrapDocument() {
-        IndexingCreatorWrapDocument result = IndexingCreatorWrapDocument.Factory.newInstance();
-
-        return result;
+        return IndexingCreatorWrapDocument.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public IndexingCreatorWrapDocument.IndexingCreatorWrap createCdwaLiteIndexingCreatorWrap() {
-        IndexingCreatorWrapDocument.IndexingCreatorWrap result
-                = IndexingCreatorWrapDocument.IndexingCreatorWrap.Factory.newInstance();
-
-        return result;
+        return IndexingCreatorWrapDocument.IndexingCreatorWrap.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public IndexingDatesSetDocument createCdwaLiteIndexingDatesSetDocument() {
-        IndexingDatesSetDocument result = IndexingDatesSetDocument.Factory.newInstance();
-
-        return result;
+        return IndexingDatesSetDocument.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public IndexingDatesWrapDocument createCdwaLiteIndexingDatesWrapDocument() {
-        IndexingDatesWrapDocument result = IndexingDatesWrapDocument.Factory.newInstance();
-
-        return result;
+        return IndexingDatesWrapDocument.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public IndexingDatesWrapDocument.IndexingDatesWrap createCdwaLiteIndexingDatesWrap() {
-        IndexingDatesWrapDocument.IndexingDatesWrap result
-                = IndexingDatesWrapDocument.IndexingDatesWrap.Factory.newInstance();
-
-        return result;
+        return IndexingDatesWrapDocument.IndexingDatesWrap.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public IndexingMaterialsTechSetDocument createCdwaLiteIndexingMaterialsTechSetDocument() {
-        IndexingMaterialsTechSetDocument result = IndexingMaterialsTechSetDocument.Factory.newInstance();
-
-        return result;
+        return IndexingMaterialsTechSetDocument.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public IndexingMaterialsTechWrapDocument createCdwaLiteIndexingMaterialsTechWrapDocument() {
-        IndexingMaterialsTechWrapDocument result = IndexingMaterialsTechWrapDocument.Factory.newInstance();
-
-        return result;
+        return IndexingMaterialsTechWrapDocument.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public IndexingMaterialsTechWrapDocument.IndexingMaterialsTechWrap createCdwaLiteIndexingMaterialsTechWrap() {
-        IndexingMaterialsTechWrapDocument.IndexingMaterialsTechWrap result
-                = IndexingMaterialsTechWrapDocument.IndexingMaterialsTechWrap.Factory.newInstance();
-
-        return result;
+        return IndexingMaterialsTechWrapDocument.IndexingMaterialsTechWrap.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public IndexingMeasurementsSetDocument createCdwaLiteIndexingMeasurementsSetDocument() {
-        IndexingMeasurementsSetDocument result = IndexingMeasurementsSetDocument.Factory.newInstance();
-
-        return result;
+        return IndexingMeasurementsSetDocument.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public IndexingMeasurementsWrapDocument createCdwaLiteIndexingMeasurementsWrapDocument() {
-        IndexingMeasurementsWrapDocument result = IndexingMeasurementsWrapDocument.Factory.newInstance();
-
-        return result;
+        return IndexingMeasurementsWrapDocument.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public IndexingMeasurementsWrapDocument.IndexingMeasurementsWrap createCdwaLiteIndexingMeasurementsWrap() {
-        IndexingMeasurementsWrapDocument.IndexingMeasurementsWrap result
-                = IndexingMeasurementsWrapDocument.IndexingMeasurementsWrap.Factory.newInstance();
-
-        return result;
+        return IndexingMeasurementsWrapDocument.IndexingMeasurementsWrap.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public IndexingSubjectSetDocument createCdwaLiteIndexingSubjectSetDocument() {
-        IndexingSubjectSetDocument result = IndexingSubjectSetDocument.Factory.newInstance();
-
-        return result;
+        return IndexingSubjectSetDocument.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public IndexingSubjectWrapDocument.IndexingSubjectWrap createCdwaLiteIndexingSubjectWrap() {
-        IndexingSubjectWrapDocument.IndexingSubjectWrap result
-                = IndexingSubjectWrapDocument.IndexingSubjectWrap.Factory.newInstance();
-
-        return result;
+        return IndexingSubjectWrapDocument.IndexingSubjectWrap.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public InscriptionsWrapDocument.InscriptionsWrap createCdwaLiteInscriptionsWrap() {
-        InscriptionsWrapDocument.InscriptionsWrap result
-                = InscriptionsWrapDocument.InscriptionsWrap.Factory.newInstance();
-
-        return result;
+        return InscriptionsWrapDocument.InscriptionsWrap.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public LocationWrapDocument.LocationWrap createCdwaLiteLocationWrap() {
-        LocationWrapDocument.LocationWrap result
-                = LocationWrapDocument.LocationWrap.Factory.newInstance();
-
-        return result;
+        return LocationWrapDocument.LocationWrap.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public ObjectWorkTypeWrapDocument.ObjectWorkTypeWrap createCdwaLiteObjectWorkTypeWrap() {
-        ObjectWorkTypeWrapDocument.ObjectWorkTypeWrap result
-                = ObjectWorkTypeWrapDocument.ObjectWorkTypeWrap.Factory.newInstance();
-
-        return result;
+        return ObjectWorkTypeWrapDocument.ObjectWorkTypeWrap.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public ObjectWorkTypeDocument.ObjectWorkType createCdwaLiteObjectWorkType() {
-        ObjectWorkTypeDocument.ObjectWorkType result
-                = ObjectWorkTypeDocument.ObjectWorkType.Factory.newInstance();
-
-        return result;
+        return ObjectWorkTypeDocument.ObjectWorkType.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public RecordInfoWrapDocument.RecordInfoWrap createCdwaLiteRecordInfoWrap() {
-        RecordInfoWrapDocument.RecordInfoWrap result
-                = RecordInfoWrapDocument.RecordInfoWrap.Factory.newInstance();
-
-        return result;
+        return RecordInfoWrapDocument.RecordInfoWrap.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public RecordWrapDocument.RecordWrap createCdwaLiteRecordWrap() {
-        RecordWrapDocument.RecordWrap result = RecordWrapDocument.RecordWrap.Factory.newInstance();
-
-        return result;
+        return RecordWrapDocument.RecordWrap.Factory.newInstance();
     }
-
 
     @Provides
     @Override
     public RelatedWorksWrapDocument.RelatedWorksWrap createCdwaLiteRelatedWorksWrap() {
-        RelatedWorksWrapDocument.RelatedWorksWrap result
-                = RelatedWorksWrapDocument.RelatedWorksWrap.Factory.newInstance();
-
-        return result;
+        return RelatedWorksWrapDocument.RelatedWorksWrap.Factory.newInstance();
     }
-
 
     @Provides
     @Override
@@ -1364,13 +973,11 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
         return IndexingCreatorSetDocument.IndexingCreatorSet.Factory.newInstance();
     }
 
-
     @Provides
     @Override
     public NameCreatorSetDocument.NameCreatorSet createCdwaLiteNameCreatorSet() {
         return NameCreatorSetDocument.NameCreatorSet.Factory.newInstance();
     }
-
 
     @Provides
     @Override
@@ -1378,13 +985,11 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
         return NameCreatorDocument.NameCreator.Factory.newInstance();
     }
 
-
     @Provides
     @Override
     public RoleCreatorDocument.RoleCreator createCdwaLiteRoleCreator() {
         return RoleCreatorDocument.RoleCreator.Factory.newInstance();
     }
-
 
     @Provides
     @Override
@@ -1392,13 +997,11 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
         return IndexingDatesSetDocument.IndexingDatesSet.Factory.newInstance();
     }
 
-
     @Provides
     @Override
     public EarliestDateDocument.EarliestDate createCdwaLiteEarliestDate() {
         return EarliestDateDocument.EarliestDate.Factory.newInstance();
     }
-
 
     @Provides
     @Override
@@ -1406,17 +1009,16 @@ public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
         return LatestDateDocument.LatestDate.Factory.newInstance();
     }
 
-
     @Provides
     @Override
     public LocationSetDocument.LocationSet createCdwaLiteLocationSet() {
         return LocationSetDocument.LocationSet.Factory.newInstance();
     }
 
-
     @Provides
     @Override
     public LocationNameDocument.LocationName createCdwaLiteLocationName() {
         return LocationNameDocument.LocationName.Factory.newInstance();
     }
+
 }

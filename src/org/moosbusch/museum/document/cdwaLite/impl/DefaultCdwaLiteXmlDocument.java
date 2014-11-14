@@ -24,19 +24,19 @@ import javax.xml.namespace.QName;
 import org.apache.xmlbeans.XmlCursor;
 import org.apache.xmlbeans.XmlException;
 import org.apache.xmlbeans.XmlOptions;
-import org.moosbusch.museum.document.cdwaLite.spi.AbstractDocument;
+import org.moosbusch.museum.document.cdwaLite.spi.AbstractCdwaLiteXmlDocument;
 import org.moosbusch.museum.inject.cdwaLite.impl.CDWALiteObjectFactory;
 
 /**
  *
  * @author moosbusch
  */
-public class DocumentImpl extends AbstractDocument<CDWALiteObjectFactory> {
+public class DefaultCdwaLiteXmlDocument extends AbstractCdwaLiteXmlDocument<CDWALiteObjectFactory> {
 
-    public DocumentImpl() {
+    public DefaultCdwaLiteXmlDocument() {
     }
 
-    public DocumentImpl(InputStream in) throws IOException, XmlException {
+    public DefaultCdwaLiteXmlDocument(InputStream in) throws IOException, XmlException {
         super(in);
     }
 

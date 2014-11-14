@@ -23,7 +23,7 @@ import java.io.InputStream;
 import java.util.Collection;
 import org.apache.xmlbeans.XmlException;
 import org.moosbusch.museum.document.spi.AbstractMuseumXmlDocument;
-import org.moosbusch.museum.document.cdwaLite.Document;
+import org.moosbusch.museum.document.cdwaLite.CdwaLiteXmlDocument;
 import org.moosbusch.museum.document.spi.AbstractMuseumXmlDocument;
 import org.moosbusch.museum.inject.cdwaLite.impl.CDWALiteObjectFactory;
 
@@ -31,14 +31,14 @@ import org.moosbusch.museum.inject.cdwaLite.impl.CDWALiteObjectFactory;
  *
  * @author moosbusch
  */
-public abstract class AbstractDocument<T extends CDWALiteObjectFactory>
+public abstract class AbstractCdwaLiteXmlDocument<T extends CDWALiteObjectFactory>
         extends AbstractMuseumXmlDocument<CdwaliteWrapDocument, T, CdwaliteWrap, Cdwalite>
-        implements Document<T> {
+        implements CdwaLiteXmlDocument<T> {
 
-    public AbstractDocument() {
+    public AbstractCdwaLiteXmlDocument() {
     }
 
-    public AbstractDocument(InputStream in) throws IOException, XmlException {
+    public AbstractCdwaLiteXmlDocument(InputStream in) throws IOException, XmlException {
         super(in);
     }
 
