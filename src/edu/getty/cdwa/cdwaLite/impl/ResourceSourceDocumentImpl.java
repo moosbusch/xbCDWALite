@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
+package edu.getty.cdwa.cdwaLite.impl;  
 /**
  * A document containing one resourceSource(@http://www.getty.edu/CDWA/CDWALite) element.
  *
@@ -53,7 +53,7 @@ public class ResourceSourceDocumentImpl extends org.apache.xmlbeans.impl.values.
     /**
      * Sets the "resourceSource" element
      */
-    @Inject(optional=true) public void setResourceSource(edu.getty.cdwa.cdwaLite.ResourceSourceDocument.ResourceSource resourceSource)
+    public void setResourceSource(edu.getty.cdwa.cdwaLite.ResourceSourceDocument.ResourceSource resourceSource)
     {
         generatedSetterHelperImpl(resourceSource, RESOURCESOURCE$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -145,7 +145,7 @@ public class ResourceSourceDocumentImpl extends org.apache.xmlbeans.impl.values.
         /**
          * Sets the "type" attribute
          */
-        @Inject(optional=true) public void setType(java.lang.String type)
+        public void setType(java.lang.String type)
         {
             synchronized (monitor())
             {
@@ -237,7 +237,7 @@ public class ResourceSourceDocumentImpl extends org.apache.xmlbeans.impl.values.
         /**
          * Sets the "earliestdate" attribute
          */
-        @Inject(optional=true) public void setEarliestdate(java.lang.String earliestdate)
+        public void setEarliestdate(java.lang.String earliestdate)
         {
             synchronized (monitor())
             {
@@ -329,7 +329,7 @@ public class ResourceSourceDocumentImpl extends org.apache.xmlbeans.impl.values.
         /**
          * Sets the "latestdate" attribute
          */
-        @Inject(optional=true) public void setLatestdate(java.lang.String latestdate)
+        public void setLatestdate(java.lang.String latestdate)
         {
             synchronized (monitor())
             {

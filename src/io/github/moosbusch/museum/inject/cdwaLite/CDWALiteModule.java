@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.moosbusch.museum.inject.cdwaLite;
+package io.github.moosbusch.museum.inject.cdwaLite;
 
 import edu.getty.cdwa.cdwaLite.AdministrativeMetadataDocument;
 import edu.getty.cdwa.cdwaLite.AttributionQualifierCreatorDocument;
@@ -144,7 +144,7 @@ import edu.getty.cdwa.cdwaLite.TitleWrapDocument;
 import edu.getty.cdwa.cdwaLite.TypeAttribute;
 import edu.getty.cdwa.cdwaLite.VitalDatesCreatorDocument;
 import edu.getty.cdwa.cdwaLite.WorkIDDocument;
-import org.moosbusch.museum.inject.MuseumXmlModule;
+import io.github.moosbusch.museum.inject.MuseumXmlModule;
 
 /**
  *

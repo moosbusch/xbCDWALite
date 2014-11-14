@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
+package edu.getty.cdwa.cdwaLite.impl;  
 /**
  * A document containing one linkResource(@http://www.getty.edu/CDWA/CDWALite) element.
  *
@@ -53,7 +53,7 @@ public class LinkResourceDocumentImpl extends org.apache.xmlbeans.impl.values.Xm
     /**
      * Sets the "linkResource" element
      */
-    @Inject(optional=true) public void setLinkResource(edu.getty.cdwa.cdwaLite.LinkResourceDocument.LinkResource linkResource)
+    public void setLinkResource(edu.getty.cdwa.cdwaLite.LinkResourceDocument.LinkResource linkResource)
     {
         generatedSetterHelperImpl(linkResource, LINKRESOURCE$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -143,7 +143,7 @@ public class LinkResourceDocumentImpl extends org.apache.xmlbeans.impl.values.Xm
         /**
          * Sets the "type" attribute
          */
-        @Inject(optional=true) public void setType(java.lang.String type)
+        public void setType(java.lang.String type)
         {
             synchronized (monitor())
             {
@@ -235,7 +235,7 @@ public class LinkResourceDocumentImpl extends org.apache.xmlbeans.impl.values.Xm
         /**
          * Sets the "formatResource" attribute
          */
-        @Inject(optional=true) public void setFormatResource(java.lang.String formatResource)
+        public void setFormatResource(java.lang.String formatResource)
         {
             synchronized (monitor())
             {

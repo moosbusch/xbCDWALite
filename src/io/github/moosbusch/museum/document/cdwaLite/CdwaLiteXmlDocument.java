@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright 2013 Gunnar Kappei.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,20 +13,19 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.moosbusch.museum.document.cdwaLite;
+package io.github.moosbusch.museum.document.cdwaLite;
 
 import edu.getty.cdwa.cdwaLite.CdwaliteDocument.Cdwalite;
 import edu.getty.cdwa.cdwaLite.CdwaliteWrapDocument;
 import edu.getty.cdwa.cdwaLite.CdwaliteWrapDocument.CdwaliteWrap;
-import org.moosbusch.museum.document.MuseumXmlDocument;
-import org.moosbusch.museum.document.MuseumXmlDocument;
-import org.moosbusch.museum.inject.cdwaLite.impl.CDWALiteObjectFactory;
+import io.github.moosbusch.museum.document.MuseumXmlDocument;
+import io.github.moosbusch.museum.document.cdwaLite.impl.DefaultCDWALiteObjectFactory;
 
 /**
  *
  * @author moosbusch
  */
-public interface CdwaLiteXmlDocument<T extends CDWALiteObjectFactory>
+public interface CdwaLiteXmlDocument<T extends DefaultCDWALiteObjectFactory>
     extends MuseumXmlDocument<CdwaliteWrapDocument, T, CdwaliteWrap, Cdwalite> {
 
     public static final String CDWALITE_NS_URI = "http://www.getty.edu/CDWA/CDWALite";

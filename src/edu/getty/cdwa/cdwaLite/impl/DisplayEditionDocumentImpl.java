@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
+package edu.getty.cdwa.cdwaLite.impl;  
 /**
  * A document containing one displayEdition(@http://www.getty.edu/CDWA/CDWALite) element.
  *
@@ -67,7 +67,7 @@ public class DisplayEditionDocumentImpl extends org.apache.xmlbeans.impl.values.
     /**
      * Sets the "displayEdition" element
      */
-    @Inject(optional=true) public void setDisplayEdition(java.lang.String displayEdition)
+    public void setDisplayEdition(java.lang.String displayEdition)
     {
         synchronized (monitor())
         {

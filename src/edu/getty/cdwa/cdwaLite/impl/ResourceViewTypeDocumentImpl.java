@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
+package edu.getty.cdwa.cdwaLite.impl;  
 /**
  * A document containing one resourceViewType(@http://www.getty.edu/CDWA/CDWALite) element.
  *
@@ -53,7 +53,7 @@ public class ResourceViewTypeDocumentImpl extends org.apache.xmlbeans.impl.value
     /**
      * Sets the "resourceViewType" element
      */
-    @Inject(optional=true) public void setResourceViewType(edu.getty.cdwa.cdwaLite.ResourceViewTypeDocument.ResourceViewType resourceViewType)
+    public void setResourceViewType(edu.getty.cdwa.cdwaLite.ResourceViewTypeDocument.ResourceViewType resourceViewType)
     {
         generatedSetterHelperImpl(resourceViewType, RESOURCEVIEWTYPE$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -143,7 +143,7 @@ public class ResourceViewTypeDocumentImpl extends org.apache.xmlbeans.impl.value
         /**
          * Sets the "termsource" attribute
          */
-        @Inject(optional=true) public void setTermsource(java.lang.String termsource)
+        public void setTermsource(java.lang.String termsource)
         {
             synchronized (monitor())
             {
@@ -235,7 +235,7 @@ public class ResourceViewTypeDocumentImpl extends org.apache.xmlbeans.impl.value
         /**
          * Sets the "termsourceID" attribute
          */
-        @Inject(optional=true) public void setTermsourceID(java.lang.String termsourceID)
+        public void setTermsourceID(java.lang.String termsourceID)
         {
             synchronized (monitor())
             {

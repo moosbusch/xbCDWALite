@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.moosbusch.museum.document.cdwaLite.spi;
+package io.github.moosbusch.museum.document.cdwaLite.spi;
 
 import edu.getty.cdwa.cdwaLite.CdwaliteDocument.Cdwalite;
 import edu.getty.cdwa.cdwaLite.CdwaliteWrapDocument;
@@ -22,16 +22,16 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.Collection;
 import org.apache.xmlbeans.XmlException;
-import org.moosbusch.museum.document.spi.AbstractMuseumXmlDocument;
-import org.moosbusch.museum.document.cdwaLite.CdwaLiteXmlDocument;
-import org.moosbusch.museum.document.spi.AbstractMuseumXmlDocument;
-import org.moosbusch.museum.inject.cdwaLite.impl.CDWALiteObjectFactory;
+import io.github.moosbusch.museum.document.spi.AbstractMuseumXmlDocument;
+import io.github.moosbusch.museum.document.cdwaLite.CdwaLiteXmlDocument;
+import io.github.moosbusch.museum.document.spi.AbstractMuseumXmlDocument;
+import io.github.moosbusch.museum.document.cdwaLite.impl.DefaultCDWALiteObjectFactory;
 
 /**
  *
  * @author moosbusch
  */
-public abstract class AbstractCdwaLiteXmlDocument<T extends CDWALiteObjectFactory>
+public abstract class AbstractCdwaLiteXmlDocument<T extends DefaultCDWALiteObjectFactory>
         extends AbstractMuseumXmlDocument<CdwaliteWrapDocument, T, CdwaliteWrap, Cdwalite>
         implements CdwaLiteXmlDocument<T> {
 

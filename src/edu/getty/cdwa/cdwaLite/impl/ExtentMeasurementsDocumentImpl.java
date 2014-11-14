@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
+package edu.getty.cdwa.cdwaLite.impl;  
 /**
  * A document containing one extentMeasurements(@http://www.getty.edu/CDWA/CDWALite) element.
  *
@@ -67,7 +67,7 @@ public class ExtentMeasurementsDocumentImpl extends org.apache.xmlbeans.impl.val
     /**
      * Sets the "extentMeasurements" element
      */
-    @Inject(optional=true) public void setExtentMeasurements(java.lang.String extentMeasurements)
+    public void setExtentMeasurements(java.lang.String extentMeasurements)
     {
         synchronized (monitor())
         {

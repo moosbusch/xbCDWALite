@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
+package edu.getty.cdwa.cdwaLite.impl;  
 /**
  * A document containing one resourceID(@http://www.getty.edu/CDWA/CDWALite) element.
  *
@@ -53,7 +53,7 @@ public class ResourceIDDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
     /**
      * Sets the "resourceID" element
      */
-    @Inject(optional=true) public void setResourceID(edu.getty.cdwa.cdwaLite.ResourceIDDocument.ResourceID resourceID)
+    public void setResourceID(edu.getty.cdwa.cdwaLite.ResourceIDDocument.ResourceID resourceID)
     {
         generatedSetterHelperImpl(resourceID, RESOURCEID$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -141,7 +141,7 @@ public class ResourceIDDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
         /**
          * Sets the "type" attribute
          */
-        @Inject(optional=true) public void setType(java.lang.String type)
+        public void setType(java.lang.String type)
         {
             synchronized (monitor())
             {

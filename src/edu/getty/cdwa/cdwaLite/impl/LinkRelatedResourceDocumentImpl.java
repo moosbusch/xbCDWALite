@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
+package edu.getty.cdwa.cdwaLite.impl;  
 /**
  * A document containing one linkRelatedResource(@http://www.getty.edu/CDWA/CDWALite) element.
  *
@@ -53,7 +53,7 @@ public class LinkRelatedResourceDocumentImpl extends org.apache.xmlbeans.impl.va
     /**
      * Sets the "linkRelatedResource" element
      */
-    @Inject(optional=true) public void setLinkRelatedResource(edu.getty.cdwa.cdwaLite.LinkRelatedResourceDocument.LinkRelatedResource linkRelatedResource)
+    public void setLinkRelatedResource(edu.getty.cdwa.cdwaLite.LinkRelatedResourceDocument.LinkRelatedResource linkRelatedResource)
     {
         generatedSetterHelperImpl(linkRelatedResource, LINKRELATEDRESOURCE$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -140,7 +140,7 @@ public class LinkRelatedResourceDocumentImpl extends org.apache.xmlbeans.impl.va
         /**
          * Sets the "relatedResourceRelType" element
          */
-        @Inject(optional=true) public void setRelatedResourceRelType(java.lang.String relatedResourceRelType)
+        public void setRelatedResourceRelType(java.lang.String relatedResourceRelType)
         {
             synchronized (monitor())
             {
@@ -361,7 +361,7 @@ public class LinkRelatedResourceDocumentImpl extends org.apache.xmlbeans.impl.va
         /**
          * Sets array of all "labelRelatedResource" element
          */
-        @Inject(optional=true) public void setLabelRelatedResourceArray(java.lang.String[] labelRelatedResourceArray)
+        public void setLabelRelatedResourceArray(java.lang.String[] labelRelatedResourceArray)
         {
             synchronized (monitor())
             {
@@ -373,7 +373,7 @@ public class LinkRelatedResourceDocumentImpl extends org.apache.xmlbeans.impl.va
         /**
          * Sets ith "labelRelatedResource" element
          */
-        @Inject(optional=true) public void setLabelRelatedResourceArray(int i, java.lang.String labelRelatedResource)
+        public void setLabelRelatedResourceArray(int i, java.lang.String labelRelatedResource)
         {
             synchronized (monitor())
             {
@@ -533,7 +533,7 @@ public class LinkRelatedResourceDocumentImpl extends org.apache.xmlbeans.impl.va
         /**
          * Sets the "linkscheme" attribute
          */
-        @Inject(optional=true) public void setLinkscheme(java.lang.String linkscheme)
+        public void setLinkscheme(java.lang.String linkscheme)
         {
             synchronized (monitor())
             {

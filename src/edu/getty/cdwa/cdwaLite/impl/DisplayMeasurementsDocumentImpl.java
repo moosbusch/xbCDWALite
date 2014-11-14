@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
+package edu.getty.cdwa.cdwaLite.impl;  
 /**
  * A document containing one displayMeasurements(@http://www.getty.edu/CDWA/CDWALite) element.
  *
@@ -67,7 +67,7 @@ public class DisplayMeasurementsDocumentImpl extends org.apache.xmlbeans.impl.va
     /**
      * Sets the "displayMeasurements" element
      */
-    @Inject(optional=true) public void setDisplayMeasurements(java.lang.String displayMeasurements)
+    public void setDisplayMeasurements(java.lang.String displayMeasurements)
     {
         synchronized (monitor())
         {

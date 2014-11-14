@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
+package edu.getty.cdwa.cdwaLite.impl;  
 /**
  * A document containing one displayState(@http://www.getty.edu/CDWA/CDWALite) element.
  *
@@ -67,7 +67,7 @@ public class DisplayStateDocumentImpl extends org.apache.xmlbeans.impl.values.Xm
     /**
      * Sets the "displayState" element
      */
-    @Inject(optional=true) public void setDisplayState(java.lang.String displayState)
+    public void setDisplayState(java.lang.String displayState)
     {
         synchronized (monitor())
         {

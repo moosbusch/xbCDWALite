@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
+package edu.getty.cdwa.cdwaLite.impl;  
 /**
  * A document containing one shapeMeasurements(@http://www.getty.edu/CDWA/CDWALite) element.
  *
@@ -67,7 +67,7 @@ public class ShapeMeasurementsDocumentImpl extends org.apache.xmlbeans.impl.valu
     /**
      * Sets the "shapeMeasurements" element
      */
-    @Inject(optional=true) public void setShapeMeasurements(java.lang.String shapeMeasurements)
+    public void setShapeMeasurements(java.lang.String shapeMeasurements)
     {
         synchronized (monitor())
         {

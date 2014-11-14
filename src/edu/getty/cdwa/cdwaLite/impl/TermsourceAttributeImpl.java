@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
+package edu.getty.cdwa.cdwaLite.impl;  
 /**
  * A document containing one termsource(@http://www.getty.edu/CDWA/CDWALite) attribute.
  *
@@ -79,7 +79,7 @@ public class TermsourceAttributeImpl extends org.apache.xmlbeans.impl.values.Xml
     /**
      * Sets the "termsource" attribute
      */
-    @Inject(optional=true) public void setTermsource(java.lang.String termsource)
+    public void setTermsource(java.lang.String termsource)
     {
         synchronized (monitor())
         {

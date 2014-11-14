@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
+package edu.getty.cdwa.cdwaLite.impl;  
 /**
  * A document containing one locationName(@http://www.getty.edu/CDWA/CDWALite) element.
  *
@@ -53,7 +53,7 @@ public class LocationNameDocumentImpl extends org.apache.xmlbeans.impl.values.Xm
     /**
      * Sets the "locationName" element
      */
-    @Inject(optional=true) public void setLocationName(edu.getty.cdwa.cdwaLite.LocationNameDocument.LocationName locationName)
+    public void setLocationName(edu.getty.cdwa.cdwaLite.LocationNameDocument.LocationName locationName)
     {
         generatedSetterHelperImpl(locationName, LOCATIONNAME$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -149,7 +149,7 @@ public class LocationNameDocumentImpl extends org.apache.xmlbeans.impl.values.Xm
         /**
          * Sets the "type" attribute
          */
-        @Inject(optional=true) public void setType(java.lang.String type)
+        public void setType(java.lang.String type)
         {
             synchronized (monitor())
             {
@@ -241,7 +241,7 @@ public class LocationNameDocumentImpl extends org.apache.xmlbeans.impl.values.Xm
         /**
          * Sets the "termsource" attribute
          */
-        @Inject(optional=true) public void setTermsource(java.lang.String termsource)
+        public void setTermsource(java.lang.String termsource)
         {
             synchronized (monitor())
             {
@@ -333,7 +333,7 @@ public class LocationNameDocumentImpl extends org.apache.xmlbeans.impl.values.Xm
         /**
          * Sets the "termsourceID" attribute
          */
-        @Inject(optional=true) public void setTermsourceID(java.lang.String termsourceID)
+        public void setTermsourceID(java.lang.String termsourceID)
         {
             synchronized (monitor())
             {
@@ -425,7 +425,7 @@ public class LocationNameDocumentImpl extends org.apache.xmlbeans.impl.values.Xm
         /**
          * Sets the "locID" attribute
          */
-        @Inject(optional=true) public void setLocID(java.lang.String locID)
+        public void setLocID(java.lang.String locID)
         {
             synchronized (monitor())
             {
@@ -517,7 +517,7 @@ public class LocationNameDocumentImpl extends org.apache.xmlbeans.impl.values.Xm
         /**
          * Sets the "locIDtype" attribute
          */
-        @Inject(optional=true) public void setLocIDtype(java.lang.String locIDtype)
+        public void setLocIDtype(java.lang.String locIDtype)
         {
             synchronized (monitor())
             {

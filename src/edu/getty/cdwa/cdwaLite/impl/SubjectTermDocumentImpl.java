@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
+package edu.getty.cdwa.cdwaLite.impl;  
 /**
  * A document containing one subjectTerm(@http://www.getty.edu/CDWA/CDWALite) element.
  *
@@ -53,7 +53,7 @@ public class SubjectTermDocumentImpl extends org.apache.xmlbeans.impl.values.Xml
     /**
      * Sets the "subjectTerm" element
      */
-    @Inject(optional=true) public void setSubjectTerm(edu.getty.cdwa.cdwaLite.SubjectTermDocument.SubjectTerm subjectTerm)
+    public void setSubjectTerm(edu.getty.cdwa.cdwaLite.SubjectTermDocument.SubjectTerm subjectTerm)
     {
         generatedSetterHelperImpl(subjectTerm, SUBJECTTERM$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -145,7 +145,7 @@ public class SubjectTermDocumentImpl extends org.apache.xmlbeans.impl.values.Xml
         /**
          * Sets the "type" attribute
          */
-        @Inject(optional=true) public void setType(java.lang.String type)
+        public void setType(java.lang.String type)
         {
             synchronized (monitor())
             {
@@ -237,7 +237,7 @@ public class SubjectTermDocumentImpl extends org.apache.xmlbeans.impl.values.Xml
         /**
          * Sets the "termsource" attribute
          */
-        @Inject(optional=true) public void setTermsource(java.lang.String termsource)
+        public void setTermsource(java.lang.String termsource)
         {
             synchronized (monitor())
             {
@@ -329,7 +329,7 @@ public class SubjectTermDocumentImpl extends org.apache.xmlbeans.impl.values.Xml
         /**
          * Sets the "termsourceID" attribute
          */
-        @Inject(optional=true) public void setTermsourceID(java.lang.String termsourceID)
+        public void setTermsourceID(java.lang.String termsourceID)
         {
             synchronized (monitor())
             {

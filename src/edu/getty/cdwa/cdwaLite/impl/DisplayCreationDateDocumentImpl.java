@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
+package edu.getty.cdwa.cdwaLite.impl;  
 /**
  * A document containing one displayCreationDate(@http://www.getty.edu/CDWA/CDWALite) element.
  *
@@ -67,7 +67,7 @@ public class DisplayCreationDateDocumentImpl extends org.apache.xmlbeans.impl.va
     /**
      * Sets the "displayCreationDate" element
      */
-    @Inject(optional=true) public void setDisplayCreationDate(java.lang.String displayCreationDate)
+    public void setDisplayCreationDate(java.lang.String displayCreationDate)
     {
         synchronized (monitor())
         {

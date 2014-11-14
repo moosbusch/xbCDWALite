@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
+package edu.getty.cdwa.cdwaLite.impl;  
 /**
  * A document containing one resourceSet(@http://www.getty.edu/CDWA/CDWALite) element.
  *
@@ -53,7 +53,7 @@ public class ResourceSetDocumentImpl extends org.apache.xmlbeans.impl.values.Xml
     /**
      * Sets the "resourceSet" element
      */
-    @Inject(optional=true) public void setResourceSet(edu.getty.cdwa.cdwaLite.ResourceSetDocument.ResourceSet resourceSet)
+    public void setResourceSet(edu.getty.cdwa.cdwaLite.ResourceSetDocument.ResourceSet resourceSet)
     {
         generatedSetterHelperImpl(resourceSet, RESOURCESET$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -144,7 +144,7 @@ public class ResourceSetDocumentImpl extends org.apache.xmlbeans.impl.values.Xml
         /**
          * Sets the "linkResource" element
          */
-        @Inject(optional=true) public void setLinkResource(edu.getty.cdwa.cdwaLite.LinkResourceDocument.LinkResource linkResource)
+        public void setLinkResource(edu.getty.cdwa.cdwaLite.LinkResourceDocument.LinkResource linkResource)
         {
             generatedSetterHelperImpl(linkResource, LINKRESOURCE$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
         }
@@ -208,7 +208,7 @@ public class ResourceSetDocumentImpl extends org.apache.xmlbeans.impl.values.Xml
         /**
          * Sets the "resourceID" element
          */
-        @Inject(optional=true) public void setResourceID(edu.getty.cdwa.cdwaLite.ResourceIDDocument.ResourceID resourceID)
+        public void setResourceID(edu.getty.cdwa.cdwaLite.ResourceIDDocument.ResourceID resourceID)
         {
             generatedSetterHelperImpl(resourceID, RESOURCEID$2, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
         }
@@ -334,7 +334,7 @@ public class ResourceSetDocumentImpl extends org.apache.xmlbeans.impl.values.Xml
         /**
          * Sets array of all "resourceRelType" element  WARNING: This method is not atomicaly synchronized.
          */
-        @Inject(optional=true) public void setResourceRelTypeArray(edu.getty.cdwa.cdwaLite.ResourceRelTypeDocument.ResourceRelType[] resourceRelTypeArray)
+        public void setResourceRelTypeArray(edu.getty.cdwa.cdwaLite.ResourceRelTypeDocument.ResourceRelType[] resourceRelTypeArray)
         {
             check_orphaned();
             arraySetterHelper(resourceRelTypeArray, RESOURCERELTYPE$4);
@@ -343,7 +343,7 @@ public class ResourceSetDocumentImpl extends org.apache.xmlbeans.impl.values.Xml
         /**
          * Sets ith "resourceRelType" element
          */
-        @Inject(optional=true) public void setResourceRelTypeArray(int i, edu.getty.cdwa.cdwaLite.ResourceRelTypeDocument.ResourceRelType resourceRelType)
+        public void setResourceRelTypeArray(int i, edu.getty.cdwa.cdwaLite.ResourceRelTypeDocument.ResourceRelType resourceRelType)
         {
             generatedSetterHelperImpl(resourceRelType, RESOURCERELTYPE$4, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }
@@ -483,7 +483,7 @@ public class ResourceSetDocumentImpl extends org.apache.xmlbeans.impl.values.Xml
         /**
          * Sets array of all "resourceType" element  WARNING: This method is not atomicaly synchronized.
          */
-        @Inject(optional=true) public void setResourceTypeArray(edu.getty.cdwa.cdwaLite.ResourceTypeDocument.ResourceType[] resourceTypeArray)
+        public void setResourceTypeArray(edu.getty.cdwa.cdwaLite.ResourceTypeDocument.ResourceType[] resourceTypeArray)
         {
             check_orphaned();
             arraySetterHelper(resourceTypeArray, RESOURCETYPE$6);
@@ -492,7 +492,7 @@ public class ResourceSetDocumentImpl extends org.apache.xmlbeans.impl.values.Xml
         /**
          * Sets ith "resourceType" element
          */
-        @Inject(optional=true) public void setResourceTypeArray(int i, edu.getty.cdwa.cdwaLite.ResourceTypeDocument.ResourceType resourceType)
+        public void setResourceTypeArray(int i, edu.getty.cdwa.cdwaLite.ResourceTypeDocument.ResourceType resourceType)
         {
             generatedSetterHelperImpl(resourceType, RESOURCETYPE$6, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }
@@ -632,7 +632,7 @@ public class ResourceSetDocumentImpl extends org.apache.xmlbeans.impl.values.Xml
         /**
          * Sets array of all "rightsResource" element  WARNING: This method is not atomicaly synchronized.
          */
-        @Inject(optional=true) public void setRightsResourceArray(edu.getty.cdwa.cdwaLite.RightsResourceDocument.RightsResource[] rightsResourceArray)
+        public void setRightsResourceArray(edu.getty.cdwa.cdwaLite.RightsResourceDocument.RightsResource[] rightsResourceArray)
         {
             check_orphaned();
             arraySetterHelper(rightsResourceArray, RIGHTSRESOURCE$8);
@@ -641,7 +641,7 @@ public class ResourceSetDocumentImpl extends org.apache.xmlbeans.impl.values.Xml
         /**
          * Sets ith "rightsResource" element
          */
-        @Inject(optional=true) public void setRightsResourceArray(int i, edu.getty.cdwa.cdwaLite.RightsResourceDocument.RightsResource rightsResource)
+        public void setRightsResourceArray(int i, edu.getty.cdwa.cdwaLite.RightsResourceDocument.RightsResource rightsResource)
         {
             generatedSetterHelperImpl(rightsResource, RIGHTSRESOURCE$8, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }
@@ -719,7 +719,7 @@ public class ResourceSetDocumentImpl extends org.apache.xmlbeans.impl.values.Xml
         /**
          * Sets the "resourceViewDescription" element
          */
-        @Inject(optional=true) public void setResourceViewDescription(edu.getty.cdwa.cdwaLite.ResourceViewDescriptionDocument.ResourceViewDescription resourceViewDescription)
+        public void setResourceViewDescription(edu.getty.cdwa.cdwaLite.ResourceViewDescriptionDocument.ResourceViewDescription resourceViewDescription)
         {
             generatedSetterHelperImpl(resourceViewDescription, RESOURCEVIEWDESCRIPTION$10, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
         }
@@ -845,7 +845,7 @@ public class ResourceSetDocumentImpl extends org.apache.xmlbeans.impl.values.Xml
         /**
          * Sets array of all "resourceViewType" element  WARNING: This method is not atomicaly synchronized.
          */
-        @Inject(optional=true) public void setResourceViewTypeArray(edu.getty.cdwa.cdwaLite.ResourceViewTypeDocument.ResourceViewType[] resourceViewTypeArray)
+        public void setResourceViewTypeArray(edu.getty.cdwa.cdwaLite.ResourceViewTypeDocument.ResourceViewType[] resourceViewTypeArray)
         {
             check_orphaned();
             arraySetterHelper(resourceViewTypeArray, RESOURCEVIEWTYPE$12);
@@ -854,7 +854,7 @@ public class ResourceSetDocumentImpl extends org.apache.xmlbeans.impl.values.Xml
         /**
          * Sets ith "resourceViewType" element
          */
-        @Inject(optional=true) public void setResourceViewTypeArray(int i, edu.getty.cdwa.cdwaLite.ResourceViewTypeDocument.ResourceViewType resourceViewType)
+        public void setResourceViewTypeArray(int i, edu.getty.cdwa.cdwaLite.ResourceViewTypeDocument.ResourceViewType resourceViewType)
         {
             generatedSetterHelperImpl(resourceViewType, RESOURCEVIEWTYPE$12, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }
@@ -994,7 +994,7 @@ public class ResourceSetDocumentImpl extends org.apache.xmlbeans.impl.values.Xml
         /**
          * Sets array of all "resourceViewSubjectTerm" element  WARNING: This method is not atomicaly synchronized.
          */
-        @Inject(optional=true) public void setResourceViewSubjectTermArray(edu.getty.cdwa.cdwaLite.ResourceViewSubjectTermDocument.ResourceViewSubjectTerm[] resourceViewSubjectTermArray)
+        public void setResourceViewSubjectTermArray(edu.getty.cdwa.cdwaLite.ResourceViewSubjectTermDocument.ResourceViewSubjectTerm[] resourceViewSubjectTermArray)
         {
             check_orphaned();
             arraySetterHelper(resourceViewSubjectTermArray, RESOURCEVIEWSUBJECTTERM$14);
@@ -1003,7 +1003,7 @@ public class ResourceSetDocumentImpl extends org.apache.xmlbeans.impl.values.Xml
         /**
          * Sets ith "resourceViewSubjectTerm" element
          */
-        @Inject(optional=true) public void setResourceViewSubjectTermArray(int i, edu.getty.cdwa.cdwaLite.ResourceViewSubjectTermDocument.ResourceViewSubjectTerm resourceViewSubjectTerm)
+        public void setResourceViewSubjectTermArray(int i, edu.getty.cdwa.cdwaLite.ResourceViewSubjectTermDocument.ResourceViewSubjectTerm resourceViewSubjectTerm)
         {
             generatedSetterHelperImpl(resourceViewSubjectTerm, RESOURCEVIEWSUBJECTTERM$14, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }
@@ -1081,7 +1081,7 @@ public class ResourceSetDocumentImpl extends org.apache.xmlbeans.impl.values.Xml
         /**
          * Sets the "resourceViewDate" element
          */
-        @Inject(optional=true) public void setResourceViewDate(edu.getty.cdwa.cdwaLite.ResourceViewDateDocument.ResourceViewDate resourceViewDate)
+        public void setResourceViewDate(edu.getty.cdwa.cdwaLite.ResourceViewDateDocument.ResourceViewDate resourceViewDate)
         {
             generatedSetterHelperImpl(resourceViewDate, RESOURCEVIEWDATE$16, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
         }
@@ -1207,7 +1207,7 @@ public class ResourceSetDocumentImpl extends org.apache.xmlbeans.impl.values.Xml
         /**
          * Sets array of all "resourceSource" element  WARNING: This method is not atomicaly synchronized.
          */
-        @Inject(optional=true) public void setResourceSourceArray(edu.getty.cdwa.cdwaLite.ResourceSourceDocument.ResourceSource[] resourceSourceArray)
+        public void setResourceSourceArray(edu.getty.cdwa.cdwaLite.ResourceSourceDocument.ResourceSource[] resourceSourceArray)
         {
             check_orphaned();
             arraySetterHelper(resourceSourceArray, RESOURCESOURCE$18);
@@ -1216,7 +1216,7 @@ public class ResourceSetDocumentImpl extends org.apache.xmlbeans.impl.values.Xml
         /**
          * Sets ith "resourceSource" element
          */
-        @Inject(optional=true) public void setResourceSourceArray(int i, edu.getty.cdwa.cdwaLite.ResourceSourceDocument.ResourceSource resourceSource)
+        public void setResourceSourceArray(int i, edu.getty.cdwa.cdwaLite.ResourceSourceDocument.ResourceSource resourceSource)
         {
             generatedSetterHelperImpl(resourceSource, RESOURCESOURCE$18, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }
@@ -1356,7 +1356,7 @@ public class ResourceSetDocumentImpl extends org.apache.xmlbeans.impl.values.Xml
         /**
          * Sets array of all "linkRelatedResource" element  WARNING: This method is not atomicaly synchronized.
          */
-        @Inject(optional=true) public void setLinkRelatedResourceArray(edu.getty.cdwa.cdwaLite.LinkRelatedResourceDocument.LinkRelatedResource[] linkRelatedResourceArray)
+        public void setLinkRelatedResourceArray(edu.getty.cdwa.cdwaLite.LinkRelatedResourceDocument.LinkRelatedResource[] linkRelatedResourceArray)
         {
             check_orphaned();
             arraySetterHelper(linkRelatedResourceArray, LINKRELATEDRESOURCE$20);
@@ -1365,7 +1365,7 @@ public class ResourceSetDocumentImpl extends org.apache.xmlbeans.impl.values.Xml
         /**
          * Sets ith "linkRelatedResource" element
          */
-        @Inject(optional=true) public void setLinkRelatedResourceArray(int i, edu.getty.cdwa.cdwaLite.LinkRelatedResourceDocument.LinkRelatedResource linkRelatedResource)
+        public void setLinkRelatedResourceArray(int i, edu.getty.cdwa.cdwaLite.LinkRelatedResourceDocument.LinkRelatedResource linkRelatedResource)
         {
             generatedSetterHelperImpl(linkRelatedResource, LINKRELATEDRESOURCE$20, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }
@@ -1505,7 +1505,7 @@ public class ResourceSetDocumentImpl extends org.apache.xmlbeans.impl.values.Xml
         /**
          * Sets array of all "resourceMetadataLoc" element  WARNING: This method is not atomicaly synchronized.
          */
-        @Inject(optional=true) public void setResourceMetadataLocArray(edu.getty.cdwa.cdwaLite.ResourceMetadataLocDocument.ResourceMetadataLoc[] resourceMetadataLocArray)
+        public void setResourceMetadataLocArray(edu.getty.cdwa.cdwaLite.ResourceMetadataLocDocument.ResourceMetadataLoc[] resourceMetadataLocArray)
         {
             check_orphaned();
             arraySetterHelper(resourceMetadataLocArray, RESOURCEMETADATALOC$22);
@@ -1514,7 +1514,7 @@ public class ResourceSetDocumentImpl extends org.apache.xmlbeans.impl.values.Xml
         /**
          * Sets ith "resourceMetadataLoc" element
          */
-        @Inject(optional=true) public void setResourceMetadataLocArray(int i, edu.getty.cdwa.cdwaLite.ResourceMetadataLocDocument.ResourceMetadataLoc resourceMetadataLoc)
+        public void setResourceMetadataLocArray(int i, edu.getty.cdwa.cdwaLite.ResourceMetadataLocDocument.ResourceMetadataLoc resourceMetadataLoc)
         {
             generatedSetterHelperImpl(resourceMetadataLoc, RESOURCEMETADATALOC$22, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }

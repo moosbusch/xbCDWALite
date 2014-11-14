@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
+package edu.getty.cdwa.cdwaLite.impl;  
 /**
  * A document containing one locIDtype(@http://www.getty.edu/CDWA/CDWALite) attribute.
  *
@@ -79,7 +79,7 @@ public class LocIDtypeAttributeImpl extends org.apache.xmlbeans.impl.values.XmlC
     /**
      * Sets the "locIDtype" attribute
      */
-    @Inject(optional=true) public void setLocIDtype(java.lang.String locIDtype)
+    public void setLocIDtype(java.lang.String locIDtype)
     {
         synchronized (monitor())
         {

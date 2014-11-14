@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
+package edu.getty.cdwa.cdwaLite.impl;  
 /**
  * A document containing one measurementsSet(@http://www.getty.edu/CDWA/CDWALite) element.
  *
@@ -53,7 +53,7 @@ public class MeasurementsSetDocumentImpl extends org.apache.xmlbeans.impl.values
     /**
      * Sets the "measurementsSet" element
      */
-    @Inject(optional=true) public void setMeasurementsSet(edu.getty.cdwa.cdwaLite.MeasurementsSetDocument.MeasurementsSet measurementsSet)
+    public void setMeasurementsSet(edu.getty.cdwa.cdwaLite.MeasurementsSetDocument.MeasurementsSet measurementsSet)
     {
         generatedSetterHelperImpl(measurementsSet, MEASUREMENTSSET$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -140,7 +140,7 @@ public class MeasurementsSetDocumentImpl extends org.apache.xmlbeans.impl.values
         /**
          * Sets the "unit" attribute
          */
-        @Inject(optional=true) public void setUnit(java.lang.String unit)
+        public void setUnit(java.lang.String unit)
         {
             synchronized (monitor())
             {
@@ -232,7 +232,7 @@ public class MeasurementsSetDocumentImpl extends org.apache.xmlbeans.impl.values
         /**
          * Sets the "type" attribute
          */
-        @Inject(optional=true) public void setType(java.lang.String type)
+        public void setType(java.lang.String type)
         {
             synchronized (monitor())
             {
@@ -312,7 +312,7 @@ public class MeasurementsSetDocumentImpl extends org.apache.xmlbeans.impl.values
         /**
          * Sets the "value" attribute
          */
-        @Inject(optional=true) public void setValue(java.lang.String value)
+        public void setValue(java.lang.String value)
         {
             synchronized (monitor())
             {

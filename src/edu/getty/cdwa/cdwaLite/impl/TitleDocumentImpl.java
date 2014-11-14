@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
+package edu.getty.cdwa.cdwaLite.impl;  
 /**
  * A document containing one title(@http://www.getty.edu/CDWA/CDWALite) element.
  *
@@ -53,7 +53,7 @@ public class TitleDocumentImpl extends org.apache.xmlbeans.impl.values.XmlComple
     /**
      * Sets the "title" element
      */
-    @Inject(optional=true) public void setTitle(edu.getty.cdwa.cdwaLite.TitleDocument.Title title)
+    public void setTitle(edu.getty.cdwa.cdwaLite.TitleDocument.Title title)
     {
         generatedSetterHelperImpl(title, TITLE$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -147,7 +147,7 @@ public class TitleDocumentImpl extends org.apache.xmlbeans.impl.values.XmlComple
         /**
          * Sets the "pref" attribute
          */
-        @Inject(optional=true) public void setPref(java.lang.String pref)
+        public void setPref(java.lang.String pref)
         {
             synchronized (monitor())
             {
@@ -239,7 +239,7 @@ public class TitleDocumentImpl extends org.apache.xmlbeans.impl.values.XmlComple
         /**
          * Sets the "lang" attribute
          */
-        @Inject(optional=true) public void setLang(java.lang.String lang)
+        public void setLang(java.lang.String lang)
         {
             synchronized (monitor())
             {
@@ -331,7 +331,7 @@ public class TitleDocumentImpl extends org.apache.xmlbeans.impl.values.XmlComple
         /**
          * Sets the "type" attribute
          */
-        @Inject(optional=true) public void setType(java.lang.String type)
+        public void setType(java.lang.String type)
         {
             synchronized (monitor())
             {
@@ -423,7 +423,7 @@ public class TitleDocumentImpl extends org.apache.xmlbeans.impl.values.XmlComple
         /**
          * Sets the "langtermsource" attribute
          */
-        @Inject(optional=true) public void setLangtermsource(java.lang.String langtermsource)
+        public void setLangtermsource(java.lang.String langtermsource)
         {
             synchronized (monitor())
             {

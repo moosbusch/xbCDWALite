@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
+package edu.getty.cdwa.cdwaLite.impl;  
 /**
  * A document containing one recordMetadataDate(@http://www.getty.edu/CDWA/CDWALite) element.
  *
@@ -53,7 +53,7 @@ public class RecordMetadataDateDocumentImpl extends org.apache.xmlbeans.impl.val
     /**
      * Sets the "recordMetadataDate" element
      */
-    @Inject(optional=true) public void setRecordMetadataDate(edu.getty.cdwa.cdwaLite.RecordMetadataDateDocument.RecordMetadataDate recordMetadataDate)
+    public void setRecordMetadataDate(edu.getty.cdwa.cdwaLite.RecordMetadataDateDocument.RecordMetadataDate recordMetadataDate)
     {
         generatedSetterHelperImpl(recordMetadataDate, RECORDMETADATADATE$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -143,7 +143,7 @@ public class RecordMetadataDateDocumentImpl extends org.apache.xmlbeans.impl.val
         /**
          * Sets the "type" attribute
          */
-        @Inject(optional=true) public void setType(java.lang.String type)
+        public void setType(java.lang.String type)
         {
             synchronized (monitor())
             {
@@ -235,7 +235,7 @@ public class RecordMetadataDateDocumentImpl extends org.apache.xmlbeans.impl.val
         /**
          * Sets the "termsource" attribute
          */
-        @Inject(optional=true) public void setTermsource(java.lang.String termsource)
+        public void setTermsource(java.lang.String termsource)
         {
             synchronized (monitor())
             {

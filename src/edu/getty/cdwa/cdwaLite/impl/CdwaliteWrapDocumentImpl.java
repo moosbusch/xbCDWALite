@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
+package edu.getty.cdwa.cdwaLite.impl;  
 
 /**
  * A document containing one cdwaliteWrap(@http://www.getty.edu/CDWA/CDWALite) element.
@@ -54,7 +54,7 @@ public class CdwaliteWrapDocumentImpl extends org.apache.xmlbeans.impl.values.Xm
     /**
      * Sets the "cdwaliteWrap" element
      */
-    @Inject(optional=true) public void setCdwaliteWrap(edu.getty.cdwa.cdwaLite.CdwaliteWrapDocument.CdwaliteWrap cdwaliteWrap)
+    public void setCdwaliteWrap(edu.getty.cdwa.cdwaLite.CdwaliteWrapDocument.CdwaliteWrap cdwaliteWrap)
     {
         generatedSetterHelperImpl(cdwaliteWrap, CDWALITEWRAP$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -185,7 +185,7 @@ public class CdwaliteWrapDocumentImpl extends org.apache.xmlbeans.impl.values.Xm
         /**
          * Sets array of all "cdwalite" element  WARNING: This method is not atomicaly synchronized.
          */
-        @Inject(optional=true) public void setCdwaliteArray(edu.getty.cdwa.cdwaLite.CdwaliteDocument.Cdwalite[] cdwaliteArray)
+        public void setCdwaliteArray(edu.getty.cdwa.cdwaLite.CdwaliteDocument.Cdwalite[] cdwaliteArray)
         {
             check_orphaned();
             arraySetterHelper(cdwaliteArray, CDWALITE$0);
@@ -194,7 +194,7 @@ public class CdwaliteWrapDocumentImpl extends org.apache.xmlbeans.impl.values.Xm
         /**
          * Sets ith "cdwalite" element
          */
-        @Inject(optional=true) public void setCdwaliteArray(int i, edu.getty.cdwa.cdwaLite.CdwaliteDocument.Cdwalite cdwalite)
+        public void setCdwaliteArray(int i, edu.getty.cdwa.cdwaLite.CdwaliteDocument.Cdwalite cdwalite)
         {
             generatedSetterHelperImpl(cdwalite, CDWALITE$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }

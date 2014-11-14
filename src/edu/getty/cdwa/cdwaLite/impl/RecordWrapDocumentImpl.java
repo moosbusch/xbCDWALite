@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
+package edu.getty.cdwa.cdwaLite.impl;  
 /**
  * A document containing one recordWrap(@http://www.getty.edu/CDWA/CDWALite) element.
  *
@@ -53,7 +53,7 @@ public class RecordWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
     /**
      * Sets the "recordWrap" element
      */
-    @Inject(optional=true) public void setRecordWrap(edu.getty.cdwa.cdwaLite.RecordWrapDocument.RecordWrap recordWrap)
+    public void setRecordWrap(edu.getty.cdwa.cdwaLite.RecordWrapDocument.RecordWrap recordWrap)
     {
         generatedSetterHelperImpl(recordWrap, RECORDWRAP$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -190,7 +190,7 @@ public class RecordWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
         /**
          * Sets array of all "recordID" element  WARNING: This method is not atomicaly synchronized.
          */
-        @Inject(optional=true) public void setRecordIDArray(edu.getty.cdwa.cdwaLite.RecordIDDocument.RecordID[] recordIDArray)
+        public void setRecordIDArray(edu.getty.cdwa.cdwaLite.RecordIDDocument.RecordID[] recordIDArray)
         {
             check_orphaned();
             arraySetterHelper(recordIDArray, RECORDID$0);
@@ -199,7 +199,7 @@ public class RecordWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
         /**
          * Sets ith "recordID" element
          */
-        @Inject(optional=true) public void setRecordIDArray(int i, edu.getty.cdwa.cdwaLite.RecordIDDocument.RecordID recordID)
+        public void setRecordIDArray(int i, edu.getty.cdwa.cdwaLite.RecordIDDocument.RecordID recordID)
         {
             generatedSetterHelperImpl(recordID, RECORDID$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }
@@ -279,7 +279,7 @@ public class RecordWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
         /**
          * Sets the "recordType" element
          */
-        @Inject(optional=true) public void setRecordType(java.lang.String recordType)
+        public void setRecordType(java.lang.String recordType)
         {
             synchronized (monitor())
             {
@@ -488,7 +488,7 @@ public class RecordWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
         /**
          * Sets array of all "recordSource" element
          */
-        @Inject(optional=true) public void setRecordSourceArray(java.lang.String[] recordSourceArray)
+        public void setRecordSourceArray(java.lang.String[] recordSourceArray)
         {
             synchronized (monitor())
             {
@@ -500,7 +500,7 @@ public class RecordWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
         /**
          * Sets ith "recordSource" element
          */
-        @Inject(optional=true) public void setRecordSourceArray(int i, java.lang.String recordSource)
+        public void setRecordSourceArray(int i, java.lang.String recordSource)
         {
             synchronized (monitor())
             {
@@ -708,7 +708,7 @@ public class RecordWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
         /**
          * Sets array of all "recordInfoWrap" element  WARNING: This method is not atomicaly synchronized.
          */
-        @Inject(optional=true) public void setRecordInfoWrapArray(edu.getty.cdwa.cdwaLite.RecordInfoWrapDocument.RecordInfoWrap[] recordInfoWrapArray)
+        public void setRecordInfoWrapArray(edu.getty.cdwa.cdwaLite.RecordInfoWrapDocument.RecordInfoWrap[] recordInfoWrapArray)
         {
             check_orphaned();
             arraySetterHelper(recordInfoWrapArray, RECORDINFOWRAP$6);
@@ -717,7 +717,7 @@ public class RecordWrapDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
         /**
          * Sets ith "recordInfoWrap" element
          */
-        @Inject(optional=true) public void setRecordInfoWrapArray(int i, edu.getty.cdwa.cdwaLite.RecordInfoWrapDocument.RecordInfoWrap recordInfoWrap)
+        public void setRecordInfoWrapArray(int i, edu.getty.cdwa.cdwaLite.RecordInfoWrapDocument.RecordInfoWrap recordInfoWrap)
         {
             generatedSetterHelperImpl(recordInfoWrap, RECORDINFOWRAP$6, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }

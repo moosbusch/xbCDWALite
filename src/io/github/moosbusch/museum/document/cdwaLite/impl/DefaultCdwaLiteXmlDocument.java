@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.moosbusch.museum.document.cdwaLite.impl;
+package io.github.moosbusch.museum.document.cdwaLite.impl;
 
 import edu.getty.cdwa.cdwaLite.CdwaliteWrapDocument;
 import java.io.IOException;
@@ -24,14 +24,13 @@ import javax.xml.namespace.QName;
 import org.apache.xmlbeans.XmlCursor;
 import org.apache.xmlbeans.XmlException;
 import org.apache.xmlbeans.XmlOptions;
-import org.moosbusch.museum.document.cdwaLite.spi.AbstractCdwaLiteXmlDocument;
-import org.moosbusch.museum.inject.cdwaLite.impl.CDWALiteObjectFactory;
+import io.github.moosbusch.museum.document.cdwaLite.spi.AbstractCdwaLiteXmlDocument;
 
 /**
  *
  * @author moosbusch
  */
-public class DefaultCdwaLiteXmlDocument extends AbstractCdwaLiteXmlDocument<CDWALiteObjectFactory> {
+public class DefaultCdwaLiteXmlDocument extends AbstractCdwaLiteXmlDocument<DefaultCDWALiteObjectFactory> {
 
     public DefaultCdwaLiteXmlDocument() {
     }
@@ -72,7 +71,7 @@ public class DefaultCdwaLiteXmlDocument extends AbstractCdwaLiteXmlDocument<CDWA
     }
 
     @Override
-    protected CDWALiteObjectFactory createObjectFactory() {
-        return new CDWALiteObjectFactory();
+    protected DefaultCDWALiteObjectFactory createObjectFactory() {
+        return new DefaultCDWALiteObjectFactory();
     }
 }

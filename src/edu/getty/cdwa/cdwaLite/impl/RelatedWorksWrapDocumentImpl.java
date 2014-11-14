@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
+package edu.getty.cdwa.cdwaLite.impl;  
 /**
  * A document containing one relatedWorksWrap(@http://www.getty.edu/CDWA/CDWALite) element.
  *
@@ -53,7 +53,7 @@ public class RelatedWorksWrapDocumentImpl extends org.apache.xmlbeans.impl.value
     /**
      * Sets the "relatedWorksWrap" element
      */
-    @Inject(optional=true) public void setRelatedWorksWrap(edu.getty.cdwa.cdwaLite.RelatedWorksWrapDocument.RelatedWorksWrap relatedWorksWrap)
+    public void setRelatedWorksWrap(edu.getty.cdwa.cdwaLite.RelatedWorksWrapDocument.RelatedWorksWrap relatedWorksWrap)
     {
         generatedSetterHelperImpl(relatedWorksWrap, RELATEDWORKSWRAP$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -184,7 +184,7 @@ public class RelatedWorksWrapDocumentImpl extends org.apache.xmlbeans.impl.value
         /**
          * Sets array of all "relatedWorkSet" element  WARNING: This method is not atomicaly synchronized.
          */
-        @Inject(optional=true) public void setRelatedWorkSetArray(edu.getty.cdwa.cdwaLite.RelatedWorkSetDocument.RelatedWorkSet[] relatedWorkSetArray)
+        public void setRelatedWorkSetArray(edu.getty.cdwa.cdwaLite.RelatedWorkSetDocument.RelatedWorkSet[] relatedWorkSetArray)
         {
             check_orphaned();
             arraySetterHelper(relatedWorkSetArray, RELATEDWORKSET$0);
@@ -193,7 +193,7 @@ public class RelatedWorksWrapDocumentImpl extends org.apache.xmlbeans.impl.value
         /**
          * Sets ith "relatedWorkSet" element
          */
-        @Inject(optional=true) public void setRelatedWorkSetArray(int i, edu.getty.cdwa.cdwaLite.RelatedWorkSetDocument.RelatedWorkSet relatedWorkSet)
+        public void setRelatedWorkSetArray(int i, edu.getty.cdwa.cdwaLite.RelatedWorkSetDocument.RelatedWorkSet relatedWorkSet)
         {
             generatedSetterHelperImpl(relatedWorkSet, RELATEDWORKSET$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }

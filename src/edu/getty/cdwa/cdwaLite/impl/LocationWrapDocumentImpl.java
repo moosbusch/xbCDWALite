@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
+package edu.getty.cdwa.cdwaLite.impl;  
 /**
  * A document containing one locationWrap(@http://www.getty.edu/CDWA/CDWALite) element.
  *
@@ -53,7 +53,7 @@ public class LocationWrapDocumentImpl extends org.apache.xmlbeans.impl.values.Xm
     /**
      * Sets the "locationWrap" element
      */
-    @Inject(optional=true) public void setLocationWrap(edu.getty.cdwa.cdwaLite.LocationWrapDocument.LocationWrap locationWrap)
+    public void setLocationWrap(edu.getty.cdwa.cdwaLite.LocationWrapDocument.LocationWrap locationWrap)
     {
         generatedSetterHelperImpl(locationWrap, LOCATIONWRAP$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -184,7 +184,7 @@ public class LocationWrapDocumentImpl extends org.apache.xmlbeans.impl.values.Xm
         /**
          * Sets array of all "locationSet" element  WARNING: This method is not atomicaly synchronized.
          */
-        @Inject(optional=true) public void setLocationSetArray(edu.getty.cdwa.cdwaLite.LocationSetDocument.LocationSet[] locationSetArray)
+        public void setLocationSetArray(edu.getty.cdwa.cdwaLite.LocationSetDocument.LocationSet[] locationSetArray)
         {
             check_orphaned();
             arraySetterHelper(locationSetArray, LOCATIONSET$0);
@@ -193,7 +193,7 @@ public class LocationWrapDocumentImpl extends org.apache.xmlbeans.impl.values.Xm
         /**
          * Sets ith "locationSet" element
          */
-        @Inject(optional=true) public void setLocationSetArray(int i, edu.getty.cdwa.cdwaLite.LocationSetDocument.LocationSet locationSet)
+        public void setLocationSetArray(int i, edu.getty.cdwa.cdwaLite.LocationSetDocument.LocationSet locationSet)
         {
             generatedSetterHelperImpl(locationSet, LOCATIONSET$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }

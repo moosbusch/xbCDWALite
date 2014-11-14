@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
+package edu.getty.cdwa.cdwaLite.impl;  
 /**
  * A document containing one extentSubject(@http://www.getty.edu/CDWA/CDWALite) element.
  *
@@ -67,7 +67,7 @@ public class ExtentSubjectDocumentImpl extends org.apache.xmlbeans.impl.values.X
     /**
      * Sets the "extentSubject" element
      */
-    @Inject(optional=true) public void setExtentSubject(java.lang.String extentSubject)
+    public void setExtentSubject(java.lang.String extentSubject)
     {
         synchronized (monitor())
         {

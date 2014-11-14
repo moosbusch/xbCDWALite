@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.moosbusch.museum.inject.cdwaLite.impl;
+package io.github.moosbusch.museum.inject.cdwaLite.impl;
 
 import com.google.inject.Provides;
 import edu.getty.cdwa.cdwaLite.AdministrativeMetadataDocument;
@@ -131,23 +131,22 @@ import edu.getty.cdwa.cdwaLite.TitleWrapDocument.TitleWrap;
 import edu.getty.cdwa.cdwaLite.TypeAttribute;
 import edu.getty.cdwa.cdwaLite.VitalDatesCreatorDocument;
 import edu.getty.cdwa.cdwaLite.WorkIDDocument;
-import org.moosbusch.museum.document.cdwaLite.CdwaLiteXmlDocument;
-import org.moosbusch.museum.document.cdwaLite.impl.DefaultCdwaLiteXmlDocument;
-import org.moosbusch.museum.inject.cdwaLite.spi.AbstractCDWALiteModule;
+import io.github.moosbusch.museum.document.cdwaLite.CdwaLiteXmlDocument;
+import io.github.moosbusch.museum.document.cdwaLite.impl.DefaultCDWALiteObjectFactory;
+import io.github.moosbusch.museum.document.cdwaLite.impl.DefaultCdwaLiteXmlDocument;
+import io.github.moosbusch.museum.inject.cdwaLite.CDWALiteModule;
+import io.github.moosbusch.museum.inject.spi.AbstractMuseumXmlModule;
 
 /**
  *
  * @author moosbusch
  */
-public class CDWALiteModuleImpl extends AbstractCDWALiteModule {
-
-    @Override
-    protected void configureImpl() {
-    }
+public class DefaultCDWALiteModule extends AbstractMuseumXmlModule
+    implements CDWALiteModule {
 
     @Provides
     @Override
-    public CdwaLiteXmlDocument<? extends CDWALiteObjectFactory> createDocument() {
+    public CdwaLiteXmlDocument<? extends DefaultCDWALiteObjectFactory> createDocument() {
         return new DefaultCdwaLiteXmlDocument();
     }
 

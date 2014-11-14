@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
+package edu.getty.cdwa.cdwaLite.impl;  
 /**
  * A document containing one sourceStateEdition(@http://www.getty.edu/CDWA/CDWALite) element.
  *
@@ -67,7 +67,7 @@ public class SourceStateEditionDocumentImpl extends org.apache.xmlbeans.impl.val
     /**
      * Sets the "sourceStateEdition" element
      */
-    @Inject(optional=true) public void setSourceStateEdition(java.lang.String sourceStateEdition)
+    public void setSourceStateEdition(java.lang.String sourceStateEdition)
     {
         synchronized (monitor())
         {

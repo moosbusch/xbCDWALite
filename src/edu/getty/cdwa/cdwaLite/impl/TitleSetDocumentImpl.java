@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
+package edu.getty.cdwa.cdwaLite.impl;  
 /**
  * A document containing one titleSet(@http://www.getty.edu/CDWA/CDWALite) element.
  *
@@ -53,7 +53,7 @@ public class TitleSetDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCom
     /**
      * Sets the "titleSet" element
      */
-    @Inject(optional=true) public void setTitleSet(edu.getty.cdwa.cdwaLite.TitleSetDocument.TitleSet titleSet)
+    public void setTitleSet(edu.getty.cdwa.cdwaLite.TitleSetDocument.TitleSet titleSet)
     {
         generatedSetterHelperImpl(titleSet, TITLESET$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -112,7 +112,7 @@ public class TitleSetDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCom
         /**
          * Sets the "title" element
          */
-        @Inject(optional=true) public void setTitle(edu.getty.cdwa.cdwaLite.TitleDocument.Title title)
+        public void setTitle(edu.getty.cdwa.cdwaLite.TitleDocument.Title title)
         {
             generatedSetterHelperImpl(title, TITLE$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
         }
@@ -307,7 +307,7 @@ public class TitleSetDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCom
         /**
          * Sets array of all "sourceTitle" element
          */
-        @Inject(optional=true) public void setSourceTitleArray(java.lang.String[] sourceTitleArray)
+        public void setSourceTitleArray(java.lang.String[] sourceTitleArray)
         {
             synchronized (monitor())
             {
@@ -319,7 +319,7 @@ public class TitleSetDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCom
         /**
          * Sets ith "sourceTitle" element
          */
-        @Inject(optional=true) public void setSourceTitleArray(int i, java.lang.String sourceTitle)
+        public void setSourceTitleArray(int i, java.lang.String sourceTitle)
         {
             synchronized (monitor())
             {

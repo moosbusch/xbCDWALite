@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
+package edu.getty.cdwa.cdwaLite.impl;  
 /**
  * A document containing one recordType(@http://www.getty.edu/CDWA/CDWALite) element.
  *
@@ -67,7 +67,7 @@ public class RecordTypeDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
     /**
      * Sets the "recordType" element
      */
-    @Inject(optional=true) public void setRecordType(java.lang.String recordType)
+    public void setRecordType(java.lang.String recordType)
     {
         synchronized (monitor())
         {

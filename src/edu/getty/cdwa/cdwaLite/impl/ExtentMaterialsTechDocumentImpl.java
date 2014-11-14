@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
+package edu.getty.cdwa.cdwaLite.impl;  
 /**
  * A document containing one extentMaterialsTech(@http://www.getty.edu/CDWA/CDWALite) element.
  *
@@ -67,7 +67,7 @@ public class ExtentMaterialsTechDocumentImpl extends org.apache.xmlbeans.impl.va
     /**
      * Sets the "extentMaterialsTech" element
      */
-    @Inject(optional=true) public void setExtentMaterialsTech(java.lang.String extentMaterialsTech)
+    public void setExtentMaterialsTech(java.lang.String extentMaterialsTech)
     {
         synchronized (monitor())
         {

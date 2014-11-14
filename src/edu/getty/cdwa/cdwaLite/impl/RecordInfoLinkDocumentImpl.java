@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
+package edu.getty.cdwa.cdwaLite.impl;  
 /**
  * A document containing one recordInfoLink(@http://www.getty.edu/CDWA/CDWALite) element.
  *
@@ -67,7 +67,7 @@ public class RecordInfoLinkDocumentImpl extends org.apache.xmlbeans.impl.values.
     /**
      * Sets the "recordInfoLink" element
      */
-    @Inject(optional=true) public void setRecordInfoLink(java.lang.String recordInfoLink)
+    public void setRecordInfoLink(java.lang.String recordInfoLink)
     {
         synchronized (monitor())
         {

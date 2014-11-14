@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
+package edu.getty.cdwa.cdwaLite.impl;  
 /**
  * A document containing one indexingDatesSet(@http://www.getty.edu/CDWA/CDWALite) element.
  *
@@ -53,7 +53,7 @@ public class IndexingDatesSetDocumentImpl extends org.apache.xmlbeans.impl.value
     /**
      * Sets the "indexingDatesSet" element
      */
-    @Inject(optional=true) public void setIndexingDatesSet(edu.getty.cdwa.cdwaLite.IndexingDatesSetDocument.IndexingDatesSet indexingDatesSet)
+    public void setIndexingDatesSet(edu.getty.cdwa.cdwaLite.IndexingDatesSetDocument.IndexingDatesSet indexingDatesSet)
     {
         generatedSetterHelperImpl(indexingDatesSet, INDEXINGDATESSET$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -269,7 +269,7 @@ public class IndexingDatesSetDocumentImpl extends org.apache.xmlbeans.impl.value
         /**
          * Sets array of all "dateQualifier" element
          */
-        @Inject(optional=true) public void setDateQualifierArray(java.lang.String[] dateQualifierArray)
+        public void setDateQualifierArray(java.lang.String[] dateQualifierArray)
         {
             synchronized (monitor())
             {
@@ -281,7 +281,7 @@ public class IndexingDatesSetDocumentImpl extends org.apache.xmlbeans.impl.value
         /**
          * Sets ith "dateQualifier" element
          */
-        @Inject(optional=true) public void setDateQualifierArray(int i, java.lang.String dateQualifier)
+        public void setDateQualifierArray(int i, java.lang.String dateQualifier)
         {
             synchronized (monitor())
             {
@@ -415,7 +415,7 @@ public class IndexingDatesSetDocumentImpl extends org.apache.xmlbeans.impl.value
         /**
          * Sets the "earliestDate" element
          */
-        @Inject(optional=true) public void setEarliestDate(edu.getty.cdwa.cdwaLite.EarliestDateDocument.EarliestDate earliestDate)
+        public void setEarliestDate(edu.getty.cdwa.cdwaLite.EarliestDateDocument.EarliestDate earliestDate)
         {
             generatedSetterHelperImpl(earliestDate, EARLIESTDATE$2, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
         }
@@ -455,7 +455,7 @@ public class IndexingDatesSetDocumentImpl extends org.apache.xmlbeans.impl.value
         /**
          * Sets the "latestDate" element
          */
-        @Inject(optional=true) public void setLatestDate(edu.getty.cdwa.cdwaLite.LatestDateDocument.LatestDate latestDate)
+        public void setLatestDate(edu.getty.cdwa.cdwaLite.LatestDateDocument.LatestDate latestDate)
         {
             generatedSetterHelperImpl(latestDate, LATESTDATE$4, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
         }

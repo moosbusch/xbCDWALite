@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
+package edu.getty.cdwa.cdwaLite.impl;  
 /**
  * A document containing one latestDate(@http://www.getty.edu/CDWA/CDWALite) element.
  *
@@ -53,7 +53,7 @@ public class LatestDateDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
     /**
      * Sets the "latestDate" element
      */
-    @Inject(optional=true) public void setLatestDate(edu.getty.cdwa.cdwaLite.LatestDateDocument.LatestDate latestDate)
+    public void setLatestDate(edu.getty.cdwa.cdwaLite.LatestDateDocument.LatestDate latestDate)
     {
         generatedSetterHelperImpl(latestDate, LATESTDATE$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -141,7 +141,7 @@ public class LatestDateDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
         /**
          * Sets the "termsource" attribute
          */
-        @Inject(optional=true) public void setTermsource(java.lang.String termsource)
+        public void setTermsource(java.lang.String termsource)
         {
             synchronized (monitor())
             {

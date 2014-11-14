@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
+package edu.getty.cdwa.cdwaLite.impl;  
 /**
  * A document containing one labelRelatedResource(@http://www.getty.edu/CDWA/CDWALite) element.
  *
@@ -67,7 +67,7 @@ public class LabelRelatedResourceDocumentImpl extends org.apache.xmlbeans.impl.v
     /**
      * Sets the "labelRelatedResource" element
      */
-    @Inject(optional=true) public void setLabelRelatedResource(java.lang.String labelRelatedResource)
+    public void setLabelRelatedResource(java.lang.String labelRelatedResource)
     {
         synchronized (monitor())
         {

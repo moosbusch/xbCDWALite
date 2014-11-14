@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
+package edu.getty.cdwa.cdwaLite.impl;  
 /**
  * A document containing one nameCreatorSet(@http://www.getty.edu/CDWA/CDWALite) element.
  *
@@ -53,7 +53,7 @@ public class NameCreatorSetDocumentImpl extends org.apache.xmlbeans.impl.values.
     /**
      * Sets the "nameCreatorSet" element
      */
-    @Inject(optional=true) public void setNameCreatorSet(edu.getty.cdwa.cdwaLite.NameCreatorSetDocument.NameCreatorSet nameCreatorSet)
+    public void setNameCreatorSet(edu.getty.cdwa.cdwaLite.NameCreatorSetDocument.NameCreatorSet nameCreatorSet)
     {
         generatedSetterHelperImpl(nameCreatorSet, NAMECREATORSET$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -112,7 +112,7 @@ public class NameCreatorSetDocumentImpl extends org.apache.xmlbeans.impl.values.
         /**
          * Sets the "nameCreator" element
          */
-        @Inject(optional=true) public void setNameCreator(edu.getty.cdwa.cdwaLite.NameCreatorDocument.NameCreator nameCreator)
+        public void setNameCreator(edu.getty.cdwa.cdwaLite.NameCreatorDocument.NameCreator nameCreator)
         {
             generatedSetterHelperImpl(nameCreator, NAMECREATOR$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
         }
@@ -307,7 +307,7 @@ public class NameCreatorSetDocumentImpl extends org.apache.xmlbeans.impl.values.
         /**
          * Sets array of all "sourceNameCreator" element
          */
-        @Inject(optional=true) public void setSourceNameCreatorArray(java.lang.String[] sourceNameCreatorArray)
+        public void setSourceNameCreatorArray(java.lang.String[] sourceNameCreatorArray)
         {
             synchronized (monitor())
             {
@@ -319,7 +319,7 @@ public class NameCreatorSetDocumentImpl extends org.apache.xmlbeans.impl.values.
         /**
          * Sets ith "sourceNameCreator" element
          */
-        @Inject(optional=true) public void setSourceNameCreatorArray(int i, java.lang.String sourceNameCreator)
+        public void setSourceNameCreatorArray(int i, java.lang.String sourceNameCreator)
         {
             synchronized (monitor())
             {

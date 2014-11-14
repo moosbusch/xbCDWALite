@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
+package edu.getty.cdwa.cdwaLite.impl;  
 /**
  * A document containing one type(@http://www.getty.edu/CDWA/CDWALite) attribute.
  *
@@ -79,7 +79,7 @@ public class TypeAttributeImpl extends org.apache.xmlbeans.impl.values.XmlComple
     /**
      * Sets the "type" attribute
      */
-    @Inject(optional=true) public void setType(java.lang.String type)
+    public void setType(java.lang.String type)
     {
         synchronized (monitor())
         {

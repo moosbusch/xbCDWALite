@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
+package edu.getty.cdwa.cdwaLite.impl;  
 /**
  * A document containing one locationSet(@http://www.getty.edu/CDWA/CDWALite) element.
  *
@@ -53,7 +53,7 @@ public class LocationSetDocumentImpl extends org.apache.xmlbeans.impl.values.Xml
     /**
      * Sets the "locationSet" element
      */
-    @Inject(optional=true) public void setLocationSet(edu.getty.cdwa.cdwaLite.LocationSetDocument.LocationSet locationSet)
+    public void setLocationSet(edu.getty.cdwa.cdwaLite.LocationSetDocument.LocationSet locationSet)
     {
         generatedSetterHelperImpl(locationSet, LOCATIONSET$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -112,7 +112,7 @@ public class LocationSetDocumentImpl extends org.apache.xmlbeans.impl.values.Xml
         /**
          * Sets the "locationName" element
          */
-        @Inject(optional=true) public void setLocationName(edu.getty.cdwa.cdwaLite.LocationNameDocument.LocationName locationName)
+        public void setLocationName(edu.getty.cdwa.cdwaLite.LocationNameDocument.LocationName locationName)
         {
             generatedSetterHelperImpl(locationName, LOCATIONNAME$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
         }
@@ -226,7 +226,7 @@ public class LocationSetDocumentImpl extends org.apache.xmlbeans.impl.values.Xml
         /**
          * Sets array of all "workID" element  WARNING: This method is not atomicaly synchronized.
          */
-        @Inject(optional=true) public void setWorkIDArray(edu.getty.cdwa.cdwaLite.WorkIDDocument.WorkID[] workIDArray)
+        public void setWorkIDArray(edu.getty.cdwa.cdwaLite.WorkIDDocument.WorkID[] workIDArray)
         {
             check_orphaned();
             arraySetterHelper(workIDArray, WORKID$2);
@@ -235,7 +235,7 @@ public class LocationSetDocumentImpl extends org.apache.xmlbeans.impl.values.Xml
         /**
          * Sets ith "workID" element
          */
-        @Inject(optional=true) public void setWorkIDArray(int i, edu.getty.cdwa.cdwaLite.WorkIDDocument.WorkID workID)
+        public void setWorkIDArray(int i, edu.getty.cdwa.cdwaLite.WorkIDDocument.WorkID workID)
         {
             generatedSetterHelperImpl(workID, WORKID$2, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }

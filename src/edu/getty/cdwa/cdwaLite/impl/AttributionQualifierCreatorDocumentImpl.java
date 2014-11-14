@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
+package edu.getty.cdwa.cdwaLite.impl;  
 /**
  * A document containing one attributionQualifierCreator(@http://www.getty.edu/CDWA/CDWALite) element.
  *
@@ -67,7 +67,7 @@ public class AttributionQualifierCreatorDocumentImpl extends org.apache.xmlbeans
     /**
      * Sets the "attributionQualifierCreator" element
      */
-    @Inject(optional=true) public void setAttributionQualifierCreator(java.lang.String attributionQualifierCreator)
+    public void setAttributionQualifierCreator(java.lang.String attributionQualifierCreator)
     {
         synchronized (monitor())
         {

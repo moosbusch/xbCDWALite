@@ -13,25 +13,26 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.moosbusch.museum.inject.cdwaLite.impl;
+package io.github.moosbusch.museum.document.cdwaLite.impl;
 
 import edu.getty.cdwa.cdwaLite.CdwaliteWrapDocument;
-import org.moosbusch.museum.inject.spi.AbstractMuseumXmlObjectFactory;
-import org.moosbusch.museum.inject.cdwaLite.CDWALiteModule;
+import io.github.moosbusch.museum.document.spi.AbstractMuseumXmlObjectFactory;
+import io.github.moosbusch.museum.inject.cdwaLite.CDWALiteModule;
+import io.github.moosbusch.museum.inject.cdwaLite.impl.DefaultCDWALiteModule;
 
 /**
  *
  * @author moosbusch
  */
-public class CDWALiteObjectFactory extends AbstractMuseumXmlObjectFactory<CDWALiteModule, CdwaliteWrapDocument> {
+public class DefaultCDWALiteObjectFactory extends AbstractMuseumXmlObjectFactory<CDWALiteModule, CdwaliteWrapDocument> {
 
     @Override
     protected CDWALiteModule createModule() {
-        return new CDWALiteModuleImpl();
+        return new DefaultCDWALiteModule();
     }
 
     @Override
-    public CdwaliteWrapDocument createRootWrapper() {
+    public CdwaliteWrapDocument createRootWrapperElement() {
         return createTypedObject(CdwaliteWrapDocument.class);
     }
 }

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
+package edu.getty.cdwa.cdwaLite.impl;  
 /**
  * A document containing one indexingMaterialsTechWrap(@http://www.getty.edu/CDWA/CDWALite) element.
  *
@@ -53,7 +53,7 @@ public class IndexingMaterialsTechWrapDocumentImpl extends org.apache.xmlbeans.i
     /**
      * Sets the "indexingMaterialsTechWrap" element
      */
-    @Inject(optional=true) public void setIndexingMaterialsTechWrap(edu.getty.cdwa.cdwaLite.IndexingMaterialsTechWrapDocument.IndexingMaterialsTechWrap indexingMaterialsTechWrap)
+    public void setIndexingMaterialsTechWrap(edu.getty.cdwa.cdwaLite.IndexingMaterialsTechWrapDocument.IndexingMaterialsTechWrap indexingMaterialsTechWrap)
     {
         generatedSetterHelperImpl(indexingMaterialsTechWrap, INDEXINGMATERIALSTECHWRAP$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -184,7 +184,7 @@ public class IndexingMaterialsTechWrapDocumentImpl extends org.apache.xmlbeans.i
         /**
          * Sets array of all "indexingMaterialsTechSet" element  WARNING: This method is not atomicaly synchronized.
          */
-        @Inject(optional=true) public void setIndexingMaterialsTechSetArray(edu.getty.cdwa.cdwaLite.IndexingMaterialsTechSetDocument.IndexingMaterialsTechSet[] indexingMaterialsTechSetArray)
+        public void setIndexingMaterialsTechSetArray(edu.getty.cdwa.cdwaLite.IndexingMaterialsTechSetDocument.IndexingMaterialsTechSet[] indexingMaterialsTechSetArray)
         {
             check_orphaned();
             arraySetterHelper(indexingMaterialsTechSetArray, INDEXINGMATERIALSTECHSET$0);
@@ -193,7 +193,7 @@ public class IndexingMaterialsTechWrapDocumentImpl extends org.apache.xmlbeans.i
         /**
          * Sets ith "indexingMaterialsTechSet" element
          */
-        @Inject(optional=true) public void setIndexingMaterialsTechSetArray(int i, edu.getty.cdwa.cdwaLite.IndexingMaterialsTechSetDocument.IndexingMaterialsTechSet indexingMaterialsTechSet)
+        public void setIndexingMaterialsTechSetArray(int i, edu.getty.cdwa.cdwaLite.IndexingMaterialsTechSetDocument.IndexingMaterialsTechSet indexingMaterialsTechSet)
         {
             generatedSetterHelperImpl(indexingMaterialsTechSet, INDEXINGMATERIALSTECHSET$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }

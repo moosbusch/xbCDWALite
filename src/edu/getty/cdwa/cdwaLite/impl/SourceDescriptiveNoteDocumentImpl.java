@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
+package edu.getty.cdwa.cdwaLite.impl;  
 /**
  * A document containing one sourceDescriptiveNote(@http://www.getty.edu/CDWA/CDWALite) element.
  *
@@ -67,7 +67,7 @@ public class SourceDescriptiveNoteDocumentImpl extends org.apache.xmlbeans.impl.
     /**
      * Sets the "sourceDescriptiveNote" element
      */
-    @Inject(optional=true) public void setSourceDescriptiveNote(java.lang.String sourceDescriptiveNote)
+    public void setSourceDescriptiveNote(java.lang.String sourceDescriptiveNote)
     {
         synchronized (monitor())
         {

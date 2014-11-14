@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
+package edu.getty.cdwa.cdwaLite.impl;  
 /**
  * A document containing one termMaterialsTech(@http://www.getty.edu/CDWA/CDWALite) element.
  *
@@ -53,7 +53,7 @@ public class TermMaterialsTechDocumentImpl extends org.apache.xmlbeans.impl.valu
     /**
      * Sets the "termMaterialsTech" element
      */
-    @Inject(optional=true) public void setTermMaterialsTech(edu.getty.cdwa.cdwaLite.TermMaterialsTechDocument.TermMaterialsTech termMaterialsTech)
+    public void setTermMaterialsTech(edu.getty.cdwa.cdwaLite.TermMaterialsTechDocument.TermMaterialsTech termMaterialsTech)
     {
         generatedSetterHelperImpl(termMaterialsTech, TERMMATERIALSTECH$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -141,7 +141,7 @@ public class TermMaterialsTechDocumentImpl extends org.apache.xmlbeans.impl.valu
         /**
          * Sets the "termsource" attribute
          */
-        @Inject(optional=true) public void setTermsource(java.lang.String termsource)
+        public void setTermsource(java.lang.String termsource)
         {
             synchronized (monitor())
             {

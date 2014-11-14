@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
+package edu.getty.cdwa.cdwaLite.impl;  
 /**
  * A document containing one dateQualifier(@http://www.getty.edu/CDWA/CDWALite) element.
  *
@@ -67,7 +67,7 @@ public class DateQualifierDocumentImpl extends org.apache.xmlbeans.impl.values.X
     /**
      * Sets the "dateQualifier" element
      */
-    @Inject(optional=true) public void setDateQualifier(java.lang.String dateQualifier)
+    public void setDateQualifier(java.lang.String dateQualifier)
     {
         synchronized (monitor())
         {

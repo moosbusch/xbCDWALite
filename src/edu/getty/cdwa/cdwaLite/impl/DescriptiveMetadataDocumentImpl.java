@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
+package edu.getty.cdwa.cdwaLite.impl;  
 /**
  * A document containing one descriptiveMetadata(@http://www.getty.edu/CDWA/CDWALite) element.
  *
@@ -53,7 +53,7 @@ public class DescriptiveMetadataDocumentImpl extends org.apache.xmlbeans.impl.va
     /**
      * Sets the "descriptiveMetadata" element
      */
-    @Inject(optional=true) public void setDescriptiveMetadata(edu.getty.cdwa.cdwaLite.DescriptiveMetadataDocument.DescriptiveMetadata descriptiveMetadata)
+    public void setDescriptiveMetadata(edu.getty.cdwa.cdwaLite.DescriptiveMetadataDocument.DescriptiveMetadata descriptiveMetadata)
     {
         generatedSetterHelperImpl(descriptiveMetadata, DESCRIPTIVEMETADATA$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -146,7 +146,7 @@ public class DescriptiveMetadataDocumentImpl extends org.apache.xmlbeans.impl.va
         /**
          * Sets the "objectWorkTypeWrap" element
          */
-        @Inject(optional=true) public void setObjectWorkTypeWrap(edu.getty.cdwa.cdwaLite.ObjectWorkTypeWrapDocument.ObjectWorkTypeWrap objectWorkTypeWrap)
+        public void setObjectWorkTypeWrap(edu.getty.cdwa.cdwaLite.ObjectWorkTypeWrapDocument.ObjectWorkTypeWrap objectWorkTypeWrap)
         {
             generatedSetterHelperImpl(objectWorkTypeWrap, OBJECTWORKTYPEWRAP$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
         }
@@ -186,7 +186,7 @@ public class DescriptiveMetadataDocumentImpl extends org.apache.xmlbeans.impl.va
         /**
          * Sets the "titleWrap" element
          */
-        @Inject(optional=true) public void setTitleWrap(edu.getty.cdwa.cdwaLite.TitleWrapDocument.TitleWrap titleWrap)
+        public void setTitleWrap(edu.getty.cdwa.cdwaLite.TitleWrapDocument.TitleWrap titleWrap)
         {
             generatedSetterHelperImpl(titleWrap, TITLEWRAP$2, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
         }
@@ -240,7 +240,7 @@ public class DescriptiveMetadataDocumentImpl extends org.apache.xmlbeans.impl.va
         /**
          * Sets the "displayCreator" element
          */
-        @Inject(optional=true) public void setDisplayCreator(java.lang.String displayCreator)
+        public void setDisplayCreator(java.lang.String displayCreator)
         {
             synchronized (monitor())
             {
@@ -294,7 +294,7 @@ public class DescriptiveMetadataDocumentImpl extends org.apache.xmlbeans.impl.va
         /**
          * Sets the "indexingCreatorWrap" element
          */
-        @Inject(optional=true) public void setIndexingCreatorWrap(edu.getty.cdwa.cdwaLite.IndexingCreatorWrapDocument.IndexingCreatorWrap indexingCreatorWrap)
+        public void setIndexingCreatorWrap(edu.getty.cdwa.cdwaLite.IndexingCreatorWrapDocument.IndexingCreatorWrap indexingCreatorWrap)
         {
             generatedSetterHelperImpl(indexingCreatorWrap, INDEXINGCREATORWRAP$6, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
         }
@@ -360,7 +360,7 @@ public class DescriptiveMetadataDocumentImpl extends org.apache.xmlbeans.impl.va
         /**
          * Sets the "displayMeasurements" element
          */
-        @Inject(optional=true) public void setDisplayMeasurements(java.lang.String displayMeasurements)
+        public void setDisplayMeasurements(java.lang.String displayMeasurements)
         {
             synchronized (monitor())
             {
@@ -438,7 +438,7 @@ public class DescriptiveMetadataDocumentImpl extends org.apache.xmlbeans.impl.va
         /**
          * Sets the "indexingMeasurementsWrap" element
          */
-        @Inject(optional=true) public void setIndexingMeasurementsWrap(edu.getty.cdwa.cdwaLite.IndexingMeasurementsWrapDocument.IndexingMeasurementsWrap indexingMeasurementsWrap)
+        public void setIndexingMeasurementsWrap(edu.getty.cdwa.cdwaLite.IndexingMeasurementsWrapDocument.IndexingMeasurementsWrap indexingMeasurementsWrap)
         {
             generatedSetterHelperImpl(indexingMeasurementsWrap, INDEXINGMEASUREMENTSWRAP$10, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
         }
@@ -504,7 +504,7 @@ public class DescriptiveMetadataDocumentImpl extends org.apache.xmlbeans.impl.va
         /**
          * Sets the "displayMaterialsTech" element
          */
-        @Inject(optional=true) public void setDisplayMaterialsTech(java.lang.String displayMaterialsTech)
+        public void setDisplayMaterialsTech(java.lang.String displayMaterialsTech)
         {
             synchronized (monitor())
             {
@@ -570,7 +570,7 @@ public class DescriptiveMetadataDocumentImpl extends org.apache.xmlbeans.impl.va
         /**
          * Sets the "indexingMaterialsTechWrap" element
          */
-        @Inject(optional=true) public void setIndexingMaterialsTechWrap(edu.getty.cdwa.cdwaLite.IndexingMaterialsTechWrapDocument.IndexingMaterialsTechWrap indexingMaterialsTechWrap)
+        public void setIndexingMaterialsTechWrap(edu.getty.cdwa.cdwaLite.IndexingMaterialsTechWrapDocument.IndexingMaterialsTechWrap indexingMaterialsTechWrap)
         {
             generatedSetterHelperImpl(indexingMaterialsTechWrap, INDEXINGMATERIALSTECHWRAP$14, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
         }
@@ -634,7 +634,7 @@ public class DescriptiveMetadataDocumentImpl extends org.apache.xmlbeans.impl.va
         /**
          * Sets the "displayStateEditionWrap" element
          */
-        @Inject(optional=true) public void setDisplayStateEditionWrap(edu.getty.cdwa.cdwaLite.DisplayStateEditionWrapDocument.DisplayStateEditionWrap displayStateEditionWrap)
+        public void setDisplayStateEditionWrap(edu.getty.cdwa.cdwaLite.DisplayStateEditionWrapDocument.DisplayStateEditionWrap displayStateEditionWrap)
         {
             generatedSetterHelperImpl(displayStateEditionWrap, DISPLAYSTATEEDITIONWRAP$16, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
         }
@@ -698,7 +698,7 @@ public class DescriptiveMetadataDocumentImpl extends org.apache.xmlbeans.impl.va
         /**
          * Sets the "styleWrap" element
          */
-        @Inject(optional=true) public void setStyleWrap(edu.getty.cdwa.cdwaLite.StyleWrapDocument.StyleWrap styleWrap)
+        public void setStyleWrap(edu.getty.cdwa.cdwaLite.StyleWrapDocument.StyleWrap styleWrap)
         {
             generatedSetterHelperImpl(styleWrap, STYLEWRAP$18, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
         }
@@ -762,7 +762,7 @@ public class DescriptiveMetadataDocumentImpl extends org.apache.xmlbeans.impl.va
         /**
          * Sets the "cultureWrap" element
          */
-        @Inject(optional=true) public void setCultureWrap(edu.getty.cdwa.cdwaLite.CultureWrapDocument.CultureWrap cultureWrap)
+        public void setCultureWrap(edu.getty.cdwa.cdwaLite.CultureWrapDocument.CultureWrap cultureWrap)
         {
             generatedSetterHelperImpl(cultureWrap, CULTUREWRAP$20, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
         }
@@ -828,7 +828,7 @@ public class DescriptiveMetadataDocumentImpl extends org.apache.xmlbeans.impl.va
         /**
          * Sets the "displayCreationDate" element
          */
-        @Inject(optional=true) public void setDisplayCreationDate(java.lang.String displayCreationDate)
+        public void setDisplayCreationDate(java.lang.String displayCreationDate)
         {
             synchronized (monitor())
             {
@@ -882,7 +882,7 @@ public class DescriptiveMetadataDocumentImpl extends org.apache.xmlbeans.impl.va
         /**
          * Sets the "indexingDatesWrap" element
          */
-        @Inject(optional=true) public void setIndexingDatesWrap(edu.getty.cdwa.cdwaLite.IndexingDatesWrapDocument.IndexingDatesWrap indexingDatesWrap)
+        public void setIndexingDatesWrap(edu.getty.cdwa.cdwaLite.IndexingDatesWrapDocument.IndexingDatesWrap indexingDatesWrap)
         {
             generatedSetterHelperImpl(indexingDatesWrap, INDEXINGDATESWRAP$24, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
         }
@@ -922,7 +922,7 @@ public class DescriptiveMetadataDocumentImpl extends org.apache.xmlbeans.impl.va
         /**
          * Sets the "locationWrap" element
          */
-        @Inject(optional=true) public void setLocationWrap(edu.getty.cdwa.cdwaLite.LocationWrapDocument.LocationWrap locationWrap)
+        public void setLocationWrap(edu.getty.cdwa.cdwaLite.LocationWrapDocument.LocationWrap locationWrap)
         {
             generatedSetterHelperImpl(locationWrap, LOCATIONWRAP$26, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
         }
@@ -974,7 +974,7 @@ public class DescriptiveMetadataDocumentImpl extends org.apache.xmlbeans.impl.va
         /**
          * Sets the "indexingSubjectWrap" element
          */
-        @Inject(optional=true) public void setIndexingSubjectWrap(edu.getty.cdwa.cdwaLite.IndexingSubjectWrapDocument.IndexingSubjectWrap indexingSubjectWrap)
+        public void setIndexingSubjectWrap(edu.getty.cdwa.cdwaLite.IndexingSubjectWrapDocument.IndexingSubjectWrap indexingSubjectWrap)
         {
             generatedSetterHelperImpl(indexingSubjectWrap, INDEXINGSUBJECTWRAP$28, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
         }
@@ -1038,7 +1038,7 @@ public class DescriptiveMetadataDocumentImpl extends org.apache.xmlbeans.impl.va
         /**
          * Sets the "classWrap" element
          */
-        @Inject(optional=true) public void setClassWrap(edu.getty.cdwa.cdwaLite.ClassWrapDocument.ClassWrap classWrap)
+        public void setClassWrap(edu.getty.cdwa.cdwaLite.ClassWrapDocument.ClassWrap classWrap)
         {
             generatedSetterHelperImpl(classWrap, CLASSWRAP$30, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
         }
@@ -1102,7 +1102,7 @@ public class DescriptiveMetadataDocumentImpl extends org.apache.xmlbeans.impl.va
         /**
          * Sets the "descriptiveNoteWrap" element
          */
-        @Inject(optional=true) public void setDescriptiveNoteWrap(edu.getty.cdwa.cdwaLite.DescriptiveNoteWrapDocument.DescriptiveNoteWrap descriptiveNoteWrap)
+        public void setDescriptiveNoteWrap(edu.getty.cdwa.cdwaLite.DescriptiveNoteWrapDocument.DescriptiveNoteWrap descriptiveNoteWrap)
         {
             generatedSetterHelperImpl(descriptiveNoteWrap, DESCRIPTIVENOTEWRAP$32, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
         }
@@ -1166,7 +1166,7 @@ public class DescriptiveMetadataDocumentImpl extends org.apache.xmlbeans.impl.va
         /**
          * Sets the "inscriptionsWrap" element
          */
-        @Inject(optional=true) public void setInscriptionsWrap(edu.getty.cdwa.cdwaLite.InscriptionsWrapDocument.InscriptionsWrap inscriptionsWrap)
+        public void setInscriptionsWrap(edu.getty.cdwa.cdwaLite.InscriptionsWrapDocument.InscriptionsWrap inscriptionsWrap)
         {
             generatedSetterHelperImpl(inscriptionsWrap, INSCRIPTIONSWRAP$34, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
         }
@@ -1230,7 +1230,7 @@ public class DescriptiveMetadataDocumentImpl extends org.apache.xmlbeans.impl.va
         /**
          * Sets the "relatedWorksWrap" element
          */
-        @Inject(optional=true) public void setRelatedWorksWrap(edu.getty.cdwa.cdwaLite.RelatedWorksWrapDocument.RelatedWorksWrap relatedWorksWrap)
+        public void setRelatedWorksWrap(edu.getty.cdwa.cdwaLite.RelatedWorksWrapDocument.RelatedWorksWrap relatedWorksWrap)
         {
             generatedSetterHelperImpl(relatedWorksWrap, RELATEDWORKSWRAP$36, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
         }

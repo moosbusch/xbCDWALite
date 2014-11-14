@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
+package edu.getty.cdwa.cdwaLite.impl;  
 /**
  * A document containing one objectWorkTypeWrap(@http://www.getty.edu/CDWA/CDWALite) element.
  *
@@ -53,7 +53,7 @@ public class ObjectWorkTypeWrapDocumentImpl extends org.apache.xmlbeans.impl.val
     /**
      * Sets the "objectWorkTypeWrap" element
      */
-    @Inject(optional=true) public void setObjectWorkTypeWrap(edu.getty.cdwa.cdwaLite.ObjectWorkTypeWrapDocument.ObjectWorkTypeWrap objectWorkTypeWrap)
+    public void setObjectWorkTypeWrap(edu.getty.cdwa.cdwaLite.ObjectWorkTypeWrapDocument.ObjectWorkTypeWrap objectWorkTypeWrap)
     {
         generatedSetterHelperImpl(objectWorkTypeWrap, OBJECTWORKTYPEWRAP$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -184,7 +184,7 @@ public class ObjectWorkTypeWrapDocumentImpl extends org.apache.xmlbeans.impl.val
         /**
          * Sets array of all "objectWorkType" element  WARNING: This method is not atomicaly synchronized.
          */
-        @Inject(optional=true) public void setObjectWorkTypeArray(edu.getty.cdwa.cdwaLite.ObjectWorkTypeDocument.ObjectWorkType[] objectWorkTypeArray)
+        public void setObjectWorkTypeArray(edu.getty.cdwa.cdwaLite.ObjectWorkTypeDocument.ObjectWorkType[] objectWorkTypeArray)
         {
             check_orphaned();
             arraySetterHelper(objectWorkTypeArray, OBJECTWORKTYPE$0);
@@ -193,7 +193,7 @@ public class ObjectWorkTypeWrapDocumentImpl extends org.apache.xmlbeans.impl.val
         /**
          * Sets ith "objectWorkType" element
          */
-        @Inject(optional=true) public void setObjectWorkTypeArray(int i, edu.getty.cdwa.cdwaLite.ObjectWorkTypeDocument.ObjectWorkType objectWorkType)
+        public void setObjectWorkTypeArray(int i, edu.getty.cdwa.cdwaLite.ObjectWorkTypeDocument.ObjectWorkType objectWorkType)
         {
             generatedSetterHelperImpl(objectWorkType, OBJECTWORKTYPE$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }

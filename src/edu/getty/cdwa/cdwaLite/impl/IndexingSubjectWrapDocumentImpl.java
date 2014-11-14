@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
+package edu.getty.cdwa.cdwaLite.impl;  
 /**
  * A document containing one indexingSubjectWrap(@http://www.getty.edu/CDWA/CDWALite) element.
  *
@@ -53,7 +53,7 @@ public class IndexingSubjectWrapDocumentImpl extends org.apache.xmlbeans.impl.va
     /**
      * Sets the "indexingSubjectWrap" element
      */
-    @Inject(optional=true) public void setIndexingSubjectWrap(edu.getty.cdwa.cdwaLite.IndexingSubjectWrapDocument.IndexingSubjectWrap indexingSubjectWrap)
+    public void setIndexingSubjectWrap(edu.getty.cdwa.cdwaLite.IndexingSubjectWrapDocument.IndexingSubjectWrap indexingSubjectWrap)
     {
         generatedSetterHelperImpl(indexingSubjectWrap, INDEXINGSUBJECTWRAP$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -184,7 +184,7 @@ public class IndexingSubjectWrapDocumentImpl extends org.apache.xmlbeans.impl.va
         /**
          * Sets array of all "indexingSubjectSet" element  WARNING: This method is not atomicaly synchronized.
          */
-        @Inject(optional=true) public void setIndexingSubjectSetArray(edu.getty.cdwa.cdwaLite.IndexingSubjectSetDocument.IndexingSubjectSet[] indexingSubjectSetArray)
+        public void setIndexingSubjectSetArray(edu.getty.cdwa.cdwaLite.IndexingSubjectSetDocument.IndexingSubjectSet[] indexingSubjectSetArray)
         {
             check_orphaned();
             arraySetterHelper(indexingSubjectSetArray, INDEXINGSUBJECTSET$0);
@@ -193,7 +193,7 @@ public class IndexingSubjectWrapDocumentImpl extends org.apache.xmlbeans.impl.va
         /**
          * Sets ith "indexingSubjectSet" element
          */
-        @Inject(optional=true) public void setIndexingSubjectSetArray(int i, edu.getty.cdwa.cdwaLite.IndexingSubjectSetDocument.IndexingSubjectSet indexingSubjectSet)
+        public void setIndexingSubjectSetArray(int i, edu.getty.cdwa.cdwaLite.IndexingSubjectSetDocument.IndexingSubjectSet indexingSubjectSet)
         {
             generatedSetterHelperImpl(indexingSubjectSet, INDEXINGSUBJECTSET$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }

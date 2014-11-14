@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
+package edu.getty.cdwa.cdwaLite.impl;  
 /**
  * A document containing one cdwalite(@http://www.getty.edu/CDWA/CDWALite) element.
  *
@@ -53,7 +53,7 @@ public class CdwaliteDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCom
     /**
      * Sets the "cdwalite" element
      */
-    @Inject(optional=true) public void setCdwalite(edu.getty.cdwa.cdwaLite.CdwaliteDocument.Cdwalite cdwalite)
+    public void setCdwalite(edu.getty.cdwa.cdwaLite.CdwaliteDocument.Cdwalite cdwalite)
     {
         generatedSetterHelperImpl(cdwalite, CDWALITE$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -112,7 +112,7 @@ public class CdwaliteDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCom
         /**
          * Sets the "descriptiveMetadata" element
          */
-        @Inject(optional=true) public void setDescriptiveMetadata(edu.getty.cdwa.cdwaLite.DescriptiveMetadataDocument.DescriptiveMetadata descriptiveMetadata)
+        public void setDescriptiveMetadata(edu.getty.cdwa.cdwaLite.DescriptiveMetadataDocument.DescriptiveMetadata descriptiveMetadata)
         {
             generatedSetterHelperImpl(descriptiveMetadata, DESCRIPTIVEMETADATA$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
         }
@@ -152,7 +152,7 @@ public class CdwaliteDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCom
         /**
          * Sets the "administrativeMetadata" element
          */
-        @Inject(optional=true) public void setAdministrativeMetadata(edu.getty.cdwa.cdwaLite.AdministrativeMetadataDocument.AdministrativeMetadata administrativeMetadata)
+        public void setAdministrativeMetadata(edu.getty.cdwa.cdwaLite.AdministrativeMetadataDocument.AdministrativeMetadata administrativeMetadata)
         {
             generatedSetterHelperImpl(administrativeMetadata, ADMINISTRATIVEMETADATA$2, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
         }

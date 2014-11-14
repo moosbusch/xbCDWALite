@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
+package edu.getty.cdwa.cdwaLite.impl;  
 /**
  * A document containing one indexingMaterialsTechSet(@http://www.getty.edu/CDWA/CDWALite) element.
  *
@@ -53,7 +53,7 @@ public class IndexingMaterialsTechSetDocumentImpl extends org.apache.xmlbeans.im
     /**
      * Sets the "indexingMaterialsTechSet" element
      */
-    @Inject(optional=true) public void setIndexingMaterialsTechSet(edu.getty.cdwa.cdwaLite.IndexingMaterialsTechSetDocument.IndexingMaterialsTechSet indexingMaterialsTechSet)
+    public void setIndexingMaterialsTechSet(edu.getty.cdwa.cdwaLite.IndexingMaterialsTechSetDocument.IndexingMaterialsTechSet indexingMaterialsTechSet)
     {
         generatedSetterHelperImpl(indexingMaterialsTechSet, INDEXINGMATERIALSTECHSET$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -190,7 +190,7 @@ public class IndexingMaterialsTechSetDocumentImpl extends org.apache.xmlbeans.im
         /**
          * Sets array of all "termMaterialsTech" element  WARNING: This method is not atomicaly synchronized.
          */
-        @Inject(optional=true) public void setTermMaterialsTechArray(edu.getty.cdwa.cdwaLite.TermMaterialsTechDocument.TermMaterialsTech[] termMaterialsTechArray)
+        public void setTermMaterialsTechArray(edu.getty.cdwa.cdwaLite.TermMaterialsTechDocument.TermMaterialsTech[] termMaterialsTechArray)
         {
             check_orphaned();
             arraySetterHelper(termMaterialsTechArray, TERMMATERIALSTECH$0);
@@ -199,7 +199,7 @@ public class IndexingMaterialsTechSetDocumentImpl extends org.apache.xmlbeans.im
         /**
          * Sets ith "termMaterialsTech" element
          */
-        @Inject(optional=true) public void setTermMaterialsTechArray(int i, edu.getty.cdwa.cdwaLite.TermMaterialsTechDocument.TermMaterialsTech termMaterialsTech)
+        public void setTermMaterialsTechArray(int i, edu.getty.cdwa.cdwaLite.TermMaterialsTechDocument.TermMaterialsTech termMaterialsTech)
         {
             generatedSetterHelperImpl(termMaterialsTech, TERMMATERIALSTECH$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }
@@ -420,7 +420,7 @@ public class IndexingMaterialsTechSetDocumentImpl extends org.apache.xmlbeans.im
         /**
          * Sets array of all "extentMaterialsTech" element
          */
-        @Inject(optional=true) public void setExtentMaterialsTechArray(java.lang.String[] extentMaterialsTechArray)
+        public void setExtentMaterialsTechArray(java.lang.String[] extentMaterialsTechArray)
         {
             synchronized (monitor())
             {
@@ -432,7 +432,7 @@ public class IndexingMaterialsTechSetDocumentImpl extends org.apache.xmlbeans.im
         /**
          * Sets ith "extentMaterialsTech" element
          */
-        @Inject(optional=true) public void setExtentMaterialsTechArray(int i, java.lang.String extentMaterialsTech)
+        public void setExtentMaterialsTechArray(int i, java.lang.String extentMaterialsTech)
         {
             synchronized (monitor())
             {
@@ -721,7 +721,7 @@ public class IndexingMaterialsTechSetDocumentImpl extends org.apache.xmlbeans.im
         /**
          * Sets array of all "sourceMaterialsTech" element
          */
-        @Inject(optional=true) public void setSourceMaterialsTechArray(java.lang.String[] sourceMaterialsTechArray)
+        public void setSourceMaterialsTechArray(java.lang.String[] sourceMaterialsTechArray)
         {
             synchronized (monitor())
             {
@@ -733,7 +733,7 @@ public class IndexingMaterialsTechSetDocumentImpl extends org.apache.xmlbeans.im
         /**
          * Sets ith "sourceMaterialsTech" element
          */
-        @Inject(optional=true) public void setSourceMaterialsTechArray(int i, java.lang.String sourceMaterialsTech)
+        public void setSourceMaterialsTechArray(int i, java.lang.String sourceMaterialsTech)
         {
             synchronized (monitor())
             {
@@ -893,7 +893,7 @@ public class IndexingMaterialsTechSetDocumentImpl extends org.apache.xmlbeans.im
         /**
          * Sets the "type" attribute
          */
-        @Inject(optional=true) public void setType(java.lang.String type)
+        public void setType(java.lang.String type)
         {
             synchronized (monitor())
             {

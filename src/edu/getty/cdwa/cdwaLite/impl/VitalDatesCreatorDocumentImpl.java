@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
+package edu.getty.cdwa.cdwaLite.impl;  
 /**
  * A document containing one vitalDatesCreator(@http://www.getty.edu/CDWA/CDWALite) element.
  *
@@ -53,7 +53,7 @@ public class VitalDatesCreatorDocumentImpl extends org.apache.xmlbeans.impl.valu
     /**
      * Sets the "vitalDatesCreator" element
      */
-    @Inject(optional=true) public void setVitalDatesCreator(edu.getty.cdwa.cdwaLite.VitalDatesCreatorDocument.VitalDatesCreator vitalDatesCreator)
+    public void setVitalDatesCreator(edu.getty.cdwa.cdwaLite.VitalDatesCreatorDocument.VitalDatesCreator vitalDatesCreator)
     {
         generatedSetterHelperImpl(vitalDatesCreator, VITALDATESCREATOR$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -145,7 +145,7 @@ public class VitalDatesCreatorDocumentImpl extends org.apache.xmlbeans.impl.valu
         /**
          * Sets the "birthDate" attribute
          */
-        @Inject(optional=true) public void setBirthDate(java.lang.String birthDate)
+        public void setBirthDate(java.lang.String birthDate)
         {
             synchronized (monitor())
             {
@@ -237,7 +237,7 @@ public class VitalDatesCreatorDocumentImpl extends org.apache.xmlbeans.impl.valu
         /**
          * Sets the "deathDate" attribute
          */
-        @Inject(optional=true) public void setDeathDate(java.lang.String deathDate)
+        public void setDeathDate(java.lang.String deathDate)
         {
             synchronized (monitor())
             {
@@ -329,7 +329,7 @@ public class VitalDatesCreatorDocumentImpl extends org.apache.xmlbeans.impl.valu
         /**
          * Sets the "termsource" attribute
          */
-        @Inject(optional=true) public void setTermsource(java.lang.String termsource)
+        public void setTermsource(java.lang.String termsource)
         {
             synchronized (monitor())
             {

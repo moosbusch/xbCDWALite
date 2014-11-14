@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
+package edu.getty.cdwa.cdwaLite.impl;  
 /**
  * A document containing one descriptiveNoteSet(@http://www.getty.edu/CDWA/CDWALite) element.
  *
@@ -53,7 +53,7 @@ public class DescriptiveNoteSetDocumentImpl extends org.apache.xmlbeans.impl.val
     /**
      * Sets the "descriptiveNoteSet" element
      */
-    @Inject(optional=true) public void setDescriptiveNoteSet(edu.getty.cdwa.cdwaLite.DescriptiveNoteSetDocument.DescriptiveNoteSet descriptiveNoteSet)
+    public void setDescriptiveNoteSet(edu.getty.cdwa.cdwaLite.DescriptiveNoteSetDocument.DescriptiveNoteSet descriptiveNoteSet)
     {
         generatedSetterHelperImpl(descriptiveNoteSet, DESCRIPTIVENOTESET$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -138,7 +138,7 @@ public class DescriptiveNoteSetDocumentImpl extends org.apache.xmlbeans.impl.val
         /**
          * Sets the "descriptiveNote" element
          */
-        @Inject(optional=true) public void setDescriptiveNote(java.lang.String descriptiveNote)
+        public void setDescriptiveNote(java.lang.String descriptiveNote)
         {
             synchronized (monitor())
             {
@@ -359,7 +359,7 @@ public class DescriptiveNoteSetDocumentImpl extends org.apache.xmlbeans.impl.val
         /**
          * Sets array of all "sourceDescriptiveNote" element
          */
-        @Inject(optional=true) public void setSourceDescriptiveNoteArray(java.lang.String[] sourceDescriptiveNoteArray)
+        public void setSourceDescriptiveNoteArray(java.lang.String[] sourceDescriptiveNoteArray)
         {
             synchronized (monitor())
             {
@@ -371,7 +371,7 @@ public class DescriptiveNoteSetDocumentImpl extends org.apache.xmlbeans.impl.val
         /**
          * Sets ith "sourceDescriptiveNote" element
          */
-        @Inject(optional=true) public void setSourceDescriptiveNoteArray(int i, java.lang.String sourceDescriptiveNote)
+        public void setSourceDescriptiveNoteArray(int i, java.lang.String sourceDescriptiveNote)
         {
             synchronized (monitor())
             {

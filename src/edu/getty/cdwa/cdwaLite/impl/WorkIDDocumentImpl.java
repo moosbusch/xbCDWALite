@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
+package edu.getty.cdwa.cdwaLite.impl;  
 /**
  * A document containing one workID(@http://www.getty.edu/CDWA/CDWALite) element.
  *
@@ -53,7 +53,7 @@ public class WorkIDDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCompl
     /**
      * Sets the "workID" element
      */
-    @Inject(optional=true) public void setWorkID(edu.getty.cdwa.cdwaLite.WorkIDDocument.WorkID workID)
+    public void setWorkID(edu.getty.cdwa.cdwaLite.WorkIDDocument.WorkID workID)
     {
         generatedSetterHelperImpl(workID, WORKID$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -141,7 +141,7 @@ public class WorkIDDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCompl
         /**
          * Sets the "type" attribute
          */
-        @Inject(optional=true) public void setType(java.lang.String type)
+        public void setType(java.lang.String type)
         {
             synchronized (monitor())
             {

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package edu.getty.cdwa.cdwaLite.impl;  import com.google.inject.Inject;
+package edu.getty.cdwa.cdwaLite.impl;  
 /**
  * A document containing one indexingDatesWrap(@http://www.getty.edu/CDWA/CDWALite) element.
  *
@@ -53,7 +53,7 @@ public class IndexingDatesWrapDocumentImpl extends org.apache.xmlbeans.impl.valu
     /**
      * Sets the "indexingDatesWrap" element
      */
-    @Inject(optional=true) public void setIndexingDatesWrap(edu.getty.cdwa.cdwaLite.IndexingDatesWrapDocument.IndexingDatesWrap indexingDatesWrap)
+    public void setIndexingDatesWrap(edu.getty.cdwa.cdwaLite.IndexingDatesWrapDocument.IndexingDatesWrap indexingDatesWrap)
     {
         generatedSetterHelperImpl(indexingDatesWrap, INDEXINGDATESWRAP$0, 0, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_SINGLETON);
     }
@@ -184,7 +184,7 @@ public class IndexingDatesWrapDocumentImpl extends org.apache.xmlbeans.impl.valu
         /**
          * Sets array of all "indexingDatesSet" element  WARNING: This method is not atomicaly synchronized.
          */
-        @Inject(optional=true) public void setIndexingDatesSetArray(edu.getty.cdwa.cdwaLite.IndexingDatesSetDocument.IndexingDatesSet[] indexingDatesSetArray)
+        public void setIndexingDatesSetArray(edu.getty.cdwa.cdwaLite.IndexingDatesSetDocument.IndexingDatesSet[] indexingDatesSetArray)
         {
             check_orphaned();
             arraySetterHelper(indexingDatesSetArray, INDEXINGDATESSET$0);
@@ -193,7 +193,7 @@ public class IndexingDatesWrapDocumentImpl extends org.apache.xmlbeans.impl.valu
         /**
          * Sets ith "indexingDatesSet" element
          */
-        @Inject(optional=true) public void setIndexingDatesSetArray(int i, edu.getty.cdwa.cdwaLite.IndexingDatesSetDocument.IndexingDatesSet indexingDatesSet)
+        public void setIndexingDatesSetArray(int i, edu.getty.cdwa.cdwaLite.IndexingDatesSetDocument.IndexingDatesSet indexingDatesSet)
         {
             generatedSetterHelperImpl(indexingDatesSet, INDEXINGDATESSET$0, i, org.apache.xmlbeans.impl.values.XmlObjectBase.KIND_SETTERHELPER_ARRAYITEM);
         }
